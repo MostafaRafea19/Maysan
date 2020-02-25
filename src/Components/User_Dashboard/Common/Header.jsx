@@ -1,5 +1,6 @@
 import React from 'react';
 import Logo from './../../../img/logo 1.png';
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
 class Header extends React.Component {
 
@@ -10,7 +11,7 @@ class Header extends React.Component {
                     <section>
                         <img src={Logo} alt="LOGO" />
                     </section>
-                    <button className="btn login_btn px-3 py-2">سجل الان</button>
+                    <Link to="/login" className="btn login_btn px-3 py-2">سجل الان</Link>
                 </header>
             </React.Fragment>
         )
