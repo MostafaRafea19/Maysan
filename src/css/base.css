@@ -1,3 +1,8 @@
+
+/* ******************************************************
+*************** Components ***************************
+****************************************************** */
+
 /* Login, Registration, Verification */
 
 .user {
@@ -12,3 +17,35 @@
 }
 
 /* Login, Registration, Verification */
+
+/* Sidebar Component Start */
+
+.saidebar-user-D .content{
+    width: 263px;
+    height: 719px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.08);
+    border-radius: 30px;
+}
+.saidebar-user-D .content .link{
+    padding: 13px 0;
+}
+.saidebar-user-D .content a{
+    font-size: 30px;
+    line-height: 44px;
+    text-align: center;
+    font-family: DIN Next LT W23;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    text-decoration: none;
+}
+.saidebar-user-D .content  .active{
+    color: #4E2F8A !important;
+}
+.saidebar-user-D .content .icon{
+    width: 32px;
+    height: 17px;
+}
+
+
+/* Sidebar Component End */
