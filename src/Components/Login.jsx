@@ -1,21 +1,22 @@
 import React from 'react';
 import Header from './User_Dashboard/Common/Header';
+import Design from './User_Dashboard/Common/Design';
+
 class Login extends React.Component {
 
     render() {
         return (
             <React.Fragment>
-                <section className="container-fluid">
-                    <section className="row">
-                        <section className="user col-8">
-                            <section className="container">
+                <section className="container-fluid login">
+                    <div className="row position-relative">
+                        <div className="user col-9">
+                            <div className="container">
                                 <Header />
-                            </section>
-                        </section>
-                        <section className="design col-4">
-
-                        </section>
-                    </section>
+                            </div>
+                        </div>
+                        <div className="design col-3"></div>
+                        <Design />
+                    </div>
                 </section>
 
             </React.Fragment>
