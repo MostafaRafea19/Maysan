@@ -5,9 +5,18 @@
     src: url(./../fonts/din-next-lt-w23-regular.ttf);
 }
 
+@font-face {
+    font-family: DIN Next LT W23 BOLD;
+    src: url(./../fonts/FontsFree-Net-din-next-arabic-bold.ttf);
+}
+
 /* Global Styles */
 
 /* Login, Registration, Verification */
+
+.login .row {
+    height: 100vh;
+}
 
 .login .user {
     background-image: url('./../img/bg_elements.jpg');
@@ -27,18 +36,18 @@
 
 .login .design {
     background-color: #4E2F8A;
-    height: 100vh;
+    min-height: 100%;
 }
 
 .login .designs {
     left: 0;
     bottom: 0;
-    height: 100vh;
+    height: 60vh;
 }
 
 .login .designs img:nth-child(1) {
     left: 3.8%;
-    bottom: 15%;
+    bottom: 19%;
 }
 
 .login .designs img:nth-child(2) {
@@ -47,4 +56,76 @@
     width: 490px;
 }
 
+.login ._form h2 {
+    font-weight: 500;
+    font-size: 40px;
+    font-family: DIN Next LT W23 BOLD;
+}
+
+.login ._form .form-control {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 35px 25px;
+    font-size: 24px;
+    border-style: none;
+}
+
+.login ._form .form-control::placeholder {
+    font-size: 24px;
+    color: #A2A2A2;
+}
+
+.login ._form .forget-pass {
+    font-size: 20px;
+    color: #737373;
+}
+
+.login ._form .submit-btn {
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 35px;
+    background: #4E2F8A;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    width: 267.42px;
+}
+
 /* Login, Registration, Verification */
+
+/* Sidebar Component Start */
+
+.saidebar-user-D .content {
+    width: 263px;
+    height: 719px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.08);
+    border-radius: 30px;
+}
+
+.saidebar-user-D .content .link {
+    padding: 13px 0;
+}
+
+.saidebar-user-D .content a {
+    font-size: 30px;
+    line-height: 44px;
+    text-align: center;
+    font-family: DIN Next LT W23;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.saidebar-user-D .content .active {
+    color: #4E2F8A !important;
+}
+
+.saidebar-user-D .content .icon {
+    width: 32px;
+    height: 17px;
+}
+
+
+/* Sidebar Component End */
