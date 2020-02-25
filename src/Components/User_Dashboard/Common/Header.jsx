@@ -6,9 +6,11 @@ class Header extends React.Component {
     render() {
         return (
             <React.Fragment>
-                <header>
-                    <img src={Logo} alt="LOGO" />
-                    <button className="btn btn-primary">تسجيل</button>
+                <header className="d-flex">
+                    <section className="ml-auto">
+                        <img src={Logo} alt="LOGO" />
+                    </section>
+                    <button className="btn login_btn">سجل الآن</button>
                 </header>
             </React.Fragment>
         )

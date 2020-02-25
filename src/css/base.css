@@ -4,4 +4,11 @@
     background-image: url('./../img/bg_elements.jpg');
 }
 
+.user .login_btn {}
+
+.design {
+    background-color: blueviolet;
+    height: 500px;
+}
+
 /* Login, Registration, Verification */
