@@ -6,8 +6,13 @@ class Header extends React.Component {
     render() {
         return (
             <React.Fragment>
-
+                <header>
+                    <img src={Logo} alt="LOGO" />
+                    <button className="btn btn-primary">تسجيل</button>
+                </header>
             </React.Fragment>
         )
     }
 }
+
+export default Header;

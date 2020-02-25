@@ -1,12 +1,14 @@
 import React from 'react';
-import background from './../img/bg elements.jpg';
+import Header from './User_Dashboard/Common/Header';
 class Login extends React.Component {
 
     render() {
         return (
             <React.Fragment>
-                <section className="container">
-
+                <section className="user">
+                    <section className="container">
+                        <Header />
+                    </section>
                 </section>
             </React.Fragment>
         )
