@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './User_Dashboard/Common/Header';
 import Design from './User_Dashboard/Common/Design';
 import Form from './User_Dashboard/Common/_Form';
+import Footer from './User_Dashboard/Common/Footer';
 
 class Login extends React.Component {
 
@@ -14,6 +15,7 @@ class Login extends React.Component {
                             <div className="container">
                                 <Header />
                                 <Form />
+                                <Footer />
                             </div>
                         </div>
                         <div className="design col-3 d-none d-lg-block"></div>
