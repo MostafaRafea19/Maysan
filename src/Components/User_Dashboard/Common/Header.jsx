@@ -1,22 +1,32 @@
 import React from 'react';
 import Logo from './../../../img/logo 1.png';
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 class Header extends React.Component {
 
-    pathname = () => {
-        let location = useLocation();
-        let path = location.pathname
-        console.log(path);
-    }
     render() {
+
+        let link = "";
+        let btn = "";
+        switch (window.location.pathname) {
+            case "/login":
+                link = "سجل الان";
+                btn = "/register";
+                break;
+            case "/register":
+            case "/verification":
+                link = "الدخول";
+                btn = "/login";
+                break;
+        }
+
         return (
             <React.Fragment>
                 <header className="d-flex justify-content-between align-items-center my-5">
                     <section>
-                        <img src={Logo} alt="LOGO" onClick={this.pathname} />
+                        <img src={Logo} alt="LOGO" />
                     </section>
-                    <Link to="/login" className="btn login_btn px-3 py-2">سجل الان</Link>
+                    <Link to={btn} className="btn login_btn px-3 py-2">{link}</Link>
                 </header>
             </React.Fragment>
         )

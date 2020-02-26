@@ -1,10 +1,10 @@
 import React from 'react';
 import Header from './User_Dashboard/Common/Header';
 import Design from './User_Dashboard/Common/Design';
-import Login_Form from './User_Dashboard/Common/Login_Form';
+import Register_Form from './User_Dashboard/Common/Register_Form';
 import Footer from './User_Dashboard/Common/Footer';
 
-class Login extends React.Component {
+class Register extends React.Component {
 
     render() {
         return (
@@ -14,7 +14,7 @@ class Login extends React.Component {
                         <div className="user col-lg-9 col-12 position-relative">
                             <div className="container">
                                 <Header />
-                                <Login_Form />
+                                <Register_Form />
                                 <Footer />
                             </div>
                         </div>
@@ -22,10 +22,9 @@ class Login extends React.Component {
                         <Design />
                     </div>
                 </section>
-
             </React.Fragment>
         )
     }
 }
 
-export default Login;
+export default Register;

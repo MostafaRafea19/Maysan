@@ -20,7 +20,9 @@
 
 .login .user {
     background-image: url('./../img/bg_elements.jpg');
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
 }
 
 .login .user .login_btn {
@@ -130,6 +132,7 @@
 
 /* Sidebar Component End */
 
+<<<<<<< HEAD
 /* Navbar Component Start*/
     .Navbar nav{
         min-height: 107px;
@@ -204,3 +207,22 @@
 
 
 /* Statistics Component End*/
+=======
+/* Footer */
+
+footer ul li {
+    font-size: 14px;
+}
+
+footer ul li:nth-child(1) {
+    color: #A2A2A2;
+}
+
+footer ul li a {
+    font-weight: 500;
+    color: #404040;
+    font-family: DIN Next LT W23 BOLD;
+}
+
+/* Footer */
+>>>>>>> be1dcdc59bac06da473a057d1418c2a1b5694191

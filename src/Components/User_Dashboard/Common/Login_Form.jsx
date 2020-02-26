@@ -1,15 +1,15 @@
 import React from 'react';
-import { Link } from 'react-router-dom/cjs/react-router-dom.min';
+import { Link } from 'react-router-dom';
 
-class Form extends React.Component {
+class Login_Form extends React.Component {
 
     render() {
         return (
             <React.Fragment>
-                <form className="p-5 m-lg-5 _form text-right col-lg-8 col-12">
+                <form className="px-5 py-4 m-lg-5 _form text-right col-lg-8 col-12">
                     <h2 className="py-5">تسجيل الدخول</h2>
                     <div className="form-group py-2">
-                        <input type="email" className="form-control" placeholder="معرف المستخدم او رقم الهاتف" />
+                        <input type="text" className="form-control" placeholder="معرف المستخدم او رقم الهاتف" />
                     </div>
                     <div className="form-group py-2">
                         <input type="password" className="form-control" placeholder="كلمة المرور" />
@@ -19,10 +19,9 @@ class Form extends React.Component {
                         <button type="submit" className="btn submit-btn py-3 align-self-md-center align-self-end">الدخول</button>
                     </div>
                 </form>
-
             </React.Fragment>
         )
     }
 }
 
-export default Form;
+export default Login_Form;
