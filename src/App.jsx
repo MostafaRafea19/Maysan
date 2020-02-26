@@ -7,7 +7,8 @@ import {
 } from "react-router-dom";
 
 import Login from './Components/Login';
-import Charge from './Components/Charge'
+// import Charge from './Components/Charge'
+import Statistics from "./Components/Statistics";
 
 
 class App extends React.Component {
@@ -19,8 +20,8 @@ class App extends React.Component {
           <Route path="/login">
             <Login />
           </Route>
-          <Route path="/charge">
-            <Charge />
+          <Route path="/c">
+            <Statistics />
           </Route>
         </Switch>
       </Router>
