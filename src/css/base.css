@@ -10,6 +10,11 @@
     src: url(./../fonts/FontsFree-Net-din-next-arabic-bold.ttf);
 }
 
+@font-face {
+    font-family: DIN Next LT W23 Medium;
+    src: url(./../fonts/din-next-lt-w23-medium.ttf);
+}
+
 /* Global Styles */
 
 /* Login, Registration, Verification */
@@ -64,6 +69,13 @@
     font-family: DIN Next LT W23 BOLD;
 }
 
+.login ._form h6 {
+    font-weight: 100;
+    font-size: 24px;
+    line-height: 35px;
+    font-family: DIN Next LT W23 Medium;
+}
+
 .login ._form .form-control {
     background: #FFFFFF;
     box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
@@ -71,6 +83,16 @@
     padding: 35px 25px;
     font-size: 24px;
     border-style: none;
+}
+
+.login ._form .verify .form-control {
+    width: 75px;
+    height: 73.47px;
+    font-size: 40px;
+    text-align: center;
+    font-family: DIN Next LT W23 BOLD;
+    color: #000000;
+    padding: 0;
 }
 
 .login ._form .form-control::placeholder {
@@ -92,6 +114,13 @@
     box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     width: 267.42px;
+}
+
+.login ._form .resend {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+    color: #000000;
 }
 
 /* Login, Registration, Verification */
@@ -146,6 +175,11 @@ footer ul li a {
     font-weight: 500;
     color: #404040;
     font-family: DIN Next LT W23 BOLD;
+}
+
+footer ul li a:hover {
+    color: #4E2F8A;
+    text-decoration: none;
 }
 
 /* Footer */
