@@ -13,3 +13,13 @@ ul {
 a {
     text-decoration: none;
 }
+
+.primary-color{
+    color: #F16724 !important;
+}
+.bg-purple{
+    background: #4E2F8A !important;
+}
+.bg-orange{
+    background: #F16724!important;
+}

@@ -6,9 +6,10 @@ import {
 } from "react-router-dom";
 
 import Login from './Components/Login';
+// import Charge from './Components/Charge'
+import Statistics from "./Components/Statistics";
 import Register from './Components/Register';
 import Verification from './Components/Verification';
-import Charge from './Components/Charge';
 
 
 class App extends React.Component {
@@ -44,6 +45,9 @@ class App extends React.Component {
           <Route path="/login">
             <Login />
           </Route>
+          <Route path="/c">
+            <Statistics />
+          </Route>
           <Route path="/register">
             <Register />
           </Route>
@@ -53,9 +57,6 @@ class App extends React.Component {
               inputs={this.state.vc_inputs}
               handleVerificationCodeChange={this.handleVerificationCodeChange}
             />
-          </Route>
-          <Route path="/charge">
-            <Charge />
           </Route>
         </Switch>
       </Router>

@@ -2,15 +2,16 @@ import React from 'react';
 import Sh from '../../../img/icon/Sh.png'
 import Xl from '../../../img/icon/x31 0.png'
 import Xm from '../../../img/icon/x35.png'
-// import Header from './User_Dashboard/Common/Header';
+import CC from '../../../img/icon/conversation.png'
+import SS from '../../../img/icon/settings.png'
 class Sidebar extends React.Component {
 
     render() {
         return (
             <React.Fragment>
-                <section className="saidebar-user-D">
+                <section className="saidebar-user-D mr-3">
                     <div className="content">
-                        <div className="row justify-content-center align-items-center text-center">
+                        <div className="row justify-content-center align-items-center text-right pr-5">
                             <div className="col-12 link mt-2">
 
                                 <a href="#" className="d-inline active">
@@ -29,7 +30,9 @@ class Sidebar extends React.Component {
                             </div>
                             <div className="col-12 link">
 
-                                <a href="#" className="d-inline"> العملاء</a>
+                                <a href="#" className="d-inline"><div className="icon d-inline ml-3">
+                                    <img src={CC} alt=""/>
+                                </div> العملاء</a>
 
                             </div>
                             <div className="col-12 link">
@@ -41,7 +44,9 @@ class Sidebar extends React.Component {
                             </div>
                             <div className="col-12 link">
 
-                                <a href="#" className="d-inline">ألاعدادات</a>
+                                <a href="#" className="d-inline"><div className="icon d-inline ml-3">
+                                    <img src={SS} alt=""/>
+                                </div>ألاعدادات</a>
 
                             </div>
 

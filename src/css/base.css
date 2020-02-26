@@ -161,6 +161,82 @@
 
 /* Sidebar Component End */
 
+<<<<<<< HEAD
+/* Navbar Component Start*/
+    .Navbar nav{
+        min-height: 107px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.14);
+    }
+    .Navbar nav .notfication{
+        height: 32px;
+        width: 32px;
+        line-height: 53.5px;
+    }
+.Navbar nav .new{
+    width: 140px;
+    min-height: 50px;
+    border: 2px solid #F16724;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    align-items: center;
+    text-align: center;
+    margin-top: 13px;
+    color: #F16724;
+    font-size: 18px;
+}
+.Navbar nav .new img{
+    margin-left: 5px;
+}
+/* Navbar Component End*/
+
+/* Statistics Component Start*/
+.statistics{
+    background-image: url('./../img/bg_elements.jpg');
+    background-size: cover;
+}
+
+.statistics .section-L .empty{
+    width: 100%;
+    height: 350px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.08);
+    border-radius: 30px;
+}
+.statistics .section-L .details{
+    background: #F16724;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.08);
+    border-radius: 30px;
+    width: 640px;
+    height: 170px;
+}
+.statistics .section-L .add-C{
+    background: #4E2F8A;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 10px 15px !important;
+    min-width: 15px;
+    text-decoration: none;
+    font-size: 14px;
+}
+.statistics .section-L .bundles {
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    width: 100%;
+    height: 170px;
+}
+.statistics .section-L .bundles .out{
+    top: -45px;
+    left: 100px;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    width: 195px;
+    height: 45px;
+}
+
+
+/* Statistics Component End*/
+=======
 /* Footer */
 
 footer ul li {
@@ -177,9 +253,14 @@ footer ul li a {
     font-family: DIN Next LT W23 BOLD;
 }
 
+<<<<<<< HEAD
 footer ul li a:hover {
     color: #4E2F8A;
     text-decoration: none;
 }
 
 /* Footer */
+=======
+/* Footer */
+>>>>>>> be1dcdc59bac06da473a057d1418c2a1b5694191
+>>>>>>> 8c7814f253b510d1b6bb571cea0fd69f34ba072c
