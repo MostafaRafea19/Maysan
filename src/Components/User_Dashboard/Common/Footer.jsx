@@ -5,7 +5,7 @@ class Footer extends React.Component {
     render() {
         return (
             <React.Fragment>
-                <footer className="col-12">
+                <footer className="col-12 px-0">
                     <ul className="d-flex px-5 mx-lg-5 flex-md-row flex-column">
                         <li className="px-2">شبكة ميسان للخدمات اللوجستية 2020</li>
                         <li className="px-2">

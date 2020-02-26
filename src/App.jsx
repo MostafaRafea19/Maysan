@@ -3,11 +3,11 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 
 import Login from './Components/Login';
-import Charge from './Components/Charge'
+import Register from './Components/Register';
+import Charge from './Components/Charge';
 
 
 class App extends React.Component {
@@ -18,6 +18,9 @@ class App extends React.Component {
         <Switch>
           <Route path="/login">
             <Login />
+          </Route>
+          <Route path="/register">
+            <Register />
           </Route>
           <Route path="/charge">
             <Charge />

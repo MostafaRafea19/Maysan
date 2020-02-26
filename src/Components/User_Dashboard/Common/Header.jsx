@@ -7,13 +7,16 @@ class Header extends React.Component {
     render() {
 
         let link = "";
+        let btn = "";
         switch (window.location.pathname) {
             case "/login":
                 link = "سجل الان";
+                btn = "/register";
                 break;
             case "/register":
             case "/verification":
                 link = "الدخول";
+                btn = "/login";
                 break;
         }
 
@@ -23,7 +26,7 @@ class Header extends React.Component {
                     <section>
                         <img src={Logo} alt="LOGO" />
                     </section>
-                    <Link to="/login" className="btn login_btn px-3 py-2">{link}</Link>
+                    <Link to={btn} className="btn login_btn px-3 py-2">{link}</Link>
                 </header>
             </React.Fragment>
         )
