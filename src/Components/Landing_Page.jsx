@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from "./Landing_Page/Header";
+import Benefit from './Landing_Page/Benefit';
 
 class Landing_Page extends React.Component {
 
@@ -9,8 +10,8 @@ class Landing_Page extends React.Component {
                 <section className="landing-page">
                     <div className="container-fluid">
                         <div className="row">
-                            <div className="col-12 p-0">
-                                <Header />
+                            <div className="col-12">
+                                <Benefit />
                             </div>
                         </div>
                     </div>
