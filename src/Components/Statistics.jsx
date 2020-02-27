@@ -1,10 +1,10 @@
 import React from 'react';
-import Saidebar from './User_Dashboard/Common/Sidebar'
+import Sidebar from './User_Dashboard/Common/Sidebar'
 import Navbar from "./User_Dashboard/Common/Navbar";
 
-class Statistics extends React.Component{
-    render(){
-        return(
+class Statistics extends React.Component {
+    render() {
+        return (
             <React.Fragment>
 
                 <section className="statistics">
@@ -19,7 +19,7 @@ class Statistics extends React.Component{
                             </div>
 
                             <div className="col-3">
-                                <Saidebar />
+                                <Sidebar />
                             </div>
                             <div className="col-9   section-L">
                                 <div className="container">

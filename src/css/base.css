@@ -161,8 +161,6 @@
 
 /* Sidebar Component End */
 
-<<<<<<< HEAD
-
 /* Navbar Component Start*/
 .Navbar nav {
     min-height: 107px;
@@ -245,6 +243,46 @@
 
 
 /* Statistics Component End*/
+
+/* Sent Shipments */
+
+.sent_shipments {
+    background-image: url('./../img//bg_elements.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.sent_shipments h1 {
+    font-family: DIN Next LT W23 Medium;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.sent_shipments table thead {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 15px !important;
+    border-style: none;
+}
+
+.sent_shipments table thead th {
+    border-style: none;
+    border-radius: 15px !important;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    color: #818181;
+}
+
+.sent_shipments table tbody tr td {
+    border-style: none;
+    font-size: 21px;
+    text-align: center;
+    color: #000000;
+}
+
+/* Sent Shipments */
 
 /* Footer */
 

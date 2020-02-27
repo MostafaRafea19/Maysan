@@ -10,6 +10,7 @@ import Login from './Components/Login';
 import Statistics from "./Components/Statistics";
 import Register from './Components/Register';
 import Verification from './Components/Verification';
+import Sent_Shipments from './Components/Sent_Shipments';
 
 
 class App extends React.Component {
@@ -23,7 +24,71 @@ class App extends React.Component {
       React.createRef(),
       React.createRef()
     ],
-    input: React.createRef()
+    sent_shipments: [
+      {
+        'shipment_number': 6541981,
+        'sent_date': '2020/20/22',
+        'shipper_data': 'محمد عبدالله',
+        'recipient_data': 'احمد سعيد',
+        'recipient_address': 'حي، شارع، مبنى',
+        'shipment_content': 'صندوق',
+        'shipment_status': 'خرجت للتوصيل'
+      },
+      {
+        'shipment_number': 6541981,
+        'sent_date': '2020/20/22',
+        'shipper_data': 'محمد عبدالله',
+        'recipient_data': 'احمد سعيد',
+        'recipient_address': 'حي، شارع، مبنى',
+        'shipment_content': 'صندوق',
+        'shipment_status': 'خرجت للتوصيل'
+      },
+      {
+        'shipment_number': 6541981,
+        'sent_date': '2020/20/22',
+        'shipper_data': 'محمد عبدالله',
+        'recipient_data': 'احمد سعيد',
+        'recipient_address': 'حي، شارع، مبنى',
+        'shipment_content': 'صندوق',
+        'shipment_status': 'خرجت للتوصيل'
+      },
+      {
+        'shipment_number': 6541981,
+        'sent_date': '2020/20/22',
+        'shipper_data': 'محمد عبدالله',
+        'recipient_data': 'احمد سعيد',
+        'recipient_address': 'حي، شارع، مبنى',
+        'shipment_content': 'صندوق',
+        'shipment_status': 'خرجت للتوصيل'
+      },
+      {
+        'shipment_number': 6541981,
+        'sent_date': '2020/20/22',
+        'shipper_data': 'محمد عبدالله',
+        'recipient_data': 'احمد سعيد',
+        'recipient_address': 'حي، شارع، مبنى',
+        'shipment_content': 'صندوق',
+        'shipment_status': 'خرجت للتوصيل'
+      },
+      {
+        'shipment_number': 6541981,
+        'sent_date': '2020/20/22',
+        'shipper_data': 'محمد عبدالله',
+        'recipient_data': 'احمد سعيد',
+        'recipient_address': 'حي، شارع، مبنى',
+        'shipment_content': 'صندوق',
+        'shipment_status': 'خرجت للتوصيل'
+      },
+      {
+        'shipment_number': 6541981,
+        'sent_date': '2020/20/22',
+        'shipper_data': 'محمد عبدالله',
+        'recipient_data': 'احمد سعيد',
+        'recipient_address': 'حي، شارع، مبنى',
+        'shipment_content': 'صندوق',
+        'shipment_status': 'خرجت للتوصيل'
+      }
+    ]
   }
 
   handleVerificationCodeChange = (e, index) => {
@@ -56,6 +121,11 @@ class App extends React.Component {
               phone_number={this.state.phone_number}
               inputs={this.state.vc_inputs}
               handleVerificationCodeChange={this.handleVerificationCodeChange}
+            />
+          </Route>
+          <Route path="/sent-shipments">
+            <Sent_Shipments
+              sent_shipments={this.state.sent_shipments}
             />
           </Route>
         </Switch>
