@@ -1,6 +1,8 @@
 import React from 'react';
 import Saidebar from './User_Dashboard/Common/Sidebar'
 import Navbar from "./User_Dashboard/Common/Navbar";
+import Footer from "./User_Dashboard/Common/Footer";
+import Graph from "./User_Dashboard/Common/Graph";
 
 class Statistics extends React.Component{
     render(){
@@ -25,10 +27,10 @@ class Statistics extends React.Component{
                                 <div className="container">
                                     <div className="row">
                                         <div className="col-8 bg-danger">
-                                            asd
+                                            <Graph />
                                         </div>
                                         <div className="col-4 ">
-                                            <div className="empty text-center">
+                                            <div className="empty text-center bg-white ">
                                                 <h5 className="h2">اعلان</h5>
                                             </div>
                                         </div>
@@ -36,8 +38,8 @@ class Statistics extends React.Component{
                                             <div className="details">
                                                 <div className="row justify-content-center align-items-center">
 
-                                                    <div className="col-4 text-center">
-                                                        <div className="mt-4">
+                                                    <div className="col-4 text-center ">
+                                                        <div className="mt-4 ">
                                                             <h3 className="text-white">رصيد الشحنات</h3>
                                                             <div className="text-white">
                                                                 <span className="text-white h1 mt-2 d-inline">70</span>
@@ -95,6 +97,10 @@ class Statistics extends React.Component{
                                     </div>
                                 </div>
                             </div>
+                            <div className="col-12 mt-5">
+                                <Footer/>
+                            </div>
+
                         </div>
                     </div>
                 </section>

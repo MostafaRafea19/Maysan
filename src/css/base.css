@@ -100,9 +100,10 @@
 
 .saidebar-user-D .content {
     width: 263px;
-    height: 719px;
+    height: auto;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.08);
     border-radius: 30px;
+    background-color: #FFFFFF;
 }
 
 .saidebar-user-D .content .link {
@@ -132,7 +133,6 @@
 
 /* Sidebar Component End */
 
-<<<<<<< HEAD
 /* Navbar Component Start*/
     .Navbar nav{
         min-height: 107px;
@@ -207,7 +207,6 @@
 
 
 /* Statistics Component End*/
-=======
 /* Footer */
 
 footer ul li {
@@ -225,4 +224,26 @@ footer ul li a {
 }
 
 /* Footer */
->>>>>>> be1dcdc59bac06da473a057d1418c2a1b5694191
+
+
+
+/* Send_Steps Componont Start */
+.send-steps .number-corner{
+        top: -30px;
+        right: -25px;
+    }
+.send-steps .line{
+    height: 3px;
+    width: 150px;
+    background: #4F4F4F;
+    margin: 0 20px;
+}
+/* Send_Steps Componont End */
+
+/* Content_Shipments Start*/
+
+.content-shipment .consent input{
+
+}
+
+/* Content_Shipments End*/
