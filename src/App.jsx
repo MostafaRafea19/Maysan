@@ -11,6 +11,7 @@ import Statistics from "./Components/Statistics";
 import Register from './Components/Register';
 import Verification from './Components/Verification';
 import Sent_Shipments from './Components/Sent_Shipments';
+import Landing_Page from './Components/Landing_Page';
 
 
 class App extends React.Component {
@@ -127,6 +128,9 @@ class App extends React.Component {
             <Sent_Shipments
               sent_shipments={this.state.sent_shipments}
             />
+          </Route>
+          <Route path="/home">
+            <Landing_Page />
           </Route>
         </Switch>
       </Router>
