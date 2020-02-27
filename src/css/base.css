@@ -10,6 +10,11 @@
     src: url(./../fonts/FontsFree-Net-din-next-arabic-bold.ttf);
 }
 
+@font-face {
+    font-family: DIN Next LT W23 Medium;
+    src: url(./../fonts/din-next-lt-w23-medium.ttf);
+}
+
 /* Global Styles */
 
 /* Login, Registration, Verification */
@@ -64,6 +69,13 @@
     font-family: DIN Next LT W23 BOLD;
 }
 
+.login ._form h6 {
+    font-weight: 100;
+    font-size: 24px;
+    line-height: 35px;
+    font-family: DIN Next LT W23 Medium;
+}
+
 .login ._form .form-control {
     background: #FFFFFF;
     box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
@@ -71,6 +83,16 @@
     padding: 35px 25px;
     font-size: 24px;
     border-style: none;
+}
+
+.login ._form .verify .form-control {
+    width: 75px;
+    height: 73.47px;
+    font-size: 40px;
+    text-align: center;
+    font-family: DIN Next LT W23 BOLD;
+    color: #000000;
+    padding: 0;
 }
 
 .login ._form .form-control::placeholder {
@@ -92,6 +114,13 @@
     box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     width: 267.42px;
+}
+
+.login ._form .resend {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+    color: #000000;
 }
 
 /* Login, Registration, Verification */
@@ -134,17 +163,19 @@
 /* Sidebar Component End */
 
 /* Navbar Component Start*/
-    .Navbar nav{
-        min-height: 107px;
-        background: #FFFFFF;
-        box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.14);
-    }
-    .Navbar nav .notfication{
-        height: 32px;
-        width: 32px;
-        line-height: 53.5px;
-    }
-.Navbar nav .new{
+.Navbar nav {
+    min-height: 107px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.14);
+}
+
+.Navbar nav .notfication {
+    height: 32px;
+    width: 32px;
+    line-height: 53.5px;
+}
+
+.Navbar nav .new {
     width: 140px;
     min-height: 50px;
     border: 2px solid #F16724;
@@ -157,31 +188,35 @@
     color: #F16724;
     font-size: 18px;
 }
-.Navbar nav .new img{
+
+.Navbar nav .new img {
     margin-left: 5px;
 }
+
 /* Navbar Component End*/
 
 /* Statistics Component Start*/
-.statistics{
+.statistics {
     background-image: url('./../img/bg_elements.jpg');
     background-size: cover;
 }
 
-.statistics .section-L .empty{
+.statistics .section-L .empty {
     width: 100%;
     height: 350px;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.08);
     border-radius: 30px;
 }
-.statistics .section-L .details{
+
+.statistics .section-L .details {
     background: #F16724;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.08);
     border-radius: 30px;
     width: 640px;
     height: 170px;
 }
-.statistics .section-L .add-C{
+
+.statistics .section-L .add-C {
     background: #4E2F8A;
     box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
@@ -190,13 +225,15 @@
     text-decoration: none;
     font-size: 14px;
 }
+
 .statistics .section-L .bundles {
     box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     width: 100%;
     height: 170px;
 }
-.statistics .section-L .bundles .out{
+
+.statistics .section-L .bundles .out {
     top: -45px;
     left: 100px;
     box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
@@ -207,6 +244,47 @@
 
 
 /* Statistics Component End*/
+
+/* Sent Shipments */
+
+.sent_shipments {
+    background-image: url('./../img//bg_elements.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.sent_shipments h1 {
+    font-family: DIN Next LT W23 Medium;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.sent_shipments table thead {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 15px !important;
+    border-style: none;
+}
+
+.sent_shipments table thead th {
+    border-style: none;
+    border-radius: 15px !important;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    color: #818181;
+}
+
+.sent_shipments table tbody tr td {
+    border-style: none;
+    font-size: 21px;
+    text-align: center;
+    color: #000000;
+}
+
+/* Sent Shipments */
+
 /* Footer */
 
 footer ul li {
@@ -247,3 +325,43 @@ footer ul li a {
 }
 
 /* Content_Shipments End*/
+footer ul li a:hover {
+    color: #4E2F8A;
+    text-decoration: none;
+}
+
+/* Footer */
+
+
+
+/**************************************************
+                    Start Landing Page
+***************************************************/
+
+.landing-page .Header{
+    height: 580px;
+}
+
+.landing-page .Header .sign .form-control{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 33.9597px;
+    border: none;
+    width: 450px;
+    height: 50px !important;
+    padding: 9px 15px !important;
+    display: inline;
+}
+.landing-page .Header .sign .btnL{
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 33.9597px;
+    height: 50px !important;
+    padding: 9px 30px !important;
+    left: 38px;
+
+}
+
+.landing-page .Header .header-left .D1{
+    bottom: 0;
+    left: 280px;
+}

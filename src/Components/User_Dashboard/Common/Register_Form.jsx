@@ -27,7 +27,7 @@ class Register_Form extends React.Component {
                     </div>
 
                     <div className="d-flex py-2">
-                        <button type="submit" className="btn submit-btn py-3 mr-auto">التسجيل</button>
+                        <Link to="/verification" className="btn submit-btn py-3 mr-auto">التسجيل</Link>
                     </div>
                 </form>
             </React.Fragment>
