@@ -11,6 +11,9 @@ class Landing_Page extends React.Component {
                     <div className="container-fluid">
                         <div className="row">
                             <div className="col-12">
+                                <Header />
+                            </div>
+                            <div className="col-12">
                                 <Benefit />
                             </div>
                         </div>

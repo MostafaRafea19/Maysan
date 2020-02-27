@@ -376,6 +376,16 @@ footer ul li a:hover {
     left: 280px;
 }
 
+.landing-page .Header .header-left .D2 {
+    top: -25px;
+    right: 0;
+}
+
+.landing-page .Header .D3 {
+    bottom: 0;
+    right: 150px;
+}
+
 /* Benefit */
 
 .landing-page .benefit {
