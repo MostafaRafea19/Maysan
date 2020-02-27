@@ -2,7 +2,6 @@ import React from 'react';
 import Saidebar from './User_Dashboard/Common/Sidebar'
 import Navbar from "./User_Dashboard/Common/Navbar";
 import Footer from "./User_Dashboard/Common/Footer";
-import Graph from "./User_Dashboard/Common/Graph";
 
 class Statistics extends React.Component{
     render(){
@@ -27,7 +26,6 @@ class Statistics extends React.Component{
                                 <div className="container">
                                     <div className="row">
                                         <div className="col-8 bg-danger">
-                                            <Graph />
                                         </div>
                                         <div className="col-4 ">
                                             <div className="empty text-center bg-white ">
