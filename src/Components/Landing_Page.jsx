@@ -6,8 +6,13 @@ import Information from "./Landing_Page/Information";
 import Express from "./Landing_Page/Express";
 import Benefit from './Landing_Page/Benefit';
 import Feedback from './Landing_Page/Feedback';
+import Shipping from "./Landing_Page/Shipping";
 
 class Landing_Page extends React.Component {
+
+
+
+
 
     render() {
         return (
@@ -15,20 +20,23 @@ class Landing_Page extends React.Component {
                 <section className="landing-page">
                     <div className="container-fluid">
                         <div className="row">
-                            <div className="col-12 p-0">
+                            <div className="col-12 p-0 " data-aos='fade-up'>
                                 <Navbar />
                             </div>
-                            <div className="col-12 p-0 mt-5">
+                            <div className="col-12 p-0 my-5">
                                 <Header />
+                            </div>
+                            <div className="col-12 my-5">
+                                <Shipping />
+                            </div>
+                            <div className="col-12 my-5">
+                                <Benefit />
                             </div>
                             <div className="col-12 mb-5">
                                 <Information />
                             </div>
                             <div className="col-12 mt-5 p-0">
                                 <Express />
-                            </div>
-                            <div className="col-12">
-                                <Benefit />
                             </div>
                             <div className="col-12">
                                 <Feedback />

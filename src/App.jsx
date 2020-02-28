@@ -17,6 +17,9 @@ import Landing_Page from './Components/Landing_Page';
 
 class App extends React.Component {
 
+
+
+
   state = {
     phone_number: '0501234567',
     verification_code: '',

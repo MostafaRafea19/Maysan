@@ -38,7 +38,7 @@ class Feedback extends React.Component {
                         </div>
                         <h2 className="text-center">ماذا يقول عملائنا عنا</h2>
                         <div className="row d-flex justify-content-center align-items-center">
-                            <Carousel controls={false} className="col-6 my-5 position-relative" interval={3000}>
+                            <Carousel controls={false} className="col-12 col-md-6 my-5 position-relative" interval={3000}>
                                 <Carousel.Item>
                                     <div className="feed mb-1"></div>
                                     <div className="paragraph p-5 d-flex flex-column align-items-center position-relative">

@@ -14,10 +14,9 @@ class Information extends React.Component{
                                     ﻲﻓ ﻮﻤﻨﻟﺍ ﺰﻳﺰﻌﺘﻟﻭ ﻝﺎﻤﻋﻻﺍ ﺏﺎﺤﺻﺍﻭ ﺩﺍﺮﻓﻻﺍ ﻦﻣ ﻞﻜﻟ ﻦﺤﺸﻟﺍ ﺕﺎﺒﻠﻃ ﺓﺭﺍﺩﻻ ﺔﻣﺯﻻﺍ ﺔﺋﺎﻔﻜﻟﺍﻭ ﺓﺩﻮﺠﻟﺍ ﻦﻣ ﻞﻛ ﻡﺪﻘﺘﻟ ﻥﺎﺴﻴﻣ ﺔﺼﻨﻣ ﺀﺎﻨﺑ ﻢﺗ <br/>
                                     .ﺕﺎﻨﺤﺸﻟﺍ ﺓﺭﺍﺩﺍ ﺕﺍﻭﺩﺍ ﻦﻣ ﺎﻬﺘﺟﺎﺣ ﺔﻴﻄﻐﺘﻟ ﺔﺼﻨﻤﻟﺍ ﻩﺬﻫ ﻰﻠﻋ ﺩﺎﻤﺘﻋﻻﺎﺑ ﻡﻮﻘﺗ ﻥﺍ ﺔﺌﺷﺎﻨﻟﺍ ﻊﻳﺭﺎﺸﻤﻟﺍ ﻦﻣ ﺪﻳﺪﻌﻠﻟ ﺹﺮﻔﻟﺍ ﺔﺣﺎﺗﺍﻭ ﺔﻴﻧﻭﺮﺘﻜﻟﻻﺍ ﺓﺭﺎﺠﺘﻟﺍ ﻝﺎﺠﻣ </p>
                             </div>
-                            <div className="col-4 p-2 text-right">
+                            <div className="col-12 col-md-6 col-lg-4 text-md-center text-lg-right p-2 text-right">
                                 <div className="pt-4 pr-3">
                                     <div>
-
                                         <svg width="76" height="70" viewBox="0 0 76 70" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path opacity="0.1" d="M40.4619 70C59.7919 70 75.4619 54.33 75.4619 35C75.4619 15.67 59.7919 0 40.4619 0C21.1319 0 5.46191 15.67 5.46191 35C5.46191 54.33 21.1319 70 40.4619 70Z" fill="#474DFF"/>
                                             <path d="M35.7839 52.0871H29.4619C25.6163 52.0871 21.9281 50.5594 19.2089 47.8401C16.4896 45.1208 14.9619 41.4327 14.9619 37.5871V27.2051C14.9619 23.3594 16.4896 19.6713 19.2089 16.952C21.9281 14.2328 25.6163 12.7051 29.4619 12.7051H51.9619C55.8076 12.7051 59.4957 14.2328 62.215 16.952C64.9342 19.6713 66.4619 23.3594 66.4619 27.2051V37.5871C66.4619 41.4327 64.9342 45.1208 62.215 47.8401C59.4957 50.5594 55.8076 52.0871 51.9619 52.0871H45.6899L40.7369 57.0401L35.7839 52.0871Z" fill="url(#paint0_linear)" stroke="white" stroke-width="2"/>
@@ -41,10 +40,6 @@ class Information extends React.Component{
                                                 </linearGradient>
                                             </defs>
                                         </svg>
-
-
-
-
                                     </div>
                                     <h5 className="mt-4">دعم فني متواصل</h5>
                                     <p className="mt-3">
@@ -55,8 +50,8 @@ class Information extends React.Component{
                                 </div>
 
                             </div>
-                            <div className="col-4 p-2 text-right">
-                                <div className="content pt-4 pr-3">
+                            <div className="col-12 col-md-6 col-lg-4 text-md-center text-lg-right p-2 text-right">
+                                <div className="content py-4 pr-3">
                                     <div>
                                         <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path opacity="0.1" d="M35 70C54.33 70 70 54.33 70 35C70 15.67 54.33 0 35 0C15.67 0 0 15.67 0 35C0 54.33 15.67 70 35 70Z" fill="#474DFF"/>
@@ -71,14 +66,14 @@ class Information extends React.Component{
                                     <h5 className="mt-4">
                                         وسائل دفع متعددة
                                     </h5>
-                                    <p className="mt3">
+                                    <p className="my3">
                                         ﺰﻴﻤﺘﻣ ﻖﻳﺮﻓ ﻥﺎﺴﻴﻣ ﻲﻓ ﻚﻟ ﻡﺪﻘﻧ <br/>
                                         ﻦﻣ ﺪﻛﺎﺘﻠﻟ ﺕﺎﻌﻴﺒﻤﻟﺍﻭ ﻲﻨﻔﻟﺍ ﻢﻋﺪﻟﺍﻭ ﺀﻼﻤﻌﻟﺍ ﺔﻣﺪﺧ ﻲﻓ <br/>
                                         .ًﺎﻤﺋﺍﺩ ﺏﻮﻠﻄﻤﻟﺍ ﻞﻜﺸﻟﺎﺑ ﺔﺑﻮﻠﻄﻤﻟﺍ ﺔﻣﺪﺨﻟﺍ ﻰﻠﻋ ﻚﻟﻮﺼﺣ
                                     </p>
                                 </div>
                             </div>
-                            <div className="col-4 p-2 text-right">
+                            <div className="col-12 col-md-12 col-lg-4 text-md-center text-lg-right p-2 text-right">
                                 <div className="pt-4 pr-3">
                                     <div>
                                         <svg width="71" height="70" viewBox="0 0 71 70" fill="none" xmlns="http://www.w3.org/2000/svg">
