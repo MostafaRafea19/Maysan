@@ -28,6 +28,17 @@ a {
     background-size: cover;
 }
 
+.text-purple{
+    color: #4E2F8A !important;
+}
+.text-black{
+    color: black !important;
+}
+
+.text-bold{
+    font-family: DIN Next LT W23 BOLD ;
+}
+
 .form-control{
     /*background: #FFFFFF;*/
     box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);

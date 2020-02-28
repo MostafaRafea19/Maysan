@@ -1,0 +1,10 @@
+
+/*Start Landing Page*/
+
+/*Start Header*/
+
+@media (min-height: 768px){
+    .landing-page .header-left{
+        background-color: #613EA4;
+    }
+}

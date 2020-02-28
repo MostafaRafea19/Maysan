@@ -8,15 +8,15 @@ class Header extends React.Component{
             <React.Fragment>
                 <section className="Header position-relative">
                     <div className="container-fluid h-100">
-                        <div className="row h-100">
+                        <div className="row h-100 justify-content-center align-items-center">
 
-                            <div className="col-6 position-relative h-100">
+                            <div className="col-md-6 col-12 col-sm-12  position-relative h-100">
 
                                 <div className="mr-5">
                                     <div className="mr-5">
                                         <div className="text-right d-block mt-5 pt-5 mb-5">
-                                            <h2 className="">الشحن صار اسهل</h2>
-                                            <p className="h5">نعمل علي تقديم خدمة ممُيزة <br/> بمعايير عالمية لأصحاب المتاجر الإلكترونية</p>
+                                            <h2 className="text-bold mb-3">الشحن صار اسهل</h2>
+                                            <p>نعمل علي تقديم خدمة شحن ممُيزة <br/> بمعايير عالمية لأصحاب المتاجر الإلكترونية</p>
                                         </div>
                                         <div className="d-block sign text-right mt-5">
                                             <form action="#" className="">
@@ -60,19 +60,21 @@ class Header extends React.Component{
 
                             </div>
 
-                            <div className="col-6 p-0 header-left position-relative">
+                            <div className=" col-md-6 p-0 h-100 header-left position-relative">
                                 <img src={HH} className="img-fluid" alt=""/>
-                                <div className="D2 position-absolute">
 
+                                <div className="D2 position-absolute">
                                     <svg width="62" height="61" viewBox="0 0 62 61" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M31.3987 60.9889C14.6064 60.9889 0.904297 47.2999 0.904297 30.4653C0.904297 13.6308 14.6064 0 31.3987 0C48.1911 0 61.8932 13.689 61.8932 30.4653C61.8932 47.2416 48.2494 60.9889 31.3987 60.9889ZM31.3987 11.6502C21.0201 11.6502 12.5657 20.0966 12.5657 30.4653C12.5657 40.834 21.0201 49.2804 31.3987 49.2804C41.7773 49.2804 50.2318 40.834 50.2318 30.4653C50.2318 20.0966 41.8357 11.6502 31.3987 11.6502Z" fill="#F26A36"/>
                                     </svg>
                                 </div>
+
                                 <div className="D1 position-absolute">
                                     <svg width="137" height="138" viewBox="0 0 127 128" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M63.5 127.395C28.5325 127.395 0 98.8893 0 63.8339C0 28.7785 28.5325 0.394531 63.5 0.394531C98.4675 0.394531 127 28.8998 127 63.8339C127 98.768 98.5889 127.395 63.5 127.395ZM63.5 24.6543C41.8881 24.6543 24.283 42.2427 24.283 63.8339C24.283 85.4251 41.8881 103.013 63.5 103.013C85.1119 103.013 102.717 85.4251 102.717 63.8339C102.717 42.2427 85.2333 24.6543 63.5 24.6543Z" fill="#F26A36"/>
                                     </svg>
                                 </div>
+
                             </div>
                         </div>
                     </div>
