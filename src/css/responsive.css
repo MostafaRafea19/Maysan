@@ -1,10 +1,17 @@
-
 /*Start Landing Page*/
 
 /*Start Header*/
 
-@media (min-height: 768px){
-    .landing-page .header-left{
+@media (min-height: 768px) {
+    .landing-page .header-left {
         background-color: #613EA4;
+    }
+}
+
+/* Paragraph in header -> Landing Page */
+
+@media (max-width:576px) {
+    .landing-page .Header .pragraph-header {
+        font-size: 21px !important;
     }
 }

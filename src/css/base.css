@@ -16,6 +16,11 @@
 }
 
 @font-face {
+    font-family: DIN Next LT W23 Light;
+    src: url(./../fonts/din-next-lt-w23-light.ttf);
+}
+
+@font-face {
     font-family: DIN Next LT W23 Ultra Light;
     src: url(./../fonts/din-next-lt-w23-ultra-light.ttf);
 }
@@ -347,21 +352,21 @@ footer ul li a:hover {
 /**************************************************
                     Start Landing Page
 ***************************************************/
-
-<<<<<<< HEAD
-
-
 /* Start Header Section*/
 
-.landing-page .Header{
-=======
 .landing-page {
     background-color: #FFFFFF;
 }
 
 .landing-page .Header {
->>>>>>> 865a8b6c05bfaed52ca6f7c09783dbbf4a676e2c
     height: 580px;
+}
+
+.landing-page .Header .pragraph-header {
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 38px;
+    font-family: DIN Next LT W23 Light;
 }
 
 .landing-page .Header .sign .form-control {
@@ -374,21 +379,27 @@ footer ul li a:hover {
     padding: 9px 15px !important;
     display: inline;
 }
-<<<<<<< HEAD
-.landing-page .Header .sign .form-control::placeholder{
+
+.landing-page .Header .sign .form-control::placeholder {
     color: rgba(115, 115, 141, 0.6);
     font-size: 13px
 }
-.landing-page .Header .sign .btnL{
-=======
+
+.landing-page .Header .list-inline-item {
+    color: #73738D;
+    font-weight: 500;
+    font-size: 11.0889px;
+    line-height: 150%;
+    font-family: DIN Next LT W23 Medium;
+}
 
 .landing-page .Header .sign .btnL {
->>>>>>> 865a8b6c05bfaed52ca6f7c09783dbbf4a676e2c
     box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
     border-radius: 33.9597px;
     height: 50px !important;
-    padding: 9px 55px !important;
-    left: 38px;
+    padding: 9px 0px !important;
+    left: 5%;
+    width: 35%;
 
 }
 
@@ -401,8 +412,8 @@ footer ul li a:hover {
     top: -25px;
     right: 0;
 }
-<<<<<<< HEAD
-.landing-page .Header .D3{
+
+.landing-page .Header .D3 {
     bottom: 40px;
     right: 150px;
 }
@@ -412,7 +423,7 @@ footer ul li a:hover {
 
 /*Start Navbar Section*/
 
-.landing-page .navbar-landing .btn-nav{
+.landing-page .navbar-landing .btn-nav {
     box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
     border-radius: 10px !important;
     padding: 3px 38px !important;
@@ -423,24 +434,27 @@ footer ul li a:hover {
 /*End Navbar*/
 
 /*Start Footer Section*/
-.landing-page .footer{
+.landing-page .footer {
     background: #613EA4;
 }
-.landing-page .footer .popup{
+
+.landing-page .footer .popup {
     top: -75px;
     background: #FFFFFF;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
     border-radius: 8.31667px;
 }
 
-.landing-page .footer .popup .btn-Form{
+.landing-page .footer .popup .btn-Form {
     margin-top: 23px;
     width: 232.42px;
 }
-.landing-page .footer li{
-    color:#FFF;
+
+.landing-page .footer li {
+    color: #FFF;
 }
-.landing-page .footer a{
+
+.landing-page .footer a {
     color: #FFFFFF;
     font-weight: 100 !important;
     font-size: 14px;
@@ -453,9 +467,9 @@ footer ul li a:hover {
 
 /*Start information Section*/
 
-.landing-page .info .content{
+.landing-page .info .content {
     background: #f8f7fc;
-    border-radius:12% ;
+    border-radius: 12%;
     width: 100%;
     height: 250px;
 }
@@ -466,35 +480,35 @@ footer ul li a:hover {
 
 /* Stratr Express Section*/
 
-.landing-page .express{
+.landing-page .express {
     background: #613EA4;
     height: 350px;
 }
 
-.landing-page .express .btn-sign{
+.landing-page .express .btn-sign {
     box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     padding: 7px 26px;
 }
 
-.landing-page .express .img-car{
+.landing-page .express .img-car {
     width: 100%;
     height: 390px;
     margin-top: -40px;
 }
 
-.landing-page .express .img-car img{
+.landing-page .express .img-car img {
     width: 100%;
     height: 100%;
 }
-.landing-page .express .img-car .expp{
+
+.landing-page .express .img-car .expp {
     top: 263px;
     right: 205px;
     width: 130px;
 }
 
 /* End Express Section*/
-=======
 
 .landing-page .Header .D3 {
     bottom: 0;
@@ -522,6 +536,7 @@ footer ul li a:hover {
 }
 
 .landing-page .benefit .box-1 {
+    box-sizing: border-box;
     width: 248px;
     height: 258px;
     background: #ECEDFF;
@@ -752,4 +767,3 @@ footer ul li a:hover {
 }
 
 /* Feedback */
->>>>>>> 865a8b6c05bfaed52ca6f7c09783dbbf4a676e2c
