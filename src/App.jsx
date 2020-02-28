@@ -139,7 +139,7 @@ class App extends React.Component {
               sent_shipments={this.state.sent_shipments}
             />
           </Route>
-          <Route path="/home">
+          <Route path="/">
             <Landing_Page />
           </Route>
         </Switch>
