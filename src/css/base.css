@@ -355,7 +355,7 @@ footer ul li a:hover {
 /* Start Header Section*/
 
 .landing-page {
-    background-color: #FFFFFF;
+    background-color: #F5F6FA;
 }
 
 .landing-page .Header {
@@ -379,13 +379,14 @@ footer ul li a:hover {
     padding: 9px 15px !important;
     display: inline;
 }
-.landing-page .Header .sign .form-control::placeholder{
+
+.landing-page .Header .sign .form-control::placeholder {
     color: rgba(115, 115, 141, 0.6);
     font-size: 13px
 }
 
 .landing-page .Header .sign .btnL {
-   box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
 }
 
 .landing-page .Header .sign .form-control::placeholder {
@@ -420,7 +421,8 @@ footer ul li a:hover {
     top: -25px;
     right: 0;
 }
-.landing-page .Header .D3{
+
+.landing-page .Header .D3 {
     bottom: 40px;
     right: 150px;
 }
@@ -446,15 +448,18 @@ footer ul li a:hover {
 }
 
 .landing-page .footer .popup {
-    top: -75px;
+    top: -22%;
     background: #FFFFFF;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
     border-radius: 8.31667px;
 }
 
 .landing-page .footer .popup .btn-Form {
-    margin-top: 23px;
     width: 65%;
+    font-size: 24px;
+    line-height: 35px;
+    font-weight: 500;
+    font-family: DIN Next LT W23 Medium;
 }
 
 .landing-page .footer li {
@@ -467,6 +472,41 @@ footer ul li a:hover {
     font-size: 14px;
 }
 
+.landing-page .footer .twitter-logo {
+    width: 27.67px;
+    height: 27.67px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+}
+
+.landing-page .footer footer ul {
+    padding-right: 0 !important;
+}
+
+.landing-page .footer footer ul li:nth-child(1) {
+    color: #A2A2A2 !important;
+}
+
+.landing-page .footer h6 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.landing-page .footer .links ul li a {
+    font-size: 20px;
+    font-weight: 300;
+    font-family: DIN Next LT W23 Ultra Light;
+}
+
+.landing-page .footer h3 {
+    font-size: 38px;
+    line-height: 56px;
+    font-family: DIN Next LT W23 BOLD;
+}
+
+.landing-page .footer .popup p {
+    font-size: 18px;
+}
 
 /*End Footer Section*/
 
@@ -480,7 +520,6 @@ footer ul li a:hover {
     width: 100%;
     min-height: 250px;
 }
-
 
 /*End information Section*/
 
@@ -779,18 +818,29 @@ footer ul li a:hover {
 
 /* start Shipping Section */
 
-.landing-page .shipping .paragraph{
-    font-size: 20px;
+.landing-page .shipping h2 {
+    font-weight: 500;
+    font-size: 36px;
+    font-family: DIN Next LT W23 Medium;
+}
+
+.landing-page .shipping .paragraph {
+    font-weight: 300;
+    font-size: 27px;
+    line-height: 41px;
     font-family: DIN Next LT W23 Light;
 }
-.landing-page .shipping .content{
+
+.landing-page .shipping .content {
     z-index: 8;
     display: grid;
 }
-.landing-page .shipping .content .w-100{
+
+.landing-page .shipping .content .w-100 {
     z-index: 20;
 }
-.landing-page .shipping .D1{
+
+.landing-page .shipping .D1 {
     bottom: 20%;
     left: 30%;
     z-index: 2;
