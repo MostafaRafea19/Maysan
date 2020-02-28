@@ -20,10 +20,10 @@ class Landing_Page extends React.Component {
                 <section className="landing-page">
                     <div className="container-fluid">
                         <div className="row">
-                            <div className="col-12 p-0 " data-aos='fade-up'>
+                            <div className="col-12 p-0 position-sticky Navbar-piernt bg-white">
                                 <Navbar />
                             </div>
-                            <div className="col-12 p-0 my-5">
+                            <div className="col-12 p-0 my-5 " animateIn='fadeIn'>
                                 <Header />
                             </div>
                             <div className="col-12 my-5">

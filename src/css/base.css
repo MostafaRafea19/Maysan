@@ -354,6 +354,11 @@ footer ul li a:hover {
 ***************************************************/
 /* Start Header Section*/
 
+.landing-page .Navbar-piernt{
+    top: 0;
+    z-index: 20;
+    box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.14);
+}
 .landing-page {
     background-color: #FFFFFF;
 }

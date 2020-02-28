@@ -6,13 +6,15 @@ import {
 } from "react-router-dom";
 
 import Login from './Components/Login';
-// import Charge from './Components/Charge'
 import Statistics from "./Components/Statistics";
 import Register from './Components/Register';
 import Shipments from "./Components/Shipments";
 import Verification from './Components/Verification';
 import Sent_Shipments from './Components/Sent_Shipments';
 import Landing_Page from './Components/Landing_Page';
+import ReactDOM from 'react-dom'
+import ReactWOW from 'react-wow'
+
 
 
 class App extends React.Component {

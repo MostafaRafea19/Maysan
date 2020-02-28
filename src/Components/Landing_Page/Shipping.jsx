@@ -1,16 +1,19 @@
 import React from "react";
 import img from "../../img/Firefox - Mac & Windows 1.png";
 import icon from '../../img/Landing_Page/orange_circle.png';
+import WOW from 'wowjs';
 
 class Shipping extends React.Component {
 
-
+    componentDidMount(){
+        new WOW.WOW().init();
+    };
     render() {
         return (
             <React.Fragment>
                 <section className="shipping">
                     <div className="container">
-                        <div className="row justify-content-center align-items-center">
+                        <div className="row justify-content-center align-items-center wow flipInX" data-wow-iteration="1">
                             <div className="col-12">
                                 <h2 className="text-purple text-center ">
                                     طريقة شحن جديدة كلياً

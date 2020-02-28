@@ -1,8 +1,12 @@
 import React from "react";
 import HH from "../../img/Landing_Page/HH.png"
+import WOW from 'wowjs';
 
 class Header extends React.Component {
 
+    componentDidMount(){
+        new WOW.WOW().init();
+    };
     render() {
         return (
             <React.Fragment>
@@ -10,7 +14,7 @@ class Header extends React.Component {
                     <div className="container-fluid h-100">
                         <div className="row h-100 justify-content-center align-items-center">
 
-                            <div className="col-lg-6 col-12 d-flex justify-content-center position-relative h-100">
+                            <div className="col-lg-6 col-12 d-flex justify-content-center position-relative h-100 wow bounceInUp"  data-wow-iteration="1">
 
                                 <div className="mr-lg-5">
                                     <div className="mr-lg-5">
@@ -60,7 +64,7 @@ class Header extends React.Component {
 
                             </div>
 
-                            <div className=" col-md-6 p-0 h-100 header-left position-relative d-none d-lg-block">
+                            <div className="col-md-6 p-0 h-100 header-left position-relative d-none d-lg-block wow rubberBand" data-wow-iteration="1">
                                 <img src={HH} className="img-fluid" alt="" />
 
                                 <div className="D2 position-absolute">

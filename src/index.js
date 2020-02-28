@@ -4,6 +4,8 @@ import 'bootstrap/dist/css/bootstrap.css';
 import './css/reset.css';
 import './css/responsive.css';
 import './css/base.css';
+import 'animate.css/animate.css'
+import 'animate.css';
 import App from './App';
 import $ from 'jquery';
 import Popper from 'popper.js';

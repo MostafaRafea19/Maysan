@@ -1,13 +1,18 @@
 import React from "react";
+import WOW from 'wowjs';
 
 class Information extends React.Component{
+
+    componentDidMount(){
+        new WOW.WOW().init();
+    };
 
     render() {
         return(
             <React.Fragment>
                 <section className="info">
                     <div className="container">
-                        <div className="row">
+                        <div className="row wow bounceInUp" data-wow-iteration="1">
                             <div className="col-12 mb-5 pb-5 text-center">
                                 <h2 className="text-bold text-black">لماذا نحن افضل خيار لك!</h2>
                                 <p>
@@ -73,8 +78,8 @@ class Information extends React.Component{
                                     </p>
                                 </div>
                             </div>
-                            <div className="col-12 col-md-12 col-lg-4 text-md-center text-lg-right p-2 text-right">
-                                <div className="pt-4 pr-3">
+                            <div className="col-12 col-md-12 col-lg-4 text-md-center text-lg-right p-2 text-right" data-wow-iteration="1">
+                                <div className="pt-4 pr-3 wow fedeinUp">
                                     <div>
                                         <svg width="71" height="70" viewBox="0 0 71 70" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path opacity="0.1" d="M35.4619 70C54.7919 70 70.4619 54.33 70.4619 35C70.4619 15.67 54.7919 0 35.4619 0C16.1319 0 0.461914 15.67 0.461914 35C0.461914 54.33 16.1319 70 35.4619 70Z" fill="#474DFF"/>

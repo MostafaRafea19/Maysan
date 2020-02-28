@@ -9,14 +9,18 @@ import feedback_03 from './../../img/Landing_Page/feedback_middle_bottom.png';
 import feedback_04 from './../../img/Landing_Page/feedback_middle_top.png';
 import feedback_05 from './../../img/Landing_Page/feedback_right_middle.png';
 import feedback_06 from './../../img/Landing_Page/feedback_left_bottom.png';
+import WOW from 'wowjs';
 
 
 class Feedback extends React.Component {
 
+    componentDidMount(){
+        new WOW.WOW().init();
+    };
     render() {
         return (
             <React.Fragment>
-                <section className="feedback my-5">
+                <section className="feedback my-5 wow zoomInDown">
                     <div className="container">
                         <div>
                             <img src={feedback_01} className="feedback-img-01 img-fluid position-absolute" />
