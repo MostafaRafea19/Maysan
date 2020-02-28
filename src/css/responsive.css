@@ -2,9 +2,9 @@
 
 /*Start Header*/
 
-@media (min-height: 768px) {
-    .landing-page .header-left {
-        background-color: #613EA4;
+@media screen and (max-width: 992px) {
+    .landing-page .footer .popup {
+        top: -25% !important;
     }
 }
 
@@ -19,9 +19,10 @@
 
 /*Footer section start*/
 @media (max-width:768px) {
-    .landing-page .footer .popup{
+    .landing-page .footer .popup {
         top: -135px !important;
         text-align: center;
     }
 }
+
 /*Footer section End*/
