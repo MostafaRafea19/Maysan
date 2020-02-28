@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from "./Landing_Page/Header";
 import Benefit from './Landing_Page/Benefit';
+import Feedback from './Landing_Page/Feedback';
 
 class Landing_Page extends React.Component {
 
@@ -15,6 +16,9 @@ class Landing_Page extends React.Component {
                             </div>
                             <div className="col-12">
                                 <Benefit />
+                            </div>
+                            <div className="col-12">
+                                <Feedback />
                             </div>
                         </div>
                     </div>

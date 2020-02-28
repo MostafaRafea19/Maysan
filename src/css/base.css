@@ -16,6 +16,11 @@
 }
 
 @font-face {
+    font-family: DIN Next LT W23 Ultra Light;
+    src: url(./../fonts/din-next-lt-w23-ultra-light.ttf);
+}
+
+@font-face {
     font-family: Roboto;
     src: url(./../fonts/Roboto-Light.ttf);
 }
@@ -344,7 +349,7 @@ footer ul li a:hover {
 ***************************************************/
 
 .landing-page {
-    background-color: #ffffff;
+    background-color: #FFFFFF;
 }
 
 .landing-page .Header {
@@ -535,6 +540,105 @@ footer ul li a:hover {
 .landing-page .benefit .bg-circle {
     bottom: 5%;
     left: 44%;
+    z-index: 0;
 }
 
 /* Benefit */
+
+/* Feedback */
+
+.feedback h2 {
+    color: #080940;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 56px;
+    font-family: DIN Next LT W23 BOLD;
+}
+
+.feedback .paragraph {
+    height: 301.48px;
+    background-color: #ffffff;
+    box-shadow: 0px 13.8611px 55.4444px #F2F5FA;
+    border-radius: 10px;
+}
+
+.feedback .paragraph h6 {
+    font-size: 18px;
+    line-height: 26px;
+    font-family: DIN Next LT W23 Medium;
+}
+
+.feedback .paragraph p {
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.feedback .carousel-inner {
+    box-shadow: 0px 13.8611px 55.4444px #F2F5FA;
+    border-radius: 8.31667px;
+}
+
+.feedback .paragraph .comment img {
+    padding: 0 1.7px;
+}
+
+.feedback .carousel-indicators {
+    bottom: -15% !important;
+}
+
+.feedback .carousel-indicators li {
+    background-color: #DBE5F1;
+    width: 10.69px;
+    height: 10.69px;
+    border-radius: 50%;
+    border-style: none;
+}
+
+.feedback .carousel-indicators li.active {
+    background: #613EA4;
+    border-radius: 5px;
+    width: 32.08px;
+}
+
+.feedback .paragraph .comment-photo {
+    top: -20%;
+    z-index: 5;
+}
+
+.feedback .feed {
+    height: 50px;
+    background-color: rgba(240, 244, 249, 0.3);
+}
+
+
+.feedback .feedback-img-01 {
+    top: 13%;
+    right: 13%;
+}
+
+.feedback .feedback-img-02 {
+    top: 24%;
+    right: 27%;
+}
+
+.feedback .feedback-img-03 {
+    bottom: 25%;
+    right: 20%;
+}
+
+.feedback .feedback-img-04 {
+    top: 15%;
+    left: 19%;
+}
+
+.feedback .feedback-img-05 {
+    top: 25%;
+    left: 25%;
+}
+
+.feedback .feedback-img-06 {
+    bottom: 22%;
+    left: 15%;
+}
+
+/* Feedback */
