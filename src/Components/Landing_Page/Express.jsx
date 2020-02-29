@@ -6,7 +6,7 @@ import WOW from "wowjs";
 class Express extends React.Component {
 
 
-    componentDidMount(){
+    componentDidMount() {
         new WOW.WOW().init();
     };
 
@@ -25,8 +25,8 @@ class Express extends React.Component {
                                 </div>
                             </div>
                             <div className="col-12 my-4 col-xl-5 text-center wow bounceInLeft" data-wow-iteration="1">
-                                <p className="text-white">النص الشكلي هو نص لا يحتوى علي اي معنى ويقوم بغرض <br /> تصوري فقط لتحديد اماكن النصوص والحاجة منها</p>
-                                <a href="#" className="btn bg-purple btn-sign text-bold text-white">افتح حساب الان</a>
+                                <p className="text-white my-4">النص الشكلي هو نص لا يحتوى علي اي معنى ويقوم بغرض <br /> تصوري فقط لتحديد اماكن النصوص والحاجة منها</p>
+                                <a href="#" className="btn bg-purple btn-sign text-bold text-white">افتح حسابك الان</a>
                             </div>
                         </div>
                     </div>

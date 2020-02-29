@@ -354,13 +354,14 @@ footer ul li a:hover {
 ***************************************************/
 /* Start Header Section*/
 
-.landing-page .Navbar-piernt{
+.landing-page .Navbar-piernt {
     top: 0;
     z-index: 20;
     box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.14);
 }
+
 .landing-page {
-    background-color: #F5F6FA;
+    background-color: #FFFFFF;
 }
 
 .landing-page .Header {
@@ -526,6 +527,29 @@ footer ul li a:hover {
     min-height: 250px;
 }
 
+.landing-page .info h2 {
+    font-weight: bold;
+    font-size: 38px;
+}
+
+.landing-page .info .info-p {
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(8, 9, 64, 0.8);
+}
+
+.landing-page .info h5 {
+    font-size: 18px;
+    line-height: 24px;
+    color: rgba(8, 9, 64, 0.8);
+}
+
+.landing-page .info .info-card {
+    font-size: 15px;
+    line-height: 21px;
+    color: rgba(8, 9, 64, 0.5);
+}
+
 /*End information Section*/
 
 
@@ -540,6 +564,8 @@ footer ul li a:hover {
     box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     padding: 7px 26px;
+    font-size: 20px;
+    line-height: 29px;
 }
 
 .landing-page .express .img-car {
@@ -558,6 +584,13 @@ footer ul li a:hover {
     right: 35%;
     /*width: 130px;*/
     width: 24%;
+}
+
+.landing-page .express p {
+    font-size: 18px;
+    line-height: 26px;
+    font-family: DIN Next LT W23 Light;
+    font-weight: 300;
 }
 
 /* End Express Section*/

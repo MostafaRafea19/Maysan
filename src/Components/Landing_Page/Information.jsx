@@ -5,7 +5,7 @@ import WOW from 'wowjs'
 class Information extends React.Component {
 
 
-    componentDidMount(){
+    componentDidMount() {
         new WOW.WOW().init();
     };
 
@@ -16,13 +16,13 @@ class Information extends React.Component {
                     <div className="container">
                         <div className="row">
                             <div className="col-12 mb-5 pb-5 text-center wow heartBeat">
-                                <h2 className="text-bold text-black">لماذا نحن افضل خيار لك!</h2>
-                                <p>
-                                    ﻲﻓ ﻮﻤﻨﻟﺍ ﺰﻳﺰﻌﺘﻟﻭ ﻝﺎﻤﻋﻻﺍ ﺏﺎﺤﺻﺍﻭ ﺩﺍﺮﻓﻻﺍ ﻦﻣ ﻞﻜﻟ ﻦﺤﺸﻟﺍ ﺕﺎﺒﻠﻃ ﺓﺭﺍﺩﻻ ﺔﻣﺯﻻﺍ ﺔﺋﺎﻔﻜﻟﺍﻭ ﺓﺩﻮﺠﻟﺍ ﻦﻣ ﻞﻛ ﻡﺪﻘﺘﻟ ﻥﺎﺴﻴﻣ ﺔﺼﻨﻣ ﺀﺎﻨﺑ ﻢﺗ <br />
-                                    .ﺕﺎﻨﺤﺸﻟﺍ ﺓﺭﺍﺩﺍ ﺕﺍﻭﺩﺍ ﻦﻣ ﺎﻬﺘﺟﺎﺣ ﺔﻴﻄﻐﺘﻟ ﺔﺼﻨﻤﻟﺍ ﻩﺬﻫ ﻰﻠﻋ ﺩﺎﻤﺘﻋﻻﺎﺑ ﻡﻮﻘﺗ ﻥﺍ ﺔﺌﺷﺎﻨﻟﺍ ﻊﻳﺭﺎﺸﻤﻟﺍ ﻦﻣ ﺪﻳﺪﻌﻠﻟ ﺹﺮﻔﻟﺍ ﺔﺣﺎﺗﺍﻭ ﺔﻴﻧﻭﺮﺘﻜﻟﻻﺍ ﺓﺭﺎﺠﺘﻟﺍ ﻝﺎﺠﻣ </p>
+                                <h2 className="text-black">لماذا نحن افضل خيار لك!</h2>
+                                <p className=" info-p col-10 m-auto text-center">
+                                    تم بناء منصة ميسان لتقدم كل من الجودة والكفاءة اللازمة لادارة طلبات الشحن لكل من الافراد واصحاب العمل و لتعزيز النمو فى مجال التجارة الالكترونية واتاحة الفرص للعديد من المشاريع الناشئة ان تقوم بالاعتماد على هذه المنصة لتغطية حاجتها من ادوات ادارة الشحنات.
+                                </p>
                             </div>
-                            <div className="col-12 col-md-6 col-lg-4 text-center text-lg-right p-2 text-right">
-                                <div className="pt-4 pr-3">
+                            <div className="col-12 col-md-6 col-lg-4 text-center p-2">
+                                <div className="pt-4 pr-4 text-center text-lg-right">
                                     <div>
                                         <svg width={76} height={70} viewBox="0 0 76 70" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path opacity="0.1" d="M40.4619 70C59.7919 70 75.4619 54.33 75.4619 35C75.4619 15.67 59.7919 0 40.4619 0C21.1319 0 5.46191 15.67 5.46191 35C5.46191 54.33 21.1319 70 40.4619 70Z" fill="#474DFF" />
@@ -47,17 +47,17 @@ class Information extends React.Component {
                                             </defs>
                                         </svg>
                                     </div>
-                                    <h5 className="mt-4">دعم فني متواصل</h5>
-                                    <p className="mt-3">
-                                        ﺰﻴﻤﺘﻣ ﻖﻳﺮﻓ ﻥﺎﺴﻴﻣ ﻲﻓ ﻚﻟ ﻡﺪﻘﻧ <br />
-                                        ﻦﻣ ﺪﻛﺎﺘﻠﻟ ﺕﺎﻌﻴﺒﻤﻟﺍﻭ ﻲﻨﻔﻟﺍ ﻢﻋﺪﻟﺍﻭ ﺀﻼﻤﻌﻟﺍ ﺔﻣﺪﺧ ﻲﻓ <br />
-                                        .ًﺎﻤﺋﺍﺩ ﺏﻮﻠﻄﻤﻟﺍ ﻞﻜﺸﻟﺎﺑ ﺔﺑﻮﻠﻄﻤﻟﺍ ﺔﻣﺪﺨﻟﺍ ﻰﻠﻋ ﻚﻟﻮﺼﺣ
+                                    <h5 className="mt-4 mb-3">دعم فني متواصل</h5>
+                                    <p className="mt-3 info-card">
+                                        نقدم لك فى ميسان فريق متميز<br />
+                                        فى خدمة العملاء و الدعم الفنى و المبيعات للتأكد من
+                                        <br />حصولك على الخدمة المطلوبة بالشكل الكلوب دائما.ً
                                     </p>
                                 </div>
 
                             </div>
                             <div className="col-12 col-md-6 col-lg-4 text-center text-lg-right p-2 text-right">
-                                <div className="content py-4 pr-3">
+                                <div className="content py-4 pr-4 text-center text-lg-right">
                                     <div>
                                         <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path opacity="0.1" d="M35 70C54.33 70 70 54.33 70 35C70 15.67 54.33 0 35 0C15.67 0 0 15.67 0 35C0 54.33 15.67 70 35 70Z" fill="#474DFF" />
@@ -69,18 +69,19 @@ class Information extends React.Component {
                                         </svg>
 
                                     </div>
-                                    <h5 className="mt-4">
+                                    <h5 className="mt-4 mb-3">
                                         وسائل دفع متعددة
                                     </h5>
-                                    <p className="my3">
-                                        ﺰﻴﻤﺘﻣ ﻖﻳﺮﻓ ﻥﺎﺴﻴﻣ ﻲﻓ ﻚﻟ ﻡﺪﻘﻧ <br />
-                                        ﻦﻣ ﺪﻛﺎﺘﻠﻟ ﺕﺎﻌﻴﺒﻤﻟﺍﻭ ﻲﻨﻔﻟﺍ ﻢﻋﺪﻟﺍﻭ ﺀﻼﻤﻌﻟﺍ ﺔﻣﺪﺧ ﻲﻓ <br />
-                                        .ًﺎﻤﺋﺍﺩ ﺏﻮﻠﻄﻤﻟﺍ ﻞﻜﺸﻟﺎﺑ ﺔﺑﻮﻠﻄﻤﻟﺍ ﺔﻣﺪﺨﻟﺍ ﻰﻠﻋ ﻚﻟﻮﺼﺣ
+                                    <p className="my-3 info-card">
+                                        يمكنك الدفع بالعديد من الوسائل<br />
+                                        المتاحة لاتمام طلبات الشحن الخاصة بك بشكل اسرع<br />
+                                        واكثر مرونة، يمكنك اضافة الرصيد مسبقا ً الى الحساب<br />
+                                        الخاص بك، او الاشتراك في احد الباقات المتاحة لدينا.
                                     </p>
                                 </div>
                             </div>
                             <div className="col-12 col-md-12 col-lg-4 text-center text-lg-right p-2 text-right">
-                                <div className="pt-4 pr-3">
+                                <div className="pt-4 pr-4 text-center text-lg-right">
                                     <div>
                                         <svg width="71" height="70" viewBox="0 0 71 70" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path opacity="0.1" d="M35.4619 70C54.7919 70 70.4619 54.33 70.4619 35C70.4619 15.67 54.7919 0 35.4619 0C16.1319 0 0.461914 15.67 0.461914 35C0.461914 54.33 16.1319 70 35.4619 70Z" fill="#474DFF" />
@@ -105,11 +106,11 @@ class Information extends React.Component {
 
 
                                     </div>
-                                    <h5 className="mt-4">سهولة إدارة طلباتك</h5>
-                                    <p className="mt-3">
-                                        ﺰﻴﻤﺘﻣ ﻖﻳﺮﻓ ﻥﺎﺴﻴﻣ ﻲﻓ ﻚﻟ ﻡﺪﻘﻧ <br />
-                                        ﻦﻣ ﺪﻛﺎﺘﻠﻟ ﺕﺎﻌﻴﺒﻤﻟﺍﻭ ﻲﻨﻔﻟﺍ ﻢﻋﺪﻟﺍﻭ ﺀﻼﻤﻌﻟﺍ ﺔﻣﺪﺧ ﻲﻓ <br />
-                                        .ًﺎﻤﺋﺍﺩ ﺏﻮﻠﻄﻤﻟﺍ ﻞﻜﺸﻟﺎﺑ ﺔﺑﻮﻠﻄﻤﻟﺍ ﺔﻣﺪﺨﻟﺍ ﻰﻠﻋ ﻚﻟﻮﺼﺣ
+                                    <h5 className="mt-4 mb-3">سهولة إدارة طلباتك</h5>
+                                    <p className="mt-3 info-card">
+                                        تقدم ميسان فى المنصة الخاصة بها الادوات التي تساعدك<br />
+                                        على ادارة بيانات عملائك وعنواين التوصيل الخاصة بهم<br />
+                                        ومراجعة الشحنات وطباعة فاتورة الشحن فى اي وقت.
                                     </p>
                                 </div>
 

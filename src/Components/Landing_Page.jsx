@@ -19,7 +19,7 @@ class Landing_Page extends React.Component {
                             <div className="col-12 p-0 position-sticky Navbar-piernt bg-white">
                                 <Navbar />
                             </div>
-                            <div className="col-12 p-0 my-5 " animateIn='fadeIn'>
+                            <div className="col-12 p-0 my-5 ">
                                 <Header />
                             </div>
                             <div className="col-12 my-5">
