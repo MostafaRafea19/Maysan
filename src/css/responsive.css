@@ -6,6 +6,10 @@
     .landing-page .footer .popup {
         top: -25% !important;
     }
+
+    .feedback .paragraph p {
+        font-size: 15px !important;
+    }
 }
 
 /* Paragraph in header -> Landing Page */
@@ -22,6 +26,18 @@
     .landing-page .footer .popup {
         top: -135px !important;
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 394px) {
+    .landing-page .footer .logo {
+        padding-top: 10rem !important;
+    }
+}
+
+@media screen and (max-width: 301px) {
+    .landing-page .footer .logo {
+        padding-top: 15rem !important;
     }
 }
 

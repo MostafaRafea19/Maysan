@@ -26,7 +26,7 @@ class Footer extends React.Component {
                                 </div>
                             </div>
                             <div className="col-12 col-md-3 pt-5 mt-5 text-center">
-                                <div className="my-5 mt-md-0 pt-5">
+                                <div className="logo my-5 mt-md-0 pt-5">
                                     <img src={Logo} className='img-fluid' alt="Logo" />
                                 </div>
                                 <div className="social-links">

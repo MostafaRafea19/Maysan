@@ -21,8 +21,8 @@ class Information extends React.Component {
                                     تم بناء منصة ميسان لتقدم كل من الجودة والكفاءة اللازمة لادارة طلبات الشحن لكل من الافراد واصحاب العمل و لتعزيز النمو فى مجال التجارة الالكترونية واتاحة الفرص للعديد من المشاريع الناشئة ان تقوم بالاعتماد على هذه المنصة لتغطية حاجتها من ادوات ادارة الشحنات.
                                 </p>
                             </div>
-                            <div className="col-12 col-md-6 col-lg-4 text-center p-2">
-                                <div className="pt-4 pr-4 text-center text-lg-right">
+                            <div className="col-12 col-lg-4 text-center p-2">
+                                <div className="pt-4 pr-lg-4 text-center text-lg-right">
                                     <div>
                                         <svg width={76} height={70} viewBox="0 0 76 70" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path opacity="0.1" d="M40.4619 70C59.7919 70 75.4619 54.33 75.4619 35C75.4619 15.67 59.7919 0 40.4619 0C21.1319 0 5.46191 15.67 5.46191 35C5.46191 54.33 21.1319 70 40.4619 70Z" fill="#474DFF" />
@@ -56,8 +56,8 @@ class Information extends React.Component {
                                 </div>
 
                             </div>
-                            <div className="col-12 col-md-6 col-lg-4 text-center text-lg-right p-2 text-right">
-                                <div className="content py-4 pr-4 text-center text-lg-right">
+                            <div className="col-12 col-lg-4 text-center text-lg-right p-2 text-right">
+                                <div className="content py-4 pr-lg-4 text-center text-lg-right">
                                     <div>
                                         <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path opacity="0.1" d="M35 70C54.33 70 70 54.33 70 35C70 15.67 54.33 0 35 0C15.67 0 0 15.67 0 35C0 54.33 15.67 70 35 70Z" fill="#474DFF" />
@@ -80,8 +80,8 @@ class Information extends React.Component {
                                     </p>
                                 </div>
                             </div>
-                            <div className="col-12 col-md-12 col-lg-4 text-center text-lg-right p-2 text-right">
-                                <div className="pt-4 pr-4 text-center text-lg-right">
+                            <div className="col-12 col-lg-4 text-center text-lg-right p-2 text-right">
+                                <div className="pt-4 pr-lg-4 text-center text-lg-right">
                                     <div>
                                         <svg width="71" height="70" viewBox="0 0 71 70" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path opacity="0.1" d="M35.4619 70C54.7919 70 70.4619 54.33 70.4619 35C70.4619 15.67 54.7919 0 35.4619 0C16.1319 0 0.461914 15.67 0.461914 35C0.461914 54.33 16.1319 70 35.4619 70Z" fill="#474DFF" />
