@@ -10,7 +10,7 @@ import WOW from 'wowjs';
 class Benefit extends React.Component {
 
 
-    componentDidMount(){
+    componentDidMount() {
         new WOW.WOW().init();
     };
 
@@ -20,10 +20,10 @@ class Benefit extends React.Component {
                 <div className="benefit my-5">
                     <div className="container">
                         <div className="row">
-                            <div className="col-lg-6 wow col-12 text-lg-right text-center d-flex flex-column justify-content-center bounceInUp"  data-wow-iteration="1">
+                            <div className="col-lg-6 wow col-12 text-lg-right text-center d-flex flex-column justify-content-center bounceInUp" data-wow-iteration="1">
                                 <h2>كيف تقدر تستفيد من منصة ميسان؟</h2>
                                 <h6>اقترب اكثر من تحقيق اهدافك نحو ادارة شحناتك بشكل افضل و اكثر كفائة</h6>
-                                <p>ما يميزنا انه فى ميسان نسعى دائما ً الى توفير الحلول اللوجستية فى الوقت والمكان المناسب نخدم كافة القطاعاتو الانشطة التي تحتاج الى الخدمات اللوجستية لايصال منتجاتها الى عملائها او ارسال الشحنات لاغراض شخصية</p>
+                                <p>ما يميزنا انه فى ميسان نسعى دائما ً الى توفير الحلول اللوجستية فى الوقت والمكان المناسب نخدم كافة القطاعات و الانشطة التي تحتاج الى الخدمات اللوجستية لايصال منتجاتها الى عملائها او ارسال الشحنات لاغراض شخصية</p>
                             </div>
                             <div className="col-lg-6 col-12 text-right d-flex flex-column flex-md-row my-3 my-lg-0">
                                 <div className="position-absolute bg-circle d-none d-lg-block">

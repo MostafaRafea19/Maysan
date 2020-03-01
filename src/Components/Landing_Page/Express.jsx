@@ -16,7 +16,7 @@ class Express extends React.Component {
                 <section className="express">
                     <div className="container-fluid container-lg px-lg-5">
                         <div className="row justify-content-center align-items-center">
-                            <div className="col-12 col-xl-7 wow bounceInRight" data-wow-iteration="2">
+                            <div className="col-12 col-xl-7 wow bounceInRight" data-wow-iteration="1">
                                 <div className="img-car position-relative">
                                     <img src={ex} className="img-fluid w-100" alt="" />
                                     <div className="position-absolute expp" >
@@ -25,8 +25,10 @@ class Express extends React.Component {
                                 </div>
                             </div>
                             <div className="col-12 my-4 col-xl-5 text-center wow bounceInLeft" data-wow-iteration="1">
-                                <p className="text-white my-4">النص الشكلي هو نص لا يحتوى علي اي معنى ويقوم بغرض <br /> تصوري فقط لتحديد اماكن النصوص والحاجة منها</p>
-                                <a href="#" className="btn bg-purple btn-sign text-bold text-white">افتح حسابك الان</a>
+                                <p className="text-white my-4">
+                                    أكثر من ١٠٠ متجر يثقون فى ميسان شاركنا النجاح مع أول طلب شحن لك
+                                </p>
+                                <a href="#" className="btn bg-purple btn-sign text-bold text-white">ابدء الشحن الان</a>
                             </div>
                         </div>
                     </div>

@@ -17,10 +17,13 @@ class Footer extends React.Component {
                                     <div className="row">
                                         <div className='text-md-right col-12 col-lg-8 text-center'>
                                             <h3>لا تضيع وقتك ووقت عملائك بعد الان</h3>
-                                            <p>النص الشكلي هو نص لا يحوي اي معنى ويقوم بغرض <br />تصوري فقط لتحديد اماكن النصوص والحاجة منها</p>
+                                            <p>
+                                                نجيك لحد باب البيت وناخذ طلبك ونغلفه
+وبعدين نشحنه الييييييييين الباب
+                                            </p>
                                         </div>
                                         <div className="text-md-right col-12 col-lg-4 text-center d-flex justify-content-center align-items-center">
-                                            <a href="#" className='bg-orange text-bold btn btn-Form'>افتح حسابك الان</a>
+                                            <a href="#" className='bg-orange text-bold btn btn-Form'>ابدء الشحن الان</a>
                                         </div>
                                     </div>
                                 </div>

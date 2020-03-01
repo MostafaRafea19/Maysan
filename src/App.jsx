@@ -95,6 +95,24 @@ class App extends React.Component {
         'shipment_content': 'صندوق',
         'shipment_status': 'خرجت للتوصيل'
       }
+    ],
+    Feedback: [
+      {
+        'name': 'تركي',
+        'feedback': 'مررة ممتازين وسريعين شكرا لكم'
+      },
+      {
+        'name': 'عبدالله',
+        'feedback': 'جربتكم أول مرة وما عجبتني الخدمة بس لما تواصلت معهم ما تركوني الا وانا راضي شكراً لكم'
+      },
+      {
+        'name': 'فارس',
+        'feedback': 'شكرا لكم الان صرت اقدر اوفر لعملائي شحن اسرع'
+      },
+      {
+        'name': 'نوره',
+        'feedback': 'الله يسعدكم اسعاركم تفرق والجودة بعد'
+      }
     ]
   }
 
@@ -117,15 +135,15 @@ class App extends React.Component {
           <Route path="/login">
             <Login />
           </Route>
-            <Route path="/statistics">
-                <Statistics />
-            </Route>
+          <Route path="/statistics">
+            <Statistics />
+          </Route>
           <Route path="/register">
             <Register />
           </Route>
-            <Route path="/sh">
-                <Shipments />
-            </Route>
+          <Route path="/sh">
+            <Shipments />
+          </Route>
           <Route path="/c">
             <Statistics />
           </Route>
@@ -145,7 +163,7 @@ class App extends React.Component {
             />
           </Route>
           <Route path="/">
-            <Landing_Page />
+            <Landing_Page feedback={this.state.Feedback} />
           </Route>
         </Switch>
       </Router>

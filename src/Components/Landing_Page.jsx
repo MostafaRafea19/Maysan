@@ -35,7 +35,7 @@ class Landing_Page extends React.Component {
                                 <Express />
                             </div>
                             <div className="col-12 my-5">
-                                <Feedback />
+                                <Feedback feedback={this.props.feedback} />
                             </div>
                             <div className="col-12 p-0 mt-5 pt-5">
                                 <Footer />

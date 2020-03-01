@@ -14,7 +14,7 @@ import WOW from 'wowjs';
 
 class Feedback extends React.Component {
 
-    componentDidMount(){
+    componentDidMount() {
         new WOW.WOW().init();
     };
     render() {
@@ -42,64 +42,30 @@ class Feedback extends React.Component {
                         </div>
                         <h2 className="text-center">ماذا يقول عملائنا عنا</h2>
                         <div className="row d-flex justify-content-center align-items-center">
-                            <Carousel controls={false} className="col-12 col-md-6 my-5 position-relative" interval={3000}>
-                                <Carousel.Item>
-                                    <div className="feed mb-1"></div>
-                                    <div className="paragraph p-5 d-flex flex-column align-items-center position-relative">
-                                        <div className="comment-photo position-absolute">
-                                            <img src={comment_photo} className="img-fluid" />
-                                        </div>
-                                        <h6 className="mb-0">احمد محمد سعيد</h6>
-                                        <div className="comment">
-                                            <img src={feedback} className="img-fluid" />
-                                            <img src={feedback} className="img-fluid" />
-                                        </div>
-                                        <p className="text-center px-4 py-3">
-                                            النص الشكلى هو نص لا يحوى اي معنى ويقوم بغرض تصورى فقط لتحديد اماكن النصوص والحاجة منها
-                                        </p>
-                                        <div>
-                                            <img src={signature} className="img-fluid" />
-                                        </div>
-                                    </div>
-                                </Carousel.Item>
-                                <Carousel.Item>
-                                    <div className="feed mb-1"></div>
-                                    <div className="paragraph p-5 d-flex flex-column align-items-center position-relative">
-                                        <div className="comment-photo position-absolute">
-                                            <img src={comment_photo} className="img-fluid" />
-                                        </div>
-                                        <h6 className="mb-0">احمد محمد سعيد</h6>
-                                        <div className="comment">
-                                            <img src={feedback} className="img-fluid" />
-                                            <img src={feedback} className="img-fluid" />
-                                        </div>
-                                        <p className="text-center px-4 py-3">
-                                            النص الشكلى هو نص لا يحوى اي معنى ويقوم بغرض تصورى فقط لتحديد اماكن النصوص والحاجة منها
-                                        </p>
-                                        <div>
-                                            <img src={signature} className="img-fluid" />
-                                        </div>
-                                    </div>
-                                </Carousel.Item>
-                                <Carousel.Item>
-                                    <div className="feed mb-1"></div>
-                                    <div className="paragraph p-5 d-flex flex-column align-items-center position-relative">
-                                        <div className="comment-photo position-absolute">
-                                            <img src={comment_photo} className="img-fluid" />
-                                        </div>
-                                        <h6 className="mb-0">احمد محمد سعيد</h6>
-                                        <div className="comment">
-                                            <img src={feedback} className="img-fluid" />
-                                            <img src={feedback} className="img-fluid" />
-                                        </div>
-                                        <p className="text-center px-4 py-3">
-                                            النص الشكلى هو نص لا يحوى اي معنى ويقوم بغرض تصورى فقط لتحديد اماكن النصوص والحاجة منها
-                                        </p>
-                                        <div>
-                                            <img src={signature} className="img-fluid" />
-                                        </div>
-                                    </div>
-                                </Carousel.Item>
+                            <Carousel controls={false} className="col-12 col-md-6 my-5 position-relative" interval={2500}>
+                                {
+                                    this.props.feedback.map((element, index) => {
+                                        return (
+                                            <Carousel.Item key={index}>
+                                                <div className="feed mb-1"></div>
+                                                <div className="paragraph p-5 d-flex flex-column align-items-center position-relative">
+                                                    <div className="comment-photo position-absolute">
+                                                        <img src={comment_photo} className="img-fluid" />
+                                                    </div>
+                                                    <h6 className="mb-0">{element['name']}</h6>
+                                                    <div className="comment">
+                                                        <img src={feedback} className="img-fluid" />
+                                                        <img src={feedback} className="img-fluid" />
+                                                    </div>
+                                                    <p className="text-center px-4 py-3">{element['feedback']}</p>
+                                                    <div>
+                                                        <img src={signature} className="img-fluid" />
+                                                    </div>
+                                                </div>
+                                            </Carousel.Item>
+                                        )
+                                    })
+                                }
                             </Carousel>
                         </div>
                     </div>
