@@ -19,3 +19,4 @@
 [0228/003640.647:ERROR:crash_report_database_win.cc(428)] unexpected header
 [0228/010116.526:ERROR:crash_report_database_win.cc(428)] unexpected header
 [0228/010330.683:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0229/004355.978:ERROR:file_io.cc(89)] ReadExactly: expected 36, observed 0

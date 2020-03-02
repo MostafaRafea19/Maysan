@@ -19,11 +19,11 @@ class Header extends React.Component {
                                 <div className="mr-lg-5">
                                     <div className="mr-lg-5">
                                         <div className="text-center text-lg-right d-block mt-5 pt-5 mb-5">
-                                            <h2 className="h1 text-black text-bold mb-3">الشحن صار اسهل</h2>
+                                            <h2 className="h1 text-black text-bold mb-3">معنا الشحن اسهل</h2>
                                             <p className="pragraph-header text-black">نعمل علي تقديم خدمة شحن ممُيزة <br /> بمعايير عالمية لأصحاب المتاجر الإلكترونية</p>
                                         </div>
                                         <div className="d-block sign text-center text-lg-right mt-5">
-                                            <form action="#" className="">
+                                            <form action="https://maysanexpress.com/" className="">
                                                 <div className="row justify-content-center">
                                                     <div className="form-group col-lg-12 col-10 position-relative">
                                                         <input type="number" className="form-control" placeholder="رقم الجوال" />

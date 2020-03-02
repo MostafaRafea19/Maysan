@@ -1,7 +1,7 @@
 {
   "name": "my-app",
   "version": "0.1.0",
-  "homepage": "https://demo.takwen.sa/Maysan/",
+  "homepage": "http://new.maysanexpress.com/Maysan",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",

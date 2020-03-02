@@ -16,7 +16,7 @@ class Information extends React.Component {
                     <div className="container">
                         <div className="row">
                             <div className="col-12 mb-5 pb-5 text-center wow heartBeat">
-                                <h2 className="text-black">لماذا نحن افضل خيار لك!</h2>
+                                <h2 className="text-black">نحن افضل خيار لك!</h2>
                                 <p className=" info-p col-10 m-auto text-center">
                                     تم بناء منصة ميسان لتقدم كل من الجودة والكفاءة اللازمة لادارة طلبات الشحن لكل من الافراد واصحاب العمل و لتعزيز النمو فى مجال التجارة الالكترونية واتاحة الفرص للعديد من المشاريع الناشئة ان تقوم بالاعتماد على هذه المنصة لتغطية حاجتها من ادوات ادارة الشحنات.
                                 </p>

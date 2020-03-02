@@ -16,7 +16,7 @@ class Shipping extends React.Component {
                         <div className="row justify-content-center align-items-center wow flipInX" data-wow-iteration="1">
                             <div className="col-12">
                                 <h2 className="text-purple text-center">
-                                    طريقة شحن جديدة كلياً
+                                    طريقة شحن جديدة
                                 </h2>
                                 <p className="text-center my-3 paragraph">
                                     تقدم لك ميسان منصة شحن كامله متكاملة لا حاجة إلي التركيب او الاعداد فقط قم بتسجيل حسابك مع ميسان <br /> وستتمكن من إرسال الشحنات فوراَ. ادفع حسب استخدامك او قم بالاشتراك في احد الباقات المتاحة لدينا <br /> كما تتيح لك ميسان الربط مع اشهر منصات التجارة الالكترونية العالمية

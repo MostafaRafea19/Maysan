@@ -17,12 +17,13 @@ class Navbar extends React.Component {
                             <div className="navbar-nav mr-auto">
                                 <div className="mx-2 d-flex flex-column flex-lg-row align-items-center">
                                     <a className="nav-item nav-link mx-2 text-black" href="#">المميزات</a>
-                                    <a className="nav-item nav-link mx-2 text-black" href="#">الاسعار</a>
-                                    <a className="nav-item nav-link mx-2 text-black" href="#">الدعم والمساعدة</a>
+									<a className="nav-item nav-link mx-2 text-black" href="https://maysanexpress.com/#delivery-number">تتبع الشحنة</a>
+                                    <a className="nav-item nav-link mx-2 text-black" href="https://maysanexpress.com/">الاسعار</a>
+                                    <a className="nav-item nav-link mx-2 text-black" href="https://maysanexpress.com/faqs">الدعم والمساعدة</a>
                                 </div>
                                 <div className="d-flex mx-2 flex-column flex-lg-row align-items-center">
-                                    <a className="nav-item nav-link mx-2 text-purple" href="#"> تسجيل الدخول </a>
-                                    <a className="nav-item nav-link btn btn-nav text-white bg-purple" href="#">سجل الان</a>
+                                    <a className="nav-item nav-link mx-2 text-purple" href="https://maysanexpress.com/"> تسجيل الدخول </a>
+                                    <a className="nav-item nav-link btn btn-nav text-white bg-purple" href="https://maysanexpress.com/">سجل الان</a>
                                 </div>
                             </div>
                         </div>

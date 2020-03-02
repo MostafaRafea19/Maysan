@@ -16,19 +16,22 @@ class Express extends React.Component {
                 <section className="express">
                     <div className="container-fluid container-lg px-lg-5">
                         <div className="row justify-content-center align-items-center">
-                            <div className="col-12 col-xl-7 wow bounceInRight" data-wow-iteration="1">
-                                <div className="img-car position-relative">
+                            <div className="col-12 col-xl-7">
+                                <div className="img-car position-relative  wow bounceInRight" data-wow-iteration="1">
                                     <img src={ex} className="img-fluid w-100" alt="" />
                                     <div className="position-absolute expp" >
                                         <img src={expp} alt="" />
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-12 my-4 col-xl-5 text-center wow bounceInLeft" data-wow-iteration="1">
-                                <p className="text-white my-4">
+                            <div className="col-12 my-4 col-xl-5 text-center" >
+								<div className="wow bounceInLeft" data-wow-iteration="1">
+									                                <p className="text-white my-4">
                                     أكثر من ١٠٠ متجر يثقون فى ميسان شاركنا النجاح مع أول طلب شحن لك
                                 </p>
-                                <a href="#" className="btn bg-purple btn-sign text-bold text-white">ابدء الشحن الان</a>
+                                <a href="https://maysanexpress.com/" className="btn bg-purple btn-sign text-bold text-white">ابدء الشحن الان</a>
+
+								</div>
                             </div>
                         </div>
                     </div>

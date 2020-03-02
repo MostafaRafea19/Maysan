@@ -73,40 +73,40 @@ class Footer extends React.Component {
                             <div className="links col-6 col-md-2 text-center pt-5 mt-md-5 text-md-right">
                                 <h6 className="text-white text-bold">الشركة</h6>
                                 <ul>
-                                    <li className=""><a className="text-decoration-none text-white" href="">المدونة</a></li>
-                                    <li><a className="text-decoration-none text-white" href="">من نحن</a></li>
-                                    <li><a className="text-decoration-none text-white" href="">الوظائف</a></li>
-                                    <li><a className="text-decoration-none text-white" href="">الاعلام</a></li>
-                                    <li><a className="text-decoration-none text-white" href="">المنتجات</a></li>
-                                    <li><a className="text-decoration-none text-white" href="">الشركاء</a></li>
-                                    <li><a className="text-decoration-none text-white" href="">الاسعار</a></li>
-                                    <li><a className="text-decoration-none text-white" href="">تواصل معنا</a></li>
-                                    <li><a className="text-decoration-none text-white" href="">الدعم الفني</a></li>
-                                    <li><a className="text-decoration-none text-white" href="">تسجيل حساب</a></li>
+                                    <li className=""><a className="text-decoration-none text-white" href="https://maysanexpress.com">المدونة</a></li>
+                                    <li><a className="text-decoration-none text-white" href="https://maysanexpress.com/about">من نحن</a></li>
+                                    <li><a className="text-decoration-none text-white" href="https://maysanexpress.com">الوظائف</a></li>
+                                    <li><a className="text-decoration-none text-white" href="https://maysanexpress.com">الاعلام</a></li>
+                                    <li><a className="text-decoration-none text-white" href="https://maysanexpress.com">المنتجات</a></li>
+                                    <li><a className="text-decoration-none text-white" href="https://maysanexpress.com">الشركاء</a></li>
+                                    <li><a className="text-decoration-none text-white" href="https://maysanexpress.com">الاسعار</a></li>
+                                    <li><a className="text-decoration-none text-white" href="https://maysanexpress.com/contact-us">تواصل معنا</a></li>
+                                    <li><a className="text-decoration-none text-white" href="https://maysanexpress.com/contact-us">الدعم الفني</a></li>
+                                    <li><a className="text-decoration-none text-white" href="https://maysanexpress.com/">تسجيل حساب</a></li>
                                 </ul>
                             </div>
                             <div className="links col-6 col-md-2 text-center pt-5 mt-md-5 text-md-right">
                                 <h6 className="text-white text-bold">الربط</h6>
                                 <ul>
-                                    <li><a className="text-decoration-none text-white" href="">Shopifay</a></li>
-                                    <li><a className="text-decoration-none text-white" href="">اوبن كارت</a></li>
-                                    <li><a className="text-decoration-none text-white" href="">ماجينتو</a></li>
+                                    <li><a className="text-decoration-none text-white" href="https://maysanexpress.com/">Shopifay</a></li>
+                                    <li><a className="text-decoration-none text-white" href="https://maysanexpress.com/">اوبن كارت</a></li>
+                                    <li><a className="text-decoration-none text-white" href="https://maysanexpress.com/">ماجينتو</a></li>
                                 </ul>
                             </div>
                             <div className="links col-6 col-md-2 text-center pt-5 mt-md-5 text-md-right">
                                 <h6 className="text-white text-bold">الوثائق القانونية</h6>
                                 <ul>
-                                    <li><a className="text-decoration-none text-white" href="">سياسة الخصوصية</a></li>
-                                    <li><a className="text-decoration-none text-white" href="">اتفاقية الاستخدام</a></li>
-                                    <li><a className="text-decoration-none text-white" href="">المنتجات المحظورة شحنها</a></li>
+                                    <li><a className="text-decoration-none text-white" href="https://maysanexpress.com/page/3/%D8%B3%D9%8A%D8%A7%D8%B3%D8%A9+%D8%A7%D9%84%D8%AE%D8%B5%D9%88%D8%B5%D9%8A%D8%A9">سياسة الخصوصية</a></li>
+                                    <li><a className="text-decoration-none text-white" href="https://maysanexpress.com/">اتفاقية الاستخدام</a></li>
+                                    <li><a className="text-decoration-none text-white" href="https://maysanexpress.com/">المنتجات المحظورة شحنها</a></li>
                                 </ul>
                             </div>
                             <div className="links col-6 col-md-2 pt-5 mt-md-5 text-center text-md-right">
                                 <h6 className="text-white text-bold">المركز التعليمي</h6>
                                 <ul className="h-100">
-                                    <li><a className="text-decoration-none text-white" href="">كيفية استخدام المنصة</a></li>
-                                    <li><a className="text-decoration-none text-white" href="">كيف تقوم بشحن طلبك الاول</a></li>
-                                    <li><a className="text-decoration-none text-white" href="">وسائل الدفع المتاحة</a></li>
+                                    <li><a className="text-decoration-none text-white" href="https://maysanexpress.com/faqs">كيفية استخدام المنصة</a></li>
+                                    <li><a className="text-decoration-none text-white" href="https://maysanexpress.com/faqs">كيف تقوم بشحن طلبك الاول</a></li>
+                                    <li><a className="text-decoration-none text-white" href="https://maysanexpress.com">وسائل الدفع المتاحة</a></li>
                                 </ul>
                             </div>
                             <div className="col-md-12 col-6 order-1 order-md-0 my-4 text-sm-left text-center">
