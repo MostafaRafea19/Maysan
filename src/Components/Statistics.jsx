@@ -2,6 +2,7 @@ import React from 'react';
 import Sidebar from './User_Dashboard/Common/Sidebar'
 import Navbar from "./User_Dashboard/Common/Navbar";
 import Footer from "./User_Dashboard/Common/Footer";
+import Graph from "./User_Dashboard/Common/Graph";
 
 class Statistics extends React.Component {
     render() {
@@ -19,13 +20,14 @@ class Statistics extends React.Component {
                                 </h1>
                             </div>
 
-                            <div className="col-3">
+                            <div className="col-3 pl-0">
                                 <Sidebar />
                             </div>
-                            <div className="col-9   section-L">
+                            <div className="col-9  pr-0 section-L">
                                 <div className="container">
                                     <div className="row">
-                                        <div className="col-8 bg-danger">
+                                        <div className="col-8 pr-0">
+                                            <Graph />
                                         </div>
                                         <div className="col-4 ">
                                             <div className="empty text-center bg-white ">
