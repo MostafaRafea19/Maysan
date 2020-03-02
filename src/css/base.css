@@ -261,22 +261,25 @@
 /* Statistics Component End*/
 
 /* Graph Component Start*/
-.statistics .graph{
+.statistics .graph {
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.08);
     border-radius: 30px;
     height: 350px;
 }
-.statistics .graph .head .munth{
+
+.statistics .graph .head .munth {
     width: 22%;
 }
-.statistics .graph .head .weak{
+
+.statistics .graph .head .weak {
     width: 22%;
     font-size: 24px;
     line-height: 35px;
     box-sizing: border-box;
     box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
-    border-color:#4E2F8A !important; ;
+    border-color: #4E2F8A !important;
+    ;
 }
 
 /* Graph Component End*/
