@@ -190,6 +190,32 @@
     line-height: 53.5px;
 }
 
+.Navbar nav .polpol{
+    top: 26px;
+    right: -14px;
+}
+
+.Navbar nav .NN{
+    border: 2px #613EA4 solid;
+    border-radius:50%;
+    top: 7px;
+    right: -10px;
+    width: 19px;
+    height: 19px;
+}
+
+.Navbar nav .NM{
+    bottom: 36px;
+}
+
+
+.Navbar nav .NN span{
+    font-size: 13px;
+    font-weight: bold;
+    font-family: Roboto;
+    color: #4e2f8a;
+}
+
 .Navbar nav .new {
     width: 140px;
     min-height: 50px;

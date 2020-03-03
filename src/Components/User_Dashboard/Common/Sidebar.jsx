@@ -30,9 +30,7 @@ class Sidebar extends React.Component {
                             </div>
                             <div className="col-12 link">
 
-                                <a href="#" className="d-inline"><div className="icon d-inline ml-3">
-                                    <img src={CC} alt=""/>
-                                </div> العملاء</a>
+                                <a href="#" className="d-inline"> العملاء</a>
 
                             </div>
                             <div className="col-12 link">
@@ -44,9 +42,7 @@ class Sidebar extends React.Component {
                             </div>
                             <div className="col-12 link">
 
-                                <a href="#" className="d-inline"><div className="icon d-inline ml-3">
-                                    <img src={SS} alt=""/>
-                                </div>ألاعدادات</a>
+                                <a href="#" className="d-inline d-flex justify-content-center align-items-center">ألاعدادات</a>
 
                             </div>
 

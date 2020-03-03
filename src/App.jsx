@@ -144,9 +144,6 @@ class App extends React.Component {
           <Route path="/sh">
             <Shipments />
           </Route>
-          <Route path="/c">
-            <Statistics />
-          </Route>
           <Route path="/register">
             <Register />
           </Route>

@@ -1,7 +1,8 @@
 import React from 'react';
 import logo from '../../../img/logo 1.png'
+import M1 from '../../../img/icon/noti/Vector (4).png'
+import M2 from '../../../img/icon/noti/Vector (5).png'
 import MM from '../../../img/icon/Rectangle 11.png'
-import RR from '../../../img/icon/active 2.png'
 import NN from '../../../img/icon/Group.png'
 class Navbar extends React.Component{
     render() {
@@ -20,9 +21,21 @@ class Navbar extends React.Component{
                         <div className="collapse navbar-collapse" id="navbarNavDropdown">
                             <ul className="navbar-nav mr-auto text-center">
                                 <li className="nav-item dropdown ml-4 mr-4">
-                                    <a className="nav-link mt-3 ml-2" href="#" id="navbarDropdownMenuLink"
+                                    <a className="nav-link mt-3 ml-2"  href="#" id="navbarDropdownMenuLink"
                                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <img src={RR} className="notfication" alt=""/>
+                                            <img src={M1} alt=""/>
+                                            <div className="position-relative NM d-flex justify-content-center align-items-center w-100 h-100">
+                                                <div className="position-relative NN d-flex justify-content-center align-items-center">
+                                                        <span className="text-purple d-flex align-items-center justify-content-center">1</span>
+                                                </div>
+                                                <div className="d-flex justify-content-center align-items-center position-relative">
+
+                                                    <img src={M2} alt="" className="position-absolute polpol"/>
+                                                </div>
+                                            </div>
+
+
+
                                     </a>
                                     <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                         <a className="dropdown-item" href="#">Action</a>
