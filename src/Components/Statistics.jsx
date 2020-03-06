@@ -8,7 +8,6 @@ class Statistics extends React.Component {
     render() {
         return (
             <React.Fragment>
-
                 <section className="statistics">
                     <Navbar />
                     <div className="container-fluid mt-5">
@@ -26,15 +25,15 @@ class Statistics extends React.Component {
                             <div className="col-9  pr-0 section-L">
                                 <div className="container">
                                     <div className="row">
-                                        <div className="col-8 pr-0">
+                                        <div className="col-8 pr-0 pl-3">
                                             <Graph />
                                         </div>
-                                        <div className="col-4 ">
+                                        <div className="col-4 pl-0 pr-3">
                                             <div className="empty text-center bg-white ">
                                                 <h5 className="h2">اعلان</h5>
                                             </div>
                                         </div>
-                                        <div className="col-8 mt-5">
+                                        <div className="col-8 mt-5 pr-0">
                                             <div className="details">
                                                 <div className="row justify-content-center align-items-center">
 
@@ -79,17 +78,21 @@ class Statistics extends React.Component {
                                             </div>
                                         </div>
 
-                                        <div className="col-4 mt-5">
+                                        <div className="col-4 mt-5 pl-0 pr-3">
                                             <div className="bundles bg-purple p-3">
                                                 <div className="bundle position-relative">
 
                                                     <div className="out pr-2 position-absolute text-right bg-orange">
                                                         <h5 className="text-white pt-1 h3 text-center">قم بالترقية الان</h5>
                                                     </div>
+                                                    <div className="position-absolute mt-2">
+                                                        <h5 className="text-white text-right h2">الباقة الحالية</h5>
+                                                        <h5 className="text-right primary-color h2">الباقة الحالية</h5>
+                                                        <h5 className="text-right text-white h4">ادفع حسب استخدامك</h5>
+                                                    </div>
 
-                                                    <h5 className="text-white text-right h2">الباقة الحالية</h5>
-                                                    <h5 className="text-right primary-color h2">الباقة الحالية</h5>
-                                                    <h5 className="text-right text-white h4">ادفع حسب استخدامك</h5>
+
+
 
                                                 </div>
                                             </div>

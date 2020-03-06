@@ -144,14 +144,15 @@
 
 .saidebar-user-D .content {
     width: 263px;
-    height: auto;
+    height: 571px;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.08);
     border-radius: 30px;
     background-color: #FFFFFF;
+    margin-right: 23px;
 }
 
 .saidebar-user-D .content .link {
-    padding: 13px 0;
+    padding: 7px 0;
 }
 
 .saidebar-user-D .content a {
@@ -173,7 +174,13 @@
     width: 32px;
     height: 17px;
 }
+.saidebar-user-D .content .client{
+    padding-right: 20%;
+}
 
+.saidebar-user-D .content  .settings{
+    padding-right: 20%;
+}
 
 /* Sidebar Component End */
 
@@ -192,7 +199,7 @@
 
 .Navbar nav .polpol{
     top: 26px;
-    right: -14px;
+    right: -15px;
 }
 
 .Navbar nav .NN{

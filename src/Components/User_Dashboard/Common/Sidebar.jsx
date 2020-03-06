@@ -9,40 +9,48 @@ class Sidebar extends React.Component {
     render() {
         return (
             <React.Fragment>
-                <section className="saidebar-user-D mr-3">
-                    <div className="content">
-                        <div className="row justify-content-center align-items-center text-right pr-5">
-                            <div className="col-12 link mt-2">
+                <section className="saidebar-user-D d-flex align-items-center w-100">
+                    <div className="content ">
+                        <div className="row justify-content-center align-items-center">
+                            <div className="text-right">
+                                <div className="col-12 link mt-2">
 
-                                <a href="#" className="d-inline active">
-                                    <div className="icon d-inline ml-3">
-                                        <img src={Sh} alt=""/>
-                                    </div>
-                                    منصة الشحن</a>
+                                    <a href="#" className="d-inline active">
+                                        <div className="icon d-inline ml-3">
+                                            <img src={Sh} alt=""/>
+                                        </div>
+                                        منصة الشحن</a>
 
-                            </div>
-                            <div className="col-12 link">
+                                </div>
+                                <div className="col-12 link">
 
-                                <a href="#" className="d-inline"> <div className="icon d-inline ml-3">
-                                    <img src={Xl} alt=""/>
-                                </div>البوليصات</a>
+                                    <a href="#" className="d-inline"> <div className="icon d-inline ml-3">
+                                        <img src={Xl} alt=""/>
+                                    </div>البولصيات</a>
 
-                            </div>
-                            <div className="col-12 link">
+                                </div>
+                                <div className="col-12 link ">
 
-                                <a href="#" className="d-inline"> العملاء</a>
+                                    <a href="#" className="d-inline client"> العملاء</a>
 
-                            </div>
-                            <div className="col-12 link">
+                                </div>
+                                <div className="col-12 link">
 
-                                <a href="#" className="d-inline"> <div className="icon d-inline ml-3">
-                                    <img src={Xm} alt=""/>
-                                </div>الشحنات</a>
+                                    <a href="#" className="d-inline"> <div className="icon d-inline ml-3">
+                                        <img src={Xm} alt=""/>
+                                    </div>الشحنات</a>
 
-                            </div>
-                            <div className="col-12 link">
+                                </div>
+                                <div className="col-12 link">
 
-                                <a href="#" className="d-inline d-flex justify-content-center align-items-center">ألاعدادات</a>
+                                    <a href="#" className="d-inline settings">المساعدة</a>
+
+                                </div>
+                                <div className="col-12 link">
+
+                                    <a href="#" className="d-inline settings">الاعدادات</a>
+
+                                </div>
 
                             </div>
 

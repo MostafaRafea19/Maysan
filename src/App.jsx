@@ -108,7 +108,8 @@ class App extends React.Component {
         'name': 'نوره',
         'feedback': 'الله يسعدكم اسعاركم تفرق والجودة بعد'
       }
-    ]
+    ] ,
+    Notfications: "0"
   }
 
   handleVerificationCodeChange = (e, index) => {
@@ -131,7 +132,7 @@ class App extends React.Component {
             <Login />
           </Route>
           <Route path="/statistics">
-            <Statistics />
+            <Statistics notfications={this.state.Notfications} />
           </Route>
           <Route path="/register">
             <Register />
