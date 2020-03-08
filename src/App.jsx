@@ -109,7 +109,41 @@ class App extends React.Component {
         'feedback': 'الله يسعدكم اسعاركم تفرق والجودة بعد'
       }
     ],
-    notifications_counter: 5
+    notifications_counter: 5,
+    graph: [
+      {
+        purple: "50%",
+        orange: "20%",
+      },
+      {
+        purple: "30%",
+        orange: "40%",
+      },
+      {
+        purple: "70%",
+        orange: "60%",
+      },
+      {
+        purple: "40%",
+        orange: "30%",
+      },
+      {
+        purple: "80%",
+        orange: "20%",
+      },
+      {
+        purple: "50%",
+        orange: "20%",
+      },
+      {
+        purple: "50%",
+        orange: "10%",
+      },
+      {
+        purple: "90%",
+        orange: "10%",
+      }
+    ]
   };
 
   handleVerificationCodeChange = (e, index) => {
@@ -134,6 +168,7 @@ class App extends React.Component {
           <Route path="/statistics">
             <Statistics
               notifications_counter={this.state.notifications_counter}
+              graph={this.state.graph}
             />
           </Route>
           <Route path="/register">

@@ -287,7 +287,7 @@ nav .dropdown-menu {
     padding: 10px 15px !important;
     min-width: 15px;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .statistics .section-L .bundles {
@@ -299,7 +299,7 @@ nav .dropdown-menu {
 
 .statistics .section-L .bundles .out {
     top: -45px;
-    left: 100px;
+    left: 123px;
     box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
     width: 195px;
@@ -314,6 +314,46 @@ nav .dropdown-menu {
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.08);
     border-radius: 30px;
     height: 350px;
+}
+
+.statistics .graph .graphs{
+    height: 233px;
+}
+
+.statistics .graph .graphs .super{
+    width: 11%;
+}
+
+.statistics .graph .graphs .graph-iteam{
+    height: 100%;
+    width: 65%;
+    background-color: #4e2f8a;
+    transition: all 0.5s ease-in-out;
+}
+
+.statistics .graph .graphs .small{
+    height: 100%;
+    transition: all 0.5s ease-in-out;
+    width: 20%;
+    background: #F16724;
+}
+
+.statistics .graph .graphs .border-graph{
+    border-left: 0.25px solid #8BC2C9;
+    border-bottom: 0.25px solid #8BC2C9;
+}
+.statistics .graph .graphs .left-graph ul li {
+    font-weight: 300;
+    font-size: 3.1175px;
+    color: #8BC2C9;
+    padding: 11px 0;
+}
+
+
+.statistics .graph .under-graph li{
+    font-weight: 300;
+    font-size: 3.1175px;
+    color: #8BC2C9;
 }
 
 .statistics .graph .head .munth {
