@@ -109,7 +109,45 @@ class App extends React.Component {
         'feedback': 'الله يسعدكم اسعاركم تفرق والجودة بعد'
       }
     ] ,
-    Notfications: "0"
+
+
+    Notfications: "0" ,
+
+
+    graph: [
+      {
+        purple: "50%",
+        orange: "20%",
+      } ,
+      {
+        purple: "50%",
+        orange: "20%",
+      },
+      {
+        purple: "50%",
+        orange: "20%",
+      } ,
+      {
+        purple: "50%",
+        orange: "20%",
+      } ,
+      {
+        purple: "50%",
+        orange: "20%",
+      },
+      {
+        purple: "50%",
+        orange: "20%",
+      } ,
+      {
+        purple: "50%",
+        orange: "20%",
+      } ,
+      {
+        purple: "50%",
+        orange: "10%",
+      }
+    ]
   }
 
   handleVerificationCodeChange = (e, index) => {
@@ -132,7 +170,7 @@ class App extends React.Component {
             <Login />
           </Route>
           <Route path="/statistics">
-            <Statistics notfications={this.state.Notfications} />
+            <Statistics notfications={this.state.Notfications} graph={this.state.graph} />
           </Route>
           <Route path="/register">
             <Register />
