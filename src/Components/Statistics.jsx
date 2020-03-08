@@ -9,7 +9,7 @@ class Statistics extends React.Component {
         return (
             <React.Fragment>
                 <section className="statistics">
-                    <Navbar />
+                    <Navbar notifications_counter={this.props.notifications_counter} />
                     <div className="container-fluid mt-5">
                         <div className="row mt-5">
                             <div className="col-3"></div>
@@ -101,7 +101,7 @@ class Statistics extends React.Component {
                                 </div>
                             </div>
                             <div className="col-12 mt-5">
-                                <Footer/>
+                                <Footer />
                             </div>
 
                         </div>

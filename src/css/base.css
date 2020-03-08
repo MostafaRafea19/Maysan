@@ -174,76 +174,92 @@
     width: 32px;
     height: 17px;
 }
-.saidebar-user-D .content .client{
+
+.saidebar-user-D .content .client {
     padding-right: 20%;
 }
 
-.saidebar-user-D .content  .settings{
+.saidebar-user-D .content .settings {
     padding-right: 20%;
 }
 
 /* Sidebar Component End */
 
 /* Navbar Component Start*/
-.Navbar nav {
-    min-height: 107px;
-    background: #FFFFFF;
+
+nav {
+    background-color: #FFFFFF;
     box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.14);
 }
 
-.Navbar nav .notfication {
-    height: 32px;
-    width: 32px;
-    line-height: 53.5px;
+nav .bell-2 {
+    bottom: -13%;
+    left: 31%;
 }
 
-.Navbar nav .polpol{
-    top: 26px;
-    right: -15px;
+nav a {
+    text-decoration: none !important;
 }
 
-.Navbar nav .NN{
-    border: 2px #613EA4 solid;
-    border-radius:50%;
-    top: 7px;
-    right: -10px;
-    width: 19px;
-    height: 19px;
+nav .notification-counter,
+nav .notification-counter2 {
+    border: 1.5px solid #4E2F8A;
+    border-radius: 50%;
+    color: #4E2F8A;
+    font-size: 12px;
+    width: 16px;
+    height: 16px;
+    top: -10%;
+    left: 55%;
 }
 
-.Navbar nav .NM{
-    bottom: 36px;
+nav .notification-counter2 {
+    border-color: #F16724;
+    color: #F16724;
 }
 
-
-.Navbar nav .NN span{
-    font-size: 13px;
-    font-weight: bold;
-    font-family: Roboto;
-    color: #4e2f8a;
+nav .notification-counter span {
+    display: block;
+    padding-top: 2px;
+    font-family: DIN Next LT W23 BOLD;
 }
 
-.Navbar nav .new {
-    width: 140px;
-    min-height: 50px;
+nav .new-shipment {
+    background: #FFFFFF;
     border: 2px solid #F16724;
     box-sizing: border-box;
     box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
-    align-items: center;
-    text-align: center;
-    margin-top: 13px;
-    color: #F16724;
+}
+
+nav .new-shipment .nav-link {
+    padding: 0.5rem;
+}
+
+nav .new-shipment span {
     font-size: 18px;
+    line-height: 26px;
+    color: #F16724;
 }
 
-.Navbar nav .new img {
-    margin-left: 5px;
+nav .new-shipment .plus {
+    bottom: 35%;
+    right: 11%;
 }
 
-/* Navbar Component End*/
+nav .dropdown-menu {
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.08);
+    border-radius: 30px;
+    border-style: none;
+    position: absolute !important;
+    top: 50% !important;
+    left: -50% !important;
+    text-align: right !important;
+}
 
-/* Statistics Component Start*/
+/* Navbar */
+
+/* Statistics */
 .statistics {
     background-image: url('./../img/bg_elements.jpg');
     background-size: cover;

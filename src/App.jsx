@@ -108,9 +108,9 @@ class App extends React.Component {
         'name': 'نوره',
         'feedback': 'الله يسعدكم اسعاركم تفرق والجودة بعد'
       }
-    ] ,
-    Notfications: "0"
-  }
+    ],
+    notifications_counter: 5
+  };
 
   handleVerificationCodeChange = (e, index) => {
     const code = e.target.value;
@@ -132,16 +132,15 @@ class App extends React.Component {
             <Login />
           </Route>
           <Route path="/statistics">
-            <Statistics notfications={this.state.Notfications} />
+            <Statistics
+              notifications_counter={this.state.notifications_counter}
+            />
           </Route>
           <Route path="/register">
             <Register />
           </Route>
-          <Route path="/sh">
+          <Route path="/shipments">
             <Shipments />
-          </Route>
-          <Route path="/register">
-            <Register />
           </Route>
           <Route path="/verification">
             <Verification
