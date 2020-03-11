@@ -17,11 +17,15 @@ class Express extends React.Component {
                     <div className="container-fluid container-lg px-lg-5">
                         <div className="row justify-content-center align-items-center">
                             <div className="col-12 col-xl-7">
-                                <div className="img-car position-relative  wow bounceInRight" data-wow-iteration="1">
-                                    <img src={ex} className="img-fluid w-100" alt="" />
-                                    <div className="position-absolute expp" >
-                                        <img src={expp} alt="" />
+                                <div className="edit-height " style={{height:'390px'}}>
+
+                                    <div className="img-car position-relative h-100  " >
+                                        <img src={ex} className="img-fluid w-100 wow bounceInRight" data-wow-iteration="1" alt="" />
+                                        <div className="position-absolute expp" >
+                                            <img src={expp} alt="" />
+                                        </div>
                                     </div>
+
                                 </div>
                             </div>
                             <div className="col-12 my-4 col-xl-5 text-center" >

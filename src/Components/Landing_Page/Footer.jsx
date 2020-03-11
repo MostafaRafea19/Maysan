@@ -82,7 +82,7 @@ class Footer extends React.Component {
                                     <li><a className="text-decoration-none text-white" href="https://maysanexpress.com">الاسعار</a></li>
                                     <li><a className="text-decoration-none text-white" href="https://maysanexpress.com/contact-us">تواصل معنا</a></li>
                                     <li><a className="text-decoration-none text-white" href="https://maysanexpress.com/contact-us">الدعم الفني</a></li>
-                                    <li><a className="text-decoration-none text-white" href="https://maysanexpress.com/">تسجيل حساب</a></li>
+                                    <li><a className="text-decoration-none text-white" href="https://new.maysanexpress.com/platform/ar">تسجيل حساب</a></li>
                                 </ul>
                             </div>
                             <div className="links col-6 col-md-2 text-center pt-5 mt-md-5 text-md-right">

@@ -15,14 +15,14 @@ class Information extends React.Component {
                 <section className="info">
                     <div className="container">
                         <div className="row">
-                            <div className="col-12 mb-5 pb-5 text-center wow heartBeat">
+                            <div className="col-12 mb-5 pb-5 text-center ">
                                 <h2 className="text-black">نحن افضل خيار لك!</h2>
                                 <p className=" info-p col-10 m-auto text-center">
                                     تم بناء منصة ميسان لتقدم كل من الجودة والكفاءة اللازمة لادارة طلبات الشحن لكل من الافراد واصحاب العمل و لتعزيز النمو فى مجال التجارة الالكترونية واتاحة الفرص للعديد من المشاريع الناشئة ان تقوم بالاعتماد على هذه المنصة لتغطية حاجتها من ادوات ادارة الشحنات.
                                 </p>
                             </div>
                             <div className="col-12 col-lg-4 text-center p-2">
-                                <div className="pt-4 pr-lg-4 text-center text-lg-right">
+                                <div className="pt-4 pr-lg-4 text-center text-lg-right wow heartBeat">
                                     <div>
                                         <svg width={76} height={70} viewBox="0 0 76 70" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path opacity="0.1" d="M40.4619 70C59.7919 70 75.4619 54.33 75.4619 35C75.4619 15.67 59.7919 0 40.4619 0C21.1319 0 5.46191 15.67 5.46191 35C5.46191 54.33 21.1319 70 40.4619 70Z" fill="#474DFF" />

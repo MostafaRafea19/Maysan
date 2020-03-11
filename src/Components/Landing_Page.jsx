@@ -16,10 +16,10 @@ class Landing_Page extends React.Component {
                 <section className="landing-page">
                     <div className="container-fluid">
                         <div className="row">
-                            <div className="col-12 p-0 position-sticky Navbar-piernt bg-white">
+                            <div className="col-12 p-0 position-sticky Navbar-piernt ">
                                 <Navbar />
                             </div>
-                            <div className="col-12 p-0 my-5 ">
+                            <div className="col-12 p-0 py-5 bg-purple">
                                 <Header />
                             </div>
                             <div className="col-12 my-5">

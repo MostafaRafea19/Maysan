@@ -13,17 +13,17 @@ class Shipping extends React.Component {
             <React.Fragment>
                 <section className="shipping">
                     <div className="container">
-                        <div className="row justify-content-center align-items-center wow flipInX" data-wow-iteration="1">
+                        <div className="row justify-content-center align-items-center " >
                             <div className="col-12">
                                 <h2 className="text-purple text-center">
                                     طريقة شحن جديدة
                                 </h2>
                                 <p className="text-center my-3 paragraph">
-                                    تقدم لك ميسان منصة شحن كامله متكاملة لا حاجة إلي التركيب او الاعداد فقط قم بتسجيل حسابك مع ميسان <br /> وستتمكن من إرسال الشحنات فوراَ. ادفع حسب استخدامك او قم بالاشتراك في احد الباقات المتاحة لدينا <br /> كما تتيح لك ميسان الربط مع اشهر منصات التجارة الالكترونية العالمية
+                                    لا يعد هناك حاجة للانتظار في طوابير لشحن الطرود الأن قم بأصدار طلبات الشحن وأنت في مكانك من خلال منصة ميسان رح توفر وقت وجهد لتتفرغ أكثر لتجارتك الإلكترونية
                                 </p>
                             </div>
                             <div className="col-12 position-relative content d-grid">
-                                <img src={img} className="img-fluid w-100" alt="" />
+                                <img src={img} className="img-fluid w-100 wow flipInX" alt="" data-wow-iteration="1"/>
                                 <div className="position-absolute D1">
                                     <img src={icon} alt="" />
                                 </div>

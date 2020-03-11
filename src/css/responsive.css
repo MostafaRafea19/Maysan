@@ -16,6 +16,9 @@
     .login ._form .form-control::placeholder {
         font-size: smaller !important;
     }
+    .landing-page .edit-height{
+        height: 250px !important;
+    }
 }
 
 @media (max-width:768px) {
@@ -29,6 +32,7 @@
     .landing-page .footer .logo {
         padding-top: 10rem !important;
     }
+
 }
 
 @media screen and (max-width: 387px) {
@@ -50,6 +54,7 @@
     .landing-page .footer .logo {
         padding-top: 15rem !important;
     }
+
 }
 
 /*Footer section End*/
