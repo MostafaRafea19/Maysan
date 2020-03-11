@@ -477,10 +477,13 @@ footer ul li a:hover {
     margin-top: 35px;
 }
 
-.landing-page .navbar-landing .navbar-nav .links{
-    margin-left: 13% !important;
+.landing-page .navbar-landing .navbar-nav .links a {
+    color: #000000;
 }
 
+.navbar-nav a {
+    font-size: 22px;
+}
 
 .landing-page .Navbar-piernt {
     top: 0;
