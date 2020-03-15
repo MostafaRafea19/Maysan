@@ -15,14 +15,14 @@ class Navbar extends React.Component {
                             aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
                         </button>
-                        <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-                            <div className="navbar-nav w-100">
-                                <div className="mx-2 d-flex flex-column flex-lg-row align-items-center m-auto w-100 links bg-white">
+                        <div className="collapse navbar-collapse " id="navbarNavAltMarkup">
+                            <div className="navbar-nav w-100 py-3 bg-white">
+                                <div className="d-flex col-lg-7 col-12 flex-column flex-lg-row align-items-center justify-content-end links bg-white">
                                     <a className="nav-item nav-link mx-2" href="#">المميزات</a>
                                     <a className="nav-item nav-link mx-2" href="https://maysanexpress.com/">الاسعار</a>
                                     <a className="nav-item nav-link mx-2" href="https://maysanexpress.com/faqs">الدعم والمساعدة</a>
                                 </div>
-                                <div className="d-flex flex-column flex-lg-row align-items-center w-100 bg-white">
+                                <div className="d-flex flex-column flex-lg-row align-items-center justify-content-end w-100 bg-white">
                                     <a className="nav-item nav-link mx-2 text-purple" href="https://new.maysanexpress.com/platform/ar"> تسجيل الدخول </a>
                                     <a className="nav-item nav-link btn btn-nav text-white bg-orange" href="https://new.maysanexpress.com/platform/ar">سجل الان</a>
                                 </div>

@@ -22,24 +22,6 @@ class Feedback extends React.Component {
             <React.Fragment>
                 <section className="feedback my-5 wow zoomInDown">
                     <div className="container">
-                        <div>
-                            <img src={feedback_01} className="feedback-img-01 img-fluid position-absolute" />
-                        </div>
-                        <div>
-                            <img src={feedback_02} className="feedback-img-02 img-fluid position-absolute" />
-                        </div>
-                        <div>
-                            <img src={feedback_03} className="feedback-img-03 img-fluid position-absolute" />
-                        </div>
-                        <div>
-                            <img src={feedback_04} className="feedback-img-04 img-fluid position-absolute" />
-                        </div>
-                        <div>
-                            <img src={feedback_05} className="feedback-img-05 img-fluid position-absolute" />
-                        </div>
-                        <div>
-                            <img src={feedback_06} className="feedback-img-06 img-fluid position-absolute" />
-                        </div>
                         <h2 className="text-center">ماذا يقول عملائنا عنا</h2>
                         <div className="row d-flex justify-content-center align-items-center">
                             <Carousel controls={false} className="col-12 col-md-6 my-5 position-relative" interval={2500}>
