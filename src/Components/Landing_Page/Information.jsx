@@ -12,12 +12,12 @@ class Information extends React.Component {
     render() {
         return (
             <React.Fragment>
-                <section className="info">
-                    <div className="container">
+                <section className="info mb-5">
+                    <div className="container ">
                         <div className="row">
                             <div className="col-12 mb-5 pb-5 text-center ">
-                                <h2 className="text-black">نحن افضل خيار لك!</h2>
-                                <p className=" info-p col-10 m-auto text-center">
+                                <h2 className="text-white">نحن افضل خيار لك!</h2>
+                                <p className=" info-p text-white col-10 m-auto text-center">
                                     تم بناء منصة ميسان لتقدم كل من الجودة والكفاءة اللازمة لادارة طلبات الشحن لكل من الافراد واصحاب العمل و لتعزيز النمو فى مجال التجارة الالكترونية واتاحة الفرص للعديد من المشاريع الناشئة ان تقوم بالاعتماد على هذه المنصة لتغطية حاجتها من ادوات ادارة الشحنات.
                                 </p>
                             </div>
@@ -47,8 +47,8 @@ class Information extends React.Component {
                                             </defs>
                                         </svg>
                                     </div>
-                                    <h5 className="mt-4 mb-3">دعم فني متواصل</h5>
-                                    <p className="mt-3 info-card">
+                                    <h5 className="mt-4 mb-3 text-white">دعم فني متواصل</h5>
+                                    <p className="mt-3 info-card text-white">
                                         نقدم لك فى ميسان فريق متميز<br />
                                         فى خدمة العملاء و الدعم الفنى و المبيعات للتأكد من
                                         <br />حصولك على الخدمة المطلوبة بالشكل الكلوب دائما.ً
@@ -57,7 +57,7 @@ class Information extends React.Component {
 
                             </div>
                             <div className="col-12 col-lg-4 text-center text-lg-right p-2 text-right">
-                                <div className="content py-4 pr-lg-4 text-center text-lg-right">
+                                <div className="content py-4 wow heartBeat pr-lg-4 text-center text-lg-right">
                                     <div>
                                         <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path opacity="0.1" d="M35 70C54.33 70 70 54.33 70 35C70 15.67 54.33 0 35 0C15.67 0 0 15.67 0 35C0 54.33 15.67 70 35 70Z" fill="#474DFF" />
@@ -69,10 +69,10 @@ class Information extends React.Component {
                                         </svg>
 
                                     </div>
-                                    <h5 className="mt-4 mb-3">
+                                    <h5 className="mt-4 mb-3 text-white">
                                         وسائل دفع متعددة
                                     </h5>
-                                    <p className="my-3 info-card">
+                                    <p className="my-3 info-card text-white">
                                         يمكنك الدفع بالعديد من الوسائل<br />
                                         المتاحة لاتمام طلبات الشحن الخاصة بك بشكل اسرع<br />
                                         واكثر مرونة، يمكنك اضافة الرصيد مسبقا ً الى الحساب<br />
@@ -81,7 +81,7 @@ class Information extends React.Component {
                                 </div>
                             </div>
                             <div className="col-12 col-lg-4 text-center text-lg-right p-2 text-right">
-                                <div className="pt-4 pr-lg-4 text-center text-lg-right">
+                                <div className="pt-4 pr-lg-4 wow heartBeat text-center text-lg-right">
                                     <div>
                                         <svg width="71" height="70" viewBox="0 0 71 70" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path opacity="0.1" d="M35.4619 70C54.7919 70 70.4619 54.33 70.4619 35C70.4619 15.67 54.7919 0 35.4619 0C16.1319 0 0.461914 15.67 0.461914 35C0.461914 54.33 16.1319 70 35.4619 70Z" fill="#474DFF" />
@@ -106,14 +106,21 @@ class Information extends React.Component {
 
 
                                     </div>
-                                    <h5 className="mt-4 mb-3">سهولة إدارة طلباتك</h5>
-                                    <p className="mt-3 info-card">
+                                    <h5 className="mt-4 mb-3 text-white">سهولة إدارة طلباتك</h5>
+                                    <p className="mt-3 info-card text-white">
                                         تقدم ميسان فى المنصة الخاصة بها الادوات التي تساعدك<br />
                                         على ادارة بيانات عملائك وعنواين التوصيل الخاصة بهم<br />
                                         ومراجعة الشحنات وطباعة فاتورة الشحن فى اي وقت.
                                     </p>
                                 </div>
 
+                            </div>
+                            <div className="col-12 position-relative ">
+                                <div className="position-absolute D1 mt-4">
+                                    <svg width="62" height="62" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M30.721 61.7274C13.9287 61.7274 0.226562 48.0384 0.226562 31.2038C0.226562 14.3693 13.9287 0.738525 30.721 0.738525C47.5134 0.738525 61.2155 14.4275 61.2155 31.2038C61.2155 47.9802 47.5717 61.7274 30.721 61.7274ZM30.721 12.3887C20.3424 12.3887 11.8879 20.8351 11.8879 31.2038C11.8879 41.5725 20.3424 50.0189 30.721 50.0189C41.0996 50.0189 49.5541 41.5725 49.5541 31.2038C49.5541 20.8351 41.1579 12.3887 30.721 12.3887Z" fill="#64CCE3"/>
+                                    </svg>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -653,8 +653,14 @@ footer ul li a:hover {
 
 /*Start information Section*/
 
+
+.landing-page .information{
+    min-height: 725px;
+}
+
+
 .landing-page .info .content {
-    background: #f8f7fc;
+    background: #613EA4;
     border-radius: 12%;
     width: 100%;
     min-height: 250px;
@@ -683,6 +689,10 @@ footer ul li a:hover {
     color: rgba(8, 9, 64, 0.5);
 }
 
+.landing-page .info .D1{
+   left: 25%
+}
+
 /*End information Section*/
 
 
@@ -690,7 +700,7 @@ footer ul li a:hover {
 
 .landing-page .express {
     background: #613EA4;
-    min-height: 350px;
+    min-height: 254px;
 }
 
 .landing-page .express .btn-sign {
@@ -704,7 +714,7 @@ footer ul li a:hover {
 .landing-page .express .img-car {
     width: 100%;
     height: 390px;
-    margin-top: -40px;
+    margin-top: -136px;
 }
 
 .landing-page .express .img-car img {

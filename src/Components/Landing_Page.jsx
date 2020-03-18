@@ -28,10 +28,10 @@ class Landing_Page extends React.Component {
                             <div className="col-12 my-5">
                                 <Benefit />
                             </div>
-                            <div className="col-12 my-5">
+                            <div className="col-12 py-5 bg-orange information">
                                 <Information />
                             </div>
-                            <div className="col-12 my-5 px-0">
+                            <div className="col-12 pb-5 px-0 ">
                                 <Express />
                             </div>
                             <div className="col-12 my-5">
