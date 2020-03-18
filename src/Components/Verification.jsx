@@ -18,6 +18,7 @@ class Verification extends React.Component {
                                     phone_number={this.props.phone_number}
                                     inputs={this.props.inputs}
                                     handleVerificationCodeChange={this.props.handleVerificationCodeChange}
+                                    handleVerificationCodeSubmit={this.props.handleVerificationCodeSubmit}
                                 />
                                 <div className="pt-5">
                                     <Footer />

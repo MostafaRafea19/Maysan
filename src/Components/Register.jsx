@@ -14,7 +14,10 @@ class Register extends React.Component {
                         <div className="user col-lg-9 col-12 position-relative">
                             <div className="container">
                                 <Header />
-                                <Register_Form />
+                                <Register_Form
+                                    handleRegisterFormChange={this.props.handleRegisterFormChange}
+                                    handleRegisterFormSubmit={this.props.handleRegisterFormSubmit}
+                                />
                                 <Footer />
                             </div>
                         </div>
