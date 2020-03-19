@@ -15,14 +15,14 @@ class Shipping extends React.Component {
                     <div className="container">
                         <div className="row justify-content-center align-items-center " >
                             <div className="col-12">
-                                <h2 className="text-purple text-center">
+                                <h2 className="text-purple text-center py-2">
                                     طريقة شحن جديدة
                                 </h2>
                                 <p className="text-center my-3 paragraph">
                                     لا يعد هناك حاجة للانتظار في طوابير لشحن الطرود الأن قم بأصدار طلبات الشحن وأنت في مكانك من خلال منصة ميسان رح توفر وقت وجهد لتتفرغ أكثر لتجارتك الإلكترونية
                                 </p>
                             </div>
-                            <div className="col-12 position-relative content d-grid">
+                            <div className="col-12 position-relative content d-grid my-3">
                                 <img src={img} className="img-fluid w-100 wow flipInX" alt="" data-wow-iteration="1"/>
                                 <div className="position-absolute D1">
                                     <img src={icon} alt="" />

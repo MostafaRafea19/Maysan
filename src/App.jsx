@@ -13,13 +13,29 @@ import Verification from './Components/Verification';
 import Sent_Shipments from './Components/Sent_Shipments';
 import Landing_Page from './Components/Landing_Page';
 
+import  axios from 'axios';
+
 
 
 class App extends React.Component {
 
   state = {
+    register_inputs: {
+      'name': '',
+      'surname': '',
+      'email': '',
+      'mobile': '',
+      'password': '',
+      'password_confirmation': ''
+    },
     phone_number: '0501234567',
-    verification_code: '',
+    verification_code: {
+     'n1' : '',
+     'n2' : '',
+     'n3' : '',
+     'n4' : ''
+    }
+    ,
     vc_inputs: [
       React.createRef(),
       React.createRef(),
@@ -146,17 +162,76 @@ class App extends React.Component {
     ]
   };
 
-  handleVerificationCodeChange = (e, index) => {
-    const code = e.target.value;
+  handleRegisterFormChange = (e) => {
     this.setState({
-      verification_code: code
+      register_inputs: {
+        ...this.state.register_inputs,
+        [e.target.name]: e.target.value
+      }
+    })
+  };
+
+  handleRegisterFormSubmit = (e) => {
+    e.preventDefault();
+
+
+    const data = this.state.register_inputs;
+
+    console.log(data);
+
+
+
+    // fetch('http://127.0.0.1:8000/api/register' ,{
+    //   method: 'post',
+    //   body:JSON.stringify(
+    //     this.state.register_inputs
+    //   ),
+    //   headers: {
+    //     'accept' : 'Application/json',
+    //     'Contnt-Type' : 'Application/json'
+    //   }
+    // })
+
+
+
+    axios.post(`http://127.0.0.1:8000/api/user/register`, data)
+        .then(res => {
+          const token = res.data.token;
+          console.log(res);
+          window.location.replace = '/verify';
+        })
+        .catch(error => {
+          console.log(error.response);
+        })
+  };
+
+  handleVerificationCodeChange = (e, index) => {
+    this.setState({
+      verification_code: {
+        ...this.state.verification_code,
+        [e.target.name]: e.target.value
+      }
     });
 
     let i = index + 1;
     if (i <= 3) {
       this.state.vc_inputs[i].current.focus();
     }
-  }
+  };
+
+  handleVerificationCodeSubmit = (e) => {
+    e.preventDefault();
+
+    let code = '';
+    for (let i=1; i>5; i++) {
+      code = code + this.state.verification_code[i];
+    }
+
+    axios.post(`http://127.0.0.1:8000/api/verify`, {code})
+        .then(res => {
+          console.log(res);
+        })
+  };
 
   render() {
     return (
@@ -172,16 +247,20 @@ class App extends React.Component {
             />
           </Route>
           <Route path="/register">
-            <Register />
+            <Register
+                handleRegisterFormChange={this.handleRegisterFormChange}
+                handleRegisterFormSubmit={this.handleRegisterFormSubmit}
+            />
           </Route>
           <Route path="/shipments">
             <Shipments />
           </Route>
-          <Route path="/verification">
+          <Route path="/verify">
             <Verification
               phone_number={this.state.phone_number}
               inputs={this.state.vc_inputs}
               handleVerificationCodeChange={this.handleVerificationCodeChange}
+              handleVerificationCodeSubmit={this.handleVerificationCodeSubmit}
             />
           </Route>
           <Route path="/sent-shipments">
@@ -190,7 +269,7 @@ class App extends React.Component {
             />
           </Route>
           <Route path="/">
-            <Landing_Page feedback={this.state.Feedback} />
+            <Landing_Page feedback={this.state.Feedback} handle={this.handle}/>
           </Route>
         </Switch>
       </Router>
