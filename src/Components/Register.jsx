@@ -17,6 +17,7 @@ class Register extends React.Component {
                                 <Register_Form
                                     handleRegisterFormChange={this.props.handleRegisterFormChange}
                                     handleRegisterFormSubmit={this.props.handleRegisterFormSubmit}
+                                    is_registered={this.props.is_registered}
                                 />
                                 <Footer />
                             </div>

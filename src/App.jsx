@@ -3,6 +3,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
+  withRouter
 } from "react-router-dom";
 
 import Login from './Components/Login';
@@ -28,6 +29,7 @@ class App extends React.Component {
       'password': '',
       'password_confirmation': ''
     },
+    is_registered : false,
     phone_number: '0501234567',
     verification_code: {
      'n1' : '',
@@ -172,33 +174,17 @@ class App extends React.Component {
   };
 
   handleRegisterFormSubmit = (e) => {
-    e.preventDefault();
 
+    e.preventDefault();
 
     const data = this.state.register_inputs;
 
-    console.log(data);
-
-
-
-    // fetch('http://127.0.0.1:8000/api/register' ,{
-    //   method: 'post',
-    //   body:JSON.stringify(
-    //     this.state.register_inputs
-    //   ),
-    //   headers: {
-    //     'accept' : 'Application/json',
-    //     'Contnt-Type' : 'Application/json'
-    //   }
-    // })
-
-
-
     axios.post(`http://127.0.0.1:8000/api/user/register`, data)
         .then(res => {
-          const token = res.data.token;
           console.log(res);
-          window.location.replace = '/verify';
+          this.setState({
+            is_registered: true
+          })
         })
         .catch(error => {
           console.log(error.response);
@@ -250,6 +236,7 @@ class App extends React.Component {
             <Register
                 handleRegisterFormChange={this.handleRegisterFormChange}
                 handleRegisterFormSubmit={this.handleRegisterFormSubmit}
+                is_registered={this.state.is_registered}
             />
           </Route>
           <Route path="/shipments">
