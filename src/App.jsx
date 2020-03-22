@@ -3,6 +3,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
+  Redirect,
 } from "react-router-dom";
 
 import Login from './Components/Login';
@@ -159,7 +160,8 @@ class App extends React.Component {
         purple: "90%",
         orange: "10%",
       }
-    ]
+    ],
+      is_registered: false
   };
 
   handleRegisterFormChange = (e) => {
@@ -173,37 +175,18 @@ class App extends React.Component {
 
   handleRegisterFormSubmit = (e) => {
     e.preventDefault();
-
-
     const data = this.state.register_inputs;
-
-    console.log(data);
-
-
-
-    // fetch('http://127.0.0.1:8000/api/register' ,{
-    //   method: 'post',
-    //   body:JSON.stringify(
-    //     this.state.register_inputs
-    //   ),
-    //   headers: {
-    //     'accept' : 'Application/json',
-    //     'Contnt-Type' : 'Application/json'
-    //   }
-    // })
-
-
 
     axios.post(`http://127.0.0.1:8000/api/user/register`, data)
         .then(res => {
-          const token = res.data.token;
           console.log(res);
-          window.location.replace = '/verify';
+          window.location.href = "/verify";
         })
         .catch(error => {
           console.log(error.response);
         })
   };
+
 
   handleVerificationCodeChange = (e, index) => {
     this.setState({
@@ -222,14 +205,18 @@ class App extends React.Component {
   handleVerificationCodeSubmit = (e) => {
     e.preventDefault();
 
-    let code = '';
-    for (let i=1; i>5; i++) {
-      code = code + this.state.verification_code[i];
-    }
-
-    axios.post(`http://127.0.0.1:8000/api/verify`, {code})
+    let code = '5305';
+      for (let i=1; i>5; i++) {
+        code = code + this.state.verification_code[i];
+      }
+    console.log(code);
+    axios.post(`http://127.0.0.1:8000/api/user/verify`, {code})
         .then(res => {
+            console.log(code);
           console.log(res);
+        })
+        .catch(error => {
+          console.log(error.response);
         })
   };
 
@@ -261,6 +248,7 @@ class App extends React.Component {
               inputs={this.state.vc_inputs}
               handleVerificationCodeChange={this.handleVerificationCodeChange}
               handleVerificationCodeSubmit={this.handleVerificationCodeSubmit}
+
             />
           </Route>
           <Route path="/sent-shipments">
