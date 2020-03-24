@@ -29,15 +29,12 @@ class App extends React.Component {
       'password': '',
       'password_confirmation': ''
     },
-    is_registered : false,
-    phone_number: '0501234567',
     verification_code: {
-     'n1' : '',
-     'n2' : '',
-     'n3' : '',
-     'n4' : ''
-    }
-    ,
+      'n1': '',
+      'n2': '',
+      'n3': '',
+      'n4': ''
+    },
     vc_inputs: [
       React.createRef(),
       React.createRef(),
@@ -179,12 +176,10 @@ class App extends React.Component {
 
     const data = this.state.register_inputs;
 
-    axios.post(`http://127.0.0.1:8000/api/user/register`, data)
+    axios.post(`http://127.0.0.1:8000/api/register`, data)
         .then(res => {
           console.log(res);
-          this.setState({
-            is_registered: true
-          })
+          window.location.href = 'http://localhost:3000/verify';
         })
         .catch(error => {
           console.log(error.response);
@@ -192,6 +187,7 @@ class App extends React.Component {
   };
 
   handleVerificationCodeChange = (e, index) => {
+
     this.setState({
       verification_code: {
         ...this.state.verification_code,
@@ -208,14 +204,23 @@ class App extends React.Component {
   handleVerificationCodeSubmit = (e) => {
     e.preventDefault();
 
-    let code = '';
-    for (let i=1; i>5; i++) {
-      code = code + this.state.verification_code[i];
-    }
+    const code = this.state.verification_code;
+    let n = '';
 
-    axios.post(`http://127.0.0.1:8000/api/verify`, {code})
+    Object.keys(code).map(function (keyName) {
+      n = n + code[keyName];
+    });
+
+    const data = {
+      'code': [...n].reverse().join('')
+    };
+
+    axios.post(`http://127.0.0.1:8000/api/verify`, data)
         .then(res => {
           console.log(res);
+        })
+        .catch(error => {
+          console.log(error.response);
         })
   };
 
@@ -244,7 +249,7 @@ class App extends React.Component {
           </Route>
           <Route path="/verify">
             <Verification
-              phone_number={this.state.phone_number}
+              phone_number={this.state.mobile}
               inputs={this.state.vc_inputs}
               handleVerificationCodeChange={this.handleVerificationCodeChange}
               handleVerificationCodeSubmit={this.handleVerificationCodeSubmit}
