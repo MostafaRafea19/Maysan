@@ -16,8 +16,6 @@ import Landing_Page from './Components/Landing_Page';
 
 import  axios from 'axios';
 
-
-
 class App extends React.Component {
 
   state = {
@@ -158,7 +156,8 @@ class App extends React.Component {
         purple: "90%",
         orange: "10%",
       }
-    ]
+    ],
+    errors: {}
   };
 
   handleRegisterFormChange = (e) => {
@@ -176,13 +175,18 @@ class App extends React.Component {
 
     const data = this.state.register_inputs;
 
-    axios.post(`http://127.0.0.1:8000/api/register`, data)
+    axios.post(`http://127.0.0.1:8000/api/user/register`, data)
         .then(res => {
           console.log(res);
+          const data = JSON.stringify(res.data);
+          localStorage.setItem('token', data);
           window.location.href = 'http://localhost:3000/verify';
         })
         .catch(error => {
-          console.log(error.response);
+          console.log(error.response.data.errors);
+          this.setState({
+            errors: error.response.data.errors
+          })
         })
   };
 
@@ -211,11 +215,17 @@ class App extends React.Component {
       n = n + code[keyName];
     });
 
+    const config = {
+      headers : {
+        'Authorization': localStorage.getItem('token')
+      }
+    };
+
     const data = {
       'code': [...n].reverse().join('')
     };
 
-    axios.post(`http://127.0.0.1:8000/api/verify`, data)
+    axios.post(`http://127.0.0.1:8000/api/user/verify`, data, config)
         .then(res => {
           console.log(res);
         })
@@ -223,6 +233,23 @@ class App extends React.Component {
           console.log(error.response);
         })
   };
+
+  handleVerificationCodeResend = (e) => {
+    e.preventDefault();
+    const config = {
+      headers : {
+        'Authorization': localStorage.getItem('token')
+      }
+    };
+    axios.post(`http://127.0.0.1:8000/api/user/resend`,{} ,config)
+        .then(res => {
+          console.log(res);
+        })
+        .catch(error => {
+          console.log(error.response);
+        });
+  };
+
 
   render() {
     return (
@@ -241,7 +268,7 @@ class App extends React.Component {
             <Register
                 handleRegisterFormChange={this.handleRegisterFormChange}
                 handleRegisterFormSubmit={this.handleRegisterFormSubmit}
-                is_registered={this.state.is_registered}
+                errors={this.state.errors}
             />
           </Route>
           <Route path="/shipments">
@@ -253,6 +280,7 @@ class App extends React.Component {
               inputs={this.state.vc_inputs}
               handleVerificationCodeChange={this.handleVerificationCodeChange}
               handleVerificationCodeSubmit={this.handleVerificationCodeSubmit}
+              handleVerificationCodeResend={this.handleVerificationCodeResend}
             />
           </Route>
           <Route path="/sent-shipments">

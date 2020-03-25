@@ -27,7 +27,7 @@ class Verification_Form extends React.Component {
                     </div>
                     <div className="d-flex mb-5 p-4 flex-column justify-content-center align-items-center">
                         <button type="submit" className="btn submit-btn py-3">التالى</button>
-                        <Link to="" className="text-center p-3 resend">اعادة ارسال الرمز</Link>
+                        <Link to="" onClick={(e) => {this.props.handleVerificationCodeResend(e)}} className="text-center p-3 resend">اعادة ارسال الرمز</Link>
                     </div>
                 </form>
             </React.Fragment>

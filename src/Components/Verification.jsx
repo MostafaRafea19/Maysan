@@ -19,6 +19,7 @@ class Verification extends React.Component {
                                     inputs={this.props.inputs}
                                     handleVerificationCodeChange={this.props.handleVerificationCodeChange}
                                     handleVerificationCodeSubmit={this.props.handleVerificationCodeSubmit}
+                                    handleVerificationCodeResend={this.props.handleVerificationCodeResend}
                                 />
                                 <div className="pt-5">
                                     <Footer />
