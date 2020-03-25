@@ -11,16 +11,13 @@ class Verification_Form extends React.Component {
                 </div>
             )
         }
-        /*else if(this.props.errors){
-            let errors = this.props.errors;
-            Object.keys(errors).map(function (keyName,keyIndex) {
-                return(
-                    <div className="alert alert-danger" role="alert" key={keyIndex}>
-                        {errors[keyName]}
-                    </div>
-                )
-            })
-        }*/
+        else if (this.props.v_error){
+            return (
+                <div className="alert alert-danger text-center my-4" role="alert">
+                    {this.props.v_error}
+                </div>
+            )
+        }
     };
 
     render() {

@@ -22,6 +22,7 @@ class Verification extends React.Component {
                                     handleVerificationCodeResend={this.props.handleVerificationCodeResend}
                                     is_verified={this.props.is_verified}
                                     errors={this.props.errors}
+                                    v_error={this.props.v_error}
                                 />
                                 <div className="pt-5">
                                     <Footer />

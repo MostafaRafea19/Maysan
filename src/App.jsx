@@ -228,22 +228,25 @@ class App extends React.Component {
 
     axios.post(`http://127.0.0.1:8000/api/user/verify`, data, config)
         .then(res => {
-          console.log(res);
           const data = res.data;
-          if (data[0].name == 'error'){
+          if('error' in data){
             this.setState({
-              v_error: data[0]
+              v_error : res.data['error'],
+              verify_errors: {}
             })
           }
-          this.setState({
-            is_verified: true
-          });
+          else {
+            this.setState({
+              is_verified: true,
+              verify_errors: {}
+            });
+          }
           //window.location.href = "";
         })
         .catch(error => {
-          console.log(error.response);
           this.setState({
-            verify_errors: error.response.data.errors
+            verify_errors: error.response.data.errors,
+            v_error: ''
           })
         })
   };
@@ -297,6 +300,7 @@ class App extends React.Component {
               handleVerificationCodeResend={this.handleVerificationCodeResend}
               is_verified={this.state.is_verified}
               errors={this.state.verify_errors}
+              v_error={this.state.v_error}
             />
           </Route>
           <Route path="/sent-shipments">
