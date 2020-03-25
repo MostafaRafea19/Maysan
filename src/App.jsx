@@ -157,7 +157,10 @@ class App extends React.Component {
         orange: "10%",
       }
     ],
-    errors: {}
+    errors: {},
+    verify_errors:{},
+    is_verified: false,
+    v_error: ''
   };
 
   handleRegisterFormChange = (e) => {
@@ -177,13 +180,11 @@ class App extends React.Component {
 
     axios.post(`http://127.0.0.1:8000/api/user/register`, data)
         .then(res => {
-          console.log(res);
           const data = JSON.stringify(res.data);
           localStorage.setItem('token', data);
           window.location.href = 'http://localhost:3000/verify';
         })
         .catch(error => {
-          console.log(error.response.data.errors);
           this.setState({
             errors: error.response.data.errors
           })
@@ -199,8 +200,8 @@ class App extends React.Component {
       }
     });
 
-    let i = index + 1;
-    if (i <= 3) {
+    let i = index - 1;
+    if (i >= 0) {
       this.state.vc_inputs[i].current.focus();
     }
   };
@@ -228,9 +229,22 @@ class App extends React.Component {
     axios.post(`http://127.0.0.1:8000/api/user/verify`, data, config)
         .then(res => {
           console.log(res);
+          const data = res.data;
+          if (data[0].name == 'error'){
+            this.setState({
+              v_error: data[0]
+            })
+          }
+          this.setState({
+            is_verified: true
+          });
+          //window.location.href = "";
         })
         .catch(error => {
           console.log(error.response);
+          this.setState({
+            verify_errors: error.response.data.errors
+          })
         })
   };
 
@@ -281,6 +295,8 @@ class App extends React.Component {
               handleVerificationCodeChange={this.handleVerificationCodeChange}
               handleVerificationCodeSubmit={this.handleVerificationCodeSubmit}
               handleVerificationCodeResend={this.handleVerificationCodeResend}
+              is_verified={this.state.is_verified}
+              errors={this.state.verify_errors}
             />
           </Route>
           <Route path="/sent-shipments">

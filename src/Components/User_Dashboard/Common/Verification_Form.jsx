@@ -1,10 +1,31 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Verification from "../../Verification";
 
 class Verification_Form extends React.Component {
 
+    verificationSuccess = () => {
+        if(this.props.is_verified) {
+            return(
+                <div className="alert alert-success text-center my-4" role="alert">
+                    تم تفعيل حسابك
+                </div>
+            )
+        }
+        /*else if(this.props.errors){
+            let errors = this.props.errors;
+            Object.keys(errors).map(function (keyName,keyIndex) {
+                return(
+                    <div className="alert alert-danger" role="alert" key={keyIndex}>
+                        {errors[keyName]}
+                    </div>
+                )
+            })
+        }*/
+    };
+
     render() {
+        let errors = this.props.errors;
+
         return (
             <React.Fragment>
                 <form className="m-lg-5 px-5 _form text-right col-12"
@@ -12,6 +33,17 @@ class Verification_Form extends React.Component {
                 >
                     <h2 className="pb-1">رمز التحقق</h2>
                     <h6>فضلاً قم بادخال رمز التحقق المرسل على جوالك</h6>
+                    {this.verificationSuccess()}
+                    {
+                        this.props.errors &&
+                        Object.keys(errors).map(function (keyName,keyIndex) {
+                            return(
+                                <div className="alert alert-danger text-center my-4" role="alert" key={keyIndex}>
+                                    {errors[keyName]}
+                                </div>
+                            )
+                        })
+                    }
                     <h6 className="text-center mt-5">تم ارسال الرمز الى {this.props.phone_number}</h6>
                     <div className="h-auto verify d-flex justify-content-center my-4">
                         {
