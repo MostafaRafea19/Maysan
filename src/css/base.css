@@ -138,6 +138,10 @@
     color: #000000;
 }
 
+.login ._form .disable:hover {
+    cursor: auto;
+}
+
 /* Login, Registration, Verification */
 
 /* Sidebar Component Start */
@@ -316,32 +320,33 @@ nav .dropdown-menu {
     height: 350px;
 }
 
-.statistics .graph .graphs{
+.statistics .graph .graphs {
     height: 233px;
 }
 
-.statistics .graph .graphs .super{
+.statistics .graph .graphs .super {
     width: 11%;
 }
 
-.statistics .graph .graphs .graph-iteam{
+.statistics .graph .graphs .graph-iteam {
     height: 100%;
     width: 65%;
     background-color: #4e2f8a;
     transition: all 0.5s ease-in-out;
 }
 
-.statistics .graph .graphs .small{
+.statistics .graph .graphs .small {
     height: 100%;
     transition: all 0.5s ease-in-out;
     width: 20%;
     background: #F16724;
 }
 
-.statistics .graph .graphs .border-graph{
+.statistics .graph .graphs .border-graph {
     border-left: 0.25px solid #8BC2C9;
     border-bottom: 0.25px solid #8BC2C9;
 }
+
 .statistics .graph .graphs .left-graph ul li {
     font-weight: 300;
     font-size: 3.1175px;
@@ -350,7 +355,7 @@ nav .dropdown-menu {
 }
 
 
-.statistics .graph .under-graph li{
+.statistics .graph .under-graph li {
     font-weight: 300;
     font-size: 3.1175px;
     color: #8BC2C9;
@@ -367,8 +372,7 @@ nav .dropdown-menu {
     box-sizing: border-box;
     box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
-    border-color: #4E2F8A !important;
-    ;
+    border-color: #4E2F8A !important;;
 }
 
 /* Graph Component End*/
@@ -432,7 +436,6 @@ footer ul li a {
 /* Footer */
 
 
-
 /* Send_Steps Componont Start */
 .send-steps .number-corner {
     top: -30px;
@@ -451,7 +454,6 @@ footer ul li a {
 /* Content_Shipments Start*/
 
 
-
 /* Content_Shipments End*/
 footer ul li a:hover {
     color: #4E2F8A;
@@ -461,16 +463,16 @@ footer ul li a:hover {
 /* Footer */
 
 
-
 /**************************************************
                     Start Landing Page
 ***************************************************/
 /* Start Header Section*/
 
-.landing-page .navbar-landing{
+.landing-page .navbar-landing {
     border-radius: 40px;
 }
-.landing-page .navbar-landing nav{
+
+.landing-page .navbar-landing nav {
     border-radius: 40px;
     margin-top: 35px;
 }
@@ -648,11 +650,10 @@ footer ul li a:hover {
 /*End Footer Section*/
 
 
-
 /*Start information Section*/
 
 
-.landing-page .information{
+.landing-page .information {
     min-height: 725px;
 }
 
@@ -687,8 +688,8 @@ footer ul li a:hover {
     color: rgba(8, 9, 64, 0.5);
 }
 
-.landing-page .info .D1{
-   left: 25%
+.landing-page .info .D1 {
+    left: 25%
 }
 
 /*End information Section*/

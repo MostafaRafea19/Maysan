@@ -3,7 +3,6 @@ import {
     BrowserRouter as Router,
     Switch,
     Route,
-    withRouter
 } from "react-router-dom";
 
 import Login from './Components/Login';
@@ -164,6 +163,7 @@ class App extends React.Component {
         v_error: '',
         resend_mobile: '',
         resend_error: '',
+        counter: 2,
     };
 
     handleRegisterFormChange = (e) => {
@@ -172,7 +172,7 @@ class App extends React.Component {
                 ...this.state.register_inputs,
                 [e.target.name]: e.target.value
             }
-        })
+        });
     };
 
     handleRegisterFormSubmit = (e) => {
@@ -181,10 +181,11 @@ class App extends React.Component {
 
         const data = this.state.register_inputs;
 
-        axios.post(`http://api.maysan123.com/api/user/register`, data)
+        axios.post(`http://127.0.0.1:8000/api/user/register`, data)
             .then(res => {
                 const data = JSON.stringify(res.data);
                 localStorage.setItem('token', data);
+                localStorage.setItem('mobile', data.mobile);
                 window.location.href = 'http://localhost:3000/verify';
             })
             .catch(error => {
@@ -278,10 +279,10 @@ class App extends React.Component {
     handleUserResendSubmit = (e) => {
         e.preventDefault();
         const mobile = this.state.resend_mobile;
-
+        localStorage.setItem('mobile', mobile);
         axios.post(`http://127.0.0.1:8000/api/user/resendUser`, {mobile})
             .then(res => {
-                const data = res.data
+                const data = res.data;
                 if ('activated' in data) {
                     this.setState({
                         resend_error: data.activated
@@ -325,7 +326,6 @@ class App extends React.Component {
                     </Route>
                     <Route path="/verify">
                         <Verification
-                            phone_number={this.state.mobile}
                             inputs={this.state.vc_inputs}
                             handleVerificationCodeChange={this.handleVerificationCodeChange}
                             handleVerificationCodeSubmit={this.handleVerificationCodeSubmit}
@@ -333,6 +333,7 @@ class App extends React.Component {
                             is_verified={this.state.is_verified}
                             errors={this.state.verify_errors}
                             v_error={this.state.v_error}
+                            counter={this.state.counter}
                         />
                     </Route>
                     <Route path="/resend">

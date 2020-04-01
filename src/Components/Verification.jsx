@@ -13,9 +13,8 @@ class Verification extends React.Component {
                     <div className="row position-relative">
                         <div className="user col-lg-9 col-12 position-relative">
                             <div className="container">
-                                <Header />
+                                <Header/>
                                 <Verification_Form
-                                    phone_number={this.props.phone_number}
                                     inputs={this.props.inputs}
                                     handleVerificationCodeChange={this.props.handleVerificationCodeChange}
                                     handleVerificationCodeSubmit={this.props.handleVerificationCodeSubmit}
@@ -23,14 +22,15 @@ class Verification extends React.Component {
                                     is_verified={this.props.is_verified}
                                     errors={this.props.errors}
                                     v_error={this.props.v_error}
+                                    counter={this.props.counter}
                                 />
                                 <div className="pt-5">
-                                    <Footer />
+                                    <Footer/>
                                 </div>
                             </div>
                         </div>
                         <div className="design col-3 d-none d-lg-block"></div>
-                        <Design />
+                        <Design/>
                     </div>
                 </section>
             </React.Fragment>
