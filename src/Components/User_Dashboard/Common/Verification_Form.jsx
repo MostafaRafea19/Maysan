@@ -43,6 +43,12 @@ class Verification_Form extends React.Component {
                             )
                         })
                     }
+                    {
+                        this.props.resend_status &&
+                        <div className="alert alert-info text-center my-4">
+                            {this.props.resend_status}
+                        </div>
+                    }
                     <h6 className="text-center mt-5">تم ارسال الرمز الى {
                         localStorage.getItem('mobile')
                     }</h6>

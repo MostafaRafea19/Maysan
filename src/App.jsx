@@ -164,6 +164,7 @@ class App extends React.Component {
         resend_mobile: '',
         resend_error: '',
         counter: 2,
+        resend_status: ''
     };
 
     handleRegisterFormChange = (e) => {
@@ -181,11 +182,12 @@ class App extends React.Component {
 
         const data = this.state.register_inputs;
 
+        localStorage.setItem('mobile', data.mobile);
+
         axios.post(`http://127.0.0.1:8000/api/user/register`, data)
             .then(res => {
                 const data = JSON.stringify(res.data);
                 localStorage.setItem('token', data);
-                localStorage.setItem('mobile', data.mobile);
                 window.location.href = 'http://localhost:3000/verify';
             })
             .catch(error => {
@@ -264,6 +266,9 @@ class App extends React.Component {
         axios.post(`http://127.0.0.1:8000/api/user/resend`, {}, config)
             .then(res => {
                 console.log(res);
+                this.setState({
+                    resend_status: res.data
+                });
             })
             .catch(error => {
                 console.log(error.response);
@@ -334,6 +339,7 @@ class App extends React.Component {
                             errors={this.state.verify_errors}
                             v_error={this.state.v_error}
                             counter={this.state.counter}
+                            resend_status={this.state.resend_status}
                         />
                     </Route>
                     <Route path="/resend">

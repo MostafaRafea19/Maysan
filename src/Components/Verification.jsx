@@ -23,6 +23,7 @@ class Verification extends React.Component {
                                     errors={this.props.errors}
                                     v_error={this.props.v_error}
                                     counter={this.props.counter}
+                                    resend_status={this.props.resend_status}
                                 />
                                 <div className="pt-5">
                                     <Footer/>
