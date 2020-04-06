@@ -1,18 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.css';
-import './css/reset.css';
-import './css/responsive.css';
 import './css/base.css';
+import './css/landing_page.css';
+import './css/user_dashboard.css';
 import 'animate.css/animate.css'
 import 'animate.css';
+import './css/responsive.css';
 import App from './App';
 import $ from 'jquery';
 import Popper from 'popper.js';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 ReactDOM.render(
-    < App /> ,
+< App / > ,
     document.getElementById('root')
 )
 

@@ -1,8 +1,8 @@
 import React from 'react';
-import Sidebar from './User_Dashboard/Common/Sidebar'
-import Navbar from "./User_Dashboard/Common/Navbar";
-import Footer from "./User_Dashboard/Common/Footer";
-import Graph from "./User_Dashboard/Common/Graph";
+import Sidebar from './layouts/Sidebar'
+import Navbar from "./layouts/Navbar";
+import Footer from "./layouts/Footer";
+import Graph from "./Graph";
 
 class Statistics extends React.Component {
     render() {

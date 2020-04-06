@@ -5,14 +5,14 @@ import {
     Route,
 } from "react-router-dom";
 
-import Login from './Components/Login';
-import Statistics from "./Components/Statistics";
-import Register from './Components/Register';
-import Shipments from "./Components/Shipments";
-import Verification from './Components/Verification';
-import Resend from './Components/Resend';
-import Sent_Shipments from './Components/Sent_Shipments';
-import Landing_Page from './Components/Landing_Page';
+import Login from './Components/User_Dashboard/Login';
+import Statistics from "./Components/User_Dashboard/Statistics";
+import Register from './Components/User_Dashboard/Register';
+import Shipments from "./Components/User_Dashboard/Shipments";
+import Verification from './Components/User_Dashboard/Verification';
+import Resend from './Components/User_Dashboard/Resend';
+import Sent_Shipments from './Components/User_Dashboard/Sent_Shipments';
+import Landing_Page from './Components/Landing_Page/Landing_Page';
 
 import axios from 'axios';
 

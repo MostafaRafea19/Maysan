@@ -1,7 +1,7 @@
 import React from 'react';
-import Navbar from './User_Dashboard/Common/Navbar';
-import Sidebar from './User_Dashboard/Common/Sidebar';
-import Table from './User_Dashboard/Sent_Shipments_Table';
+import Navbar from './layouts/Navbar';
+import Sidebar from './layouts/Sidebar';
+import Table from './Sent_Shipments_Table';
 
 class Sent_Shipments extends React.Component {
     render() {

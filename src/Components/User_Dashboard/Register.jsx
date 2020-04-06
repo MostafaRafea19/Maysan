@@ -1,8 +1,8 @@
 import React from 'react';
-import Header from './User_Dashboard/Common/Header';
-import Design from './User_Dashboard/Common/Design';
-import Register_Form from './User_Dashboard/Common/Register_Form';
-import Footer from './User_Dashboard/Common/Footer';
+import Header from './layouts/Header';
+import Design from './layouts/Design';
+import Register_Form from './Register_Form';
+import Footer from './layouts/Footer';
 
 class Register extends React.Component {
 
