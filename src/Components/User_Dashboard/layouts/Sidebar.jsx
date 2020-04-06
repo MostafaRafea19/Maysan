@@ -52,9 +52,7 @@ class Sidebar extends React.Component {
 
                                 </div>
                                 <div className="col-12 link">
-
                                     <a href="#" className="d-inline settings">الاعدادات</a>
-
                                 </div>
 
                             </div>

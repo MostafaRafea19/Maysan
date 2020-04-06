@@ -305,7 +305,6 @@ class App extends React.Component {
             })
     };
 
-
     render() {
         return (
             <Router>
@@ -362,7 +361,6 @@ class App extends React.Component {
             </Router>
         )
     }
-
 }
 
 export default App;

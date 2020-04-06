@@ -1,23 +1,50 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import Notification_Counter from './Notification_Counter';
+
 import logo from '../../../img/logo 1.png';
 import bordered_logo from './../../../img/icon/bordered_logo.svg';
 import new_shipment from './../../../img/icon/new_shipment.svg';
 import plus from './../../../img/icon/plus.svg';
+import menu_logo from './../../../img/menu_logo.png';
+
+import Notification_Counter from './Notification_Counter';
+import Sidebar_ from "./Sidebar";
+import Sidebar from "react-sidebar";
 
 class Navbar extends React.Component {
 
     state = {
         purple_notification: "#4E2F8A",
-        orange_notification: "#F16724"
+        orange_notification: "#F16724",
+        sidebarOpen: false
+    };
+
+    onSetSidebarOpen = (open) => {
+        this.setState({sidebarOpen: open});
     };
 
     render() {
         return (
             <React.Fragment>
                 <nav className="p-2 d-flex align-items-center">
-                    <Link to="/" className="mx-4">
+                    <Sidebar
+                        sidebar={<Sidebar_/>}
+                        open={this.state.sidebarOpen}
+                        onSetOpen={this.onSetSidebarOpen}
+                        styles={{sidebar: {background: "white"}}}
+                        pullRight={true}
+                    >
+                        <div className="d-flex align-items-center menu d-md-none">
+                            <button
+                                type="button"
+                                className="btn"
+                                onClick={() => this.onSetSidebarOpen(true)}
+                            >
+                                <img src={menu_logo} className="menu-logo"/>
+                            </button>
+                        </div>
+                    </Sidebar>
+                    <Link to="/" className="mx-4 p-5 p-md-0">
                         <img src={logo}/>
                     </Link>
                     <ul className="nav mr-auto align-items-center ml-5">
