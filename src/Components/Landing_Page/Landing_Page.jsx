@@ -1,12 +1,12 @@
 import React from 'react';
-import Header from "./Landing_Page/Header";
-import Navbar from "./Landing_Page/Navbar";
-import Footer from "./Landing_Page/Footer";
-import Information from "./Landing_Page/Information";
-import Express from "./Landing_Page/Express";
-import Benefit from './Landing_Page/Benefit';
-import Feedback from './Landing_Page/Feedback';
-import Shipping from "./Landing_Page/Shipping";
+import Header from "./Header";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
+import Information from "./Information";
+import Express from "./Express";
+import Benefit from './Benefit';
+import Feedback from './Feedback';
+import Shipping from "./Shipping";
 
 class Landing_Page extends React.Component {
 

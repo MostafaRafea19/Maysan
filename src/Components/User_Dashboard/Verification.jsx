@@ -1,8 +1,8 @@
 import React from 'react';
-import Header from './User_Dashboard/Common/Header';
-import Design from './User_Dashboard/Common/Design';
-import Verification_Form from './User_Dashboard/Common/Verification_Form';
-import Footer from './User_Dashboard/Common/Footer';
+import Header from './layouts/Header';
+import Design from './layouts/Design';
+import Verification_Form from './Verification_Form';
+import Footer from './layouts/Footer';
 
 class Verification extends React.Component {
 
@@ -13,20 +13,25 @@ class Verification extends React.Component {
                     <div className="row position-relative">
                         <div className="user col-lg-9 col-12 position-relative">
                             <div className="container">
-                                <Header />
+                                <Header/>
                                 <Verification_Form
-                                    phone_number={this.props.phone_number}
                                     inputs={this.props.inputs}
                                     handleVerificationCodeChange={this.props.handleVerificationCodeChange}
                                     handleVerificationCodeSubmit={this.props.handleVerificationCodeSubmit}
+                                    handleVerificationCodeResend={this.props.handleVerificationCodeResend}
+                                    is_verified={this.props.is_verified}
+                                    errors={this.props.errors}
+                                    v_error={this.props.v_error}
+                                    counter={this.props.counter}
+                                    resend_status={this.props.resend_status}
                                 />
                                 <div className="pt-5">
-                                    <Footer />
+                                    <Footer/>
                                 </div>
                             </div>
                         </div>
                         <div className="design col-3 d-none d-lg-block"></div>
-                        <Design />
+                        <Design/>
                     </div>
                 </section>
             </React.Fragment>

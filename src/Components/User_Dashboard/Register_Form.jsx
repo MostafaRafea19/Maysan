@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 class Register_Form extends React.Component {
 
     render() {
+        const errors = this.props.errors;
         return (
             <React.Fragment>
                 <form
@@ -11,6 +12,16 @@ class Register_Form extends React.Component {
                     onSubmit={(e) => {this.props.handleRegisterFormSubmit(e)}}
                 >
                     <h2 className="pb-5">التسجيل</h2>
+                    {
+                        this.props.errors &&
+                            Object.keys(errors).map(function (keyName, keyIndex) {
+                                return (
+                                    <div className="alert alert-danger" role="alert" key={keyIndex}>
+                                        {errors[keyName]}
+                                    </div>
+                                )
+                            })
+                    }
                     <div className="row h-auto">
                         <div className="form-group py-2 col-md-6 col-12">
                             <input
@@ -20,6 +31,7 @@ class Register_Form extends React.Component {
                                 placeholder="الاسم الاول"
                                 onChange={(e) => {this.props.handleRegisterFormChange(e)}}
                             />
+                            <span>{}</span>
                         </div>
                         <div className="form-group py-2 col-md-6 col-12">
                             <input
@@ -74,6 +86,10 @@ class Register_Form extends React.Component {
                         <button
                             type="submit"
                             className="btn submit-btn py-3 mr-lg-auto m-auto">التسجيل</button>
+
+                        <button type="submit"  className="btn submit-btn py-3 mr-lg-auto m-auto">
+                            التسجيل
+                        </button>
                     </div>
                 </form>
             </React.Fragment>

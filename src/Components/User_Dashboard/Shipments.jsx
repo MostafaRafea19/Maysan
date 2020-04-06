@@ -1,9 +1,9 @@
 import React from 'react';
-import Send_Steps from "./User_Dashboard/Common/Send_Steps";
-import Navbar from "./User_Dashboard/Common/Navbar";
-import Sidebar from "./User_Dashboard/Common/Sidebar";
-import Form_Shipments from "./User_Dashboard/Common/Form_Shipments";
-import Content_Shipment from "./User_Dashboard/Common/Content_Shipment";
+import Send_Steps from "./Send_Steps";
+import Navbar from "./layouts/Navbar";
+import Sidebar from "./layouts/Sidebar";
+import Form_Shipments from "./Form_Shipments";
+import Content_Shipment from "./Content_Shipment";
 
 class Shipments extends React.Component{
     render() {

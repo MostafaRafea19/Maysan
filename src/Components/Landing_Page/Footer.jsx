@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from './../../img/Landing_Page/footer-logo.svg'
-import User_Footer from '../User_Dashboard/Common/Footer';
+import User_Footer from '../User_Dashboard/layouts/Footer';
 import visa from '../../img/visa-mastercard-discover-american-express_364451.png';
 import visa2 from '../../img/Landing_Page/BlogPicMain3677-636677051245215173.png'
 class Footer extends React.Component {
