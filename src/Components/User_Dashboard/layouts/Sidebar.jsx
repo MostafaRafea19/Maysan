@@ -4,13 +4,14 @@ import Xl from '../../../img/icon/x31 0.png'
 import Xm from '../../../img/icon/x35.png'
 import CC from '../../../img/icon/conversation.png'
 import SS from '../../../img/icon/settings.png'
+
 class Sidebar extends React.Component {
 
     render() {
         return (
             <React.Fragment>
-                <section className="saidebar-user-D d-flex align-items-center w-100">
-                    <div className="content ">
+                <section className="sidebar-user-D d-flex align-items-center w-auto">
+                    <div className="content m-auto">
                         <div className="row justify-content-center align-items-center">
                             <div className="text-right">
                                 <div className="col-12 link mt-2">
@@ -24,9 +25,11 @@ class Sidebar extends React.Component {
                                 </div>
                                 <div className="col-12 link">
 
-                                    <a href="#" className="d-inline"> <div className="icon d-inline ml-3">
-                                        <img src={Xl} alt=""/>
-                                    </div>البولصيات</a>
+                                    <a href="#" className="d-inline">
+                                        <div className="icon d-inline ml-3">
+                                            <img src={Xl} alt=""/>
+                                        </div>
+                                        البولصيات</a>
 
                                 </div>
                                 <div className="col-12 link ">
@@ -36,9 +39,11 @@ class Sidebar extends React.Component {
                                 </div>
                                 <div className="col-12 link">
 
-                                    <a href="#" className="d-inline"> <div className="icon d-inline ml-3">
-                                        <img src={Xm} alt=""/>
-                                    </div>الشحنات</a>
+                                    <a href="#" className="d-inline">
+                                        <div className="icon d-inline ml-3">
+                                            <img src={Xm} alt=""/>
+                                        </div>
+                                        الشحنات</a>
 
                                 </div>
                                 <div className="col-12 link">
