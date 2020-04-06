@@ -1,6 +1,6 @@
 import React from 'react';
 import Logo from './../../../img/logo 1.png';
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 class Header extends React.Component {
 
@@ -14,7 +14,8 @@ class Header extends React.Component {
                 btn = "/register";
                 break;
             case "/register":
-            case "/verification":
+            case "/verify":
+            case "/resend":
                 link = "الدخول";
                 btn = "/login";
                 break;
@@ -24,7 +25,7 @@ class Header extends React.Component {
             <React.Fragment>
                 <header className="d-flex justify-content-between align-items-center my-5">
                     <section>
-                        <img src={Logo} alt="LOGO" />
+                        <img src={Logo} alt="LOGO"/>
                     </section>
                     <Link to={btn} className="btn login_btn px-3 py-2">{link}</Link>
                 </header>
