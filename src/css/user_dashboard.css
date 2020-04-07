@@ -120,6 +120,7 @@
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.08);
     border-radius: 30px;
     background-color: #FFFFFF;
+    overflow: hidden;
 }
 
 .sidebar-user-D .content .link {
@@ -133,7 +134,6 @@
     font-family: DIN Next LT W23;
     font-style: normal;
     font-weight: normal;
-    font-size: 30px;
     text-decoration: none;
 }
 
@@ -227,6 +227,15 @@ nav .dropdown-menu {
     top: 50% !important;
     left: -50% !important;
     text-align: right !important;
+}
+
+nav .menu {
+    height: 107px;
+}
+
+nav .menu-logo {
+    width: 50px;
+    height: 50px;
 }
 
 /* Navbar */

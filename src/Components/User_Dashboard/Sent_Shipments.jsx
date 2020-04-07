@@ -2,17 +2,8 @@ import React from 'react';
 import Navbar from './layouts/Navbar';
 import Sidebar_ from './layouts/Sidebar';
 import Table from './Sent_Shipments_Table';
-import Sidebar from 'react-sidebar';
 
 class Sent_Shipments extends React.Component {
-
-    state = {
-        sidebarOpen: true
-    };
-
-    onSetSidebarOpen = (open) => {
-        this.setState({sidebarOpen: open});
-    }
 
     render() {
         return (
@@ -27,17 +18,7 @@ class Sent_Shipments extends React.Component {
                         <div className="row justify-content-around">
                             <div className="">
                                 <Sidebar_/>
-                                <Sidebar
-                                    sidebar={<Sidebar_/>}
-                                    open={this.state.sidebarOpen}
-                                    onSetOpen={this.onSetSidebarOpen}
-                                    styles={{sidebar: {background: "white"}}}
-                                    pullRight={true}
-                                >
-                                    <button onClick={() => this.onSetSidebarOpen(true)}>
-                                        Open sidebar
-                                    </button>
-                                </Sidebar>
+
                             </div>
                             <div className="col-9 px-0">
                                 <Table sent_shipments={this.props.sent_shipments}/>
