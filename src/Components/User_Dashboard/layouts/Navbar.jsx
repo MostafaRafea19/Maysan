@@ -10,6 +10,7 @@ import menu_logo from './../../../img/menu_logo.png';
 import Notification_Counter from './Notification_Counter';
 import Sidebar_ from "./Sidebar";
 import Sidebar from "react-sidebar";
+import Sidebar_R from "./Sidebar_R";
 
 class Navbar extends React.Component {
 
@@ -27,23 +28,26 @@ class Navbar extends React.Component {
         return (
             <React.Fragment>
                 <nav className="p-2 d-flex align-items-center">
-                    <Sidebar
-                        sidebar={<Sidebar_/>}
-                        open={this.state.sidebarOpen}
-                        onSetOpen={this.onSetSidebarOpen}
-                        styles={{sidebar: {background: "white"}}}
-                        pullRight={true}
-                    >
-                        <div className="d-flex align-items-center menu d-md-none">
-                            <button
-                                type="button"
-                                className="btn"
-                                onClick={() => this.onSetSidebarOpen(true)}
-                            >
-                                <img src={menu_logo} className="menu-logo"/>
-                            </button>
-                        </div>
-                    </Sidebar>
+
+                    <div style={{width: '50px'}}>
+                        <Sidebar
+                            sidebar={<Sidebar_R/>}
+                            open={this.state.sidebarOpen}
+                            onSetOpen={this.onSetSidebarOpen}
+                            styles={{sidebar: {background: "white"}}}
+                            pullRight={true}
+                        >
+                            <div className="d-flex align-items-center menu d-lg-none">
+                                <button
+                                    type="button"
+                                    className="btn"
+                                    onClick={() => this.onSetSidebarOpen(true)}
+                                >
+                                    <img src={menu_logo} className="menu-logo"/>
+                                </button>
+                            </div>
+                        </Sidebar>
+                    </div>
                     <Link to="/" className="mx-4 p-5 p-md-0">
                         <img src={logo}/>
                     </Link>
@@ -78,7 +82,7 @@ class Navbar extends React.Component {
                         <li className="nav-item mx-4">
                             <img src={bordered_logo}/>
                         </li>
-                        <li className="new-shipment align-self-end nav-item mx-4">
+                        <li className="new-shipment align-self-end nav-item mx-4 d-none d-lg-inline-block">
                             <Link to="" className="nav-link d-flex align-items-center position-relative">
                                 <img src={plus} className="plus position-absolute"/>
                                 <img src={new_shipment} className="px-1"/>
