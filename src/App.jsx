@@ -2,7 +2,7 @@ import React from 'react';
 import {
     BrowserRouter as Router,
     Switch,
-    Route
+    Route,
 } from "react-router-dom";
 
 import Login from './Components/User_Dashboard/Login';
@@ -176,175 +176,10 @@ class App extends React.Component {
         });
     };
 
-  state = {
-    register_inputs: {
-      'name': '',
-      'surname': '',
-      'email': '',
-      'mobile': '',
-      'password': '',
-      'password_confirmation': ''
-    },
-    phone_number: '0501234567',
-    verification_code: {
-     'n1' : '',
-     'n2' : '',
-     'n3' : '',
-     'n4' : ''
-    }
-    ,
-    vc_inputs: [
-      React.createRef(),
-      React.createRef(),
-      React.createRef(),
-      React.createRef()
-    ],
-    sent_shipments: [
-      {
-        'shipment_number': 6541981,
-        'sent_date': '2020/20/22',
-        'shipper_data': 'محمد عبدالله',
-        'recipient_data': 'احمد سعيد',
-        'recipient_address': 'حي، شارع، مبنى',
-        'shipment_content': 'صندوق',
-        'shipment_status': 'خرجت للتوصيل'
-      },
-      {
-        'shipment_number': 6541981,
-        'sent_date': '2020/20/22',
-        'shipper_data': 'محمد عبدالله',
-        'recipient_data': 'احمد سعيد',
-        'recipient_address': 'حي، شارع، مبنى',
-        'shipment_content': 'صندوق',
-        'shipment_status': 'خرجت للتوصيل'
-      },
-      {
-        'shipment_number': 6541981,
-        'sent_date': '2020/20/22',
-        'shipper_data': 'محمد عبدالله',
-        'recipient_data': 'احمد سعيد',
-        'recipient_address': 'حي، شارع، مبنى',
-        'shipment_content': 'صندوق',
-        'shipment_status': 'خرجت للتوصيل'
-      },
-      {
-        'shipment_number': 6541981,
-        'sent_date': '2020/20/22',
-        'shipper_data': 'محمد عبدالله',
-        'recipient_data': 'احمد سعيد',
-        'recipient_address': 'حي، شارع، مبنى',
-        'shipment_content': 'صندوق',
-        'shipment_status': 'خرجت للتوصيل'
-      },
-      {
-        'shipment_number': 6541981,
-        'sent_date': '2020/20/22',
-        'shipper_data': 'محمد عبدالله',
-        'recipient_data': 'احمد سعيد',
-        'recipient_address': 'حي، شارع، مبنى',
-        'shipment_content': 'صندوق',
-        'shipment_status': 'خرجت للتوصيل'
-      },
-      {
-        'shipment_number': 6541981,
-        'sent_date': '2020/20/22',
-        'shipper_data': 'محمد عبدالله',
-        'recipient_data': 'احمد سعيد',
-        'recipient_address': 'حي، شارع، مبنى',
-        'shipment_content': 'صندوق',
-        'shipment_status': 'خرجت للتوصيل'
-      },
-      {
-        'shipment_number': 6541981,
-        'sent_date': '2020/20/22',
-        'shipper_data': 'محمد عبدالله',
-        'recipient_data': 'احمد سعيد',
-        'recipient_address': 'حي، شارع، مبنى',
-        'shipment_content': 'صندوق',
-        'shipment_status': 'خرجت للتوصيل'
-      }
-    ],
-    Feedback: [
-      {
-        'name': 'تركي',
-        'feedback': 'مررة ممتازين وسريعين شكرا لكم'
-      },
-      {
-        'name': 'عبدالله',
-        'feedback': 'جربتكم أول مرة وما عجبتني الخدمة بس لما تواصلت معهم ما تركوني الا وانا راضي شكراً لكم'
-      },
-      {
-        'name': 'فارس',
-        'feedback': 'شكرا لكم الان صرت اقدر اوفر لعملائي شحن اسرع'
-      },
-      {
-        'name': 'نوره',
-        'feedback': 'الله يسعدكم اسعاركم تفرق والجودة بعد'
-      }
-    ],
-    notifications_counter: 5,
-    graph: [
-      {
-        purple: "50%",
-        orange: "20%",
-      },
-      {
-        purple: "30%",
-        orange: "40%",
-      },
-      {
-        purple: "70%",
-        orange: "60%",
-      },
-      {
-        purple: "40%",
-        orange: "30%",
-      },
-      {
-        purple: "80%",
-        orange: "20%",
-      },
-      {
-        purple: "50%",
-        orange: "20%",
-      },
-      {
-        purple: "50%",
-        orange: "10%",
-      },
-      {
-        purple: "90%",
-        orange: "10%",
-      }
-    ],
-      is_registered: false
-  };
     handleRegisterFormSubmit = (e) => {
 
         e.preventDefault();
 
-  handleRegisterFormSubmit = (e) => {
-    e.preventDefault();
-    const data = this.state.register_inputs;
-
-    axios.post(`http://127.0.0.1:8000/api/user/register`, data)
-        .then(res => {
-          console.log(res);
-          window.location.href = "/verify";
-        })
-        .catch(error => {
-          console.log(error.response);
-        })
-  };
-
-
-  handleVerificationCodeChange = (e, index) => {
-    this.setState({
-      verification_code: {
-        ...this.state.verification_code,
-        [e.target.name]: e.target.value
-      }
-    });
         const data = this.state.register_inputs;
 
         localStorage.setItem('mobile', data.mobile);
@@ -440,64 +275,6 @@ class App extends React.Component {
             });
     };
 
-    let code = '5305';
-      for (let i=1; i>5; i++) {
-        code = code + this.state.verification_code[i];
-      }
-    console.log(code);
-    axios.post(`http://127.0.0.1:8000/api/user/verify`, {code})
-        .then(res => {
-            console.log(code);
-          console.log(res);
-        })
-        .catch(error => {
-          console.log(error.response);
-        })
-  };
-
-  render() {
-    return (
-      <Router>
-        <Switch>
-          <Route path="/login">
-            <Login />
-          </Route>
-          <Route path="/statistics">
-            <Statistics
-              notifications_counter={this.state.notifications_counter}
-              graph={this.state.graph}
-            />
-          </Route>
-          <Route path="/register">
-            <Register
-                handleRegisterFormChange={this.handleRegisterFormChange}
-                handleRegisterFormSubmit={this.handleRegisterFormSubmit}
-            />
-          </Route>
-          <Route path="/shipments">
-            <Shipments />
-          </Route>
-          <Route path="/verify">
-            <Verification
-              phone_number={this.state.phone_number}
-              inputs={this.state.vc_inputs}
-              handleVerificationCodeChange={this.handleVerificationCodeChange}
-              handleVerificationCodeSubmit={this.handleVerificationCodeSubmit}
-
-            />
-          </Route>
-          <Route path="/sent-shipments">
-            <Sent_Shipments
-              sent_shipments={this.state.sent_shipments}
-            />
-          </Route>
-          <Route path="/">
-            <Landing_Page feedback={this.state.Feedback} handle={this.handle}/>
-          </Route>
-        </Switch>
-      </Router>
-    )
-  }
     handleUserResendChange = (e) => {
         this.setState({
             resend_mobile: e.target.value
