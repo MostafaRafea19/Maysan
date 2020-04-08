@@ -17,10 +17,10 @@ class Sent_Shipments extends React.Component {
                             <h1 className="text-right mx-5 my-5 px-3">الشحنات المرسلة</h1>
                         </div>
                         <div className="row justify-content-around">
-                            <div className="h-100">
+                            <div className="h-100 d-xl-block d-none">
                                 <Sidebar_/>
                             </div>
-                            <div className="col-9 px-0 h-100">
+                            <div className="col-xl-9 col-11 px-0 h-100">
                                 <Table sent_shipments={this.props.sent_shipments}/>
                             </div>
                         </div>
