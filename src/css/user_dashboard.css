@@ -276,6 +276,10 @@ nav .menu-logo {
     height: 45px;
 }
 
+.statistics .statistics-sidebar {
+    flex: 0 0 23%;
+    max-width: 25%;
+}
 
 /* Statistics Component End*/
 

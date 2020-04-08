@@ -8,7 +8,7 @@
     }
 }
 
-@media (max-width:576px) {
+@media (max-width: 576px) {
     .landing-page .Header .pragraph-header {
         font-size: 21px !important;
     }
@@ -16,19 +16,21 @@
     .login ._form .form-control::placeholder {
         font-size: smaller !important;
     }
-    .landing-page .edit-height{
+
+    .landing-page .edit-height {
         height: 250px !important;
     }
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
     .landing-page .footer .popup {
         top: -135px !important;
         text-align: center;
     }
-    .statistics .section-L .details{
+
+    .statistics .section-L .details {
         height: auto;
-        padding-bottom: 25px ;
+        padding-bottom: 25px;
     }
 }
 
