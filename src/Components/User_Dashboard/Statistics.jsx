@@ -13,8 +13,8 @@ class Statistics extends React.Component {
                     <div className="container-fluid mt-5">
                         <div className="row mt-5">
                             <div className="col-lg-3 d-none d-lg-inline-block"></div>
-                            <div className="col-9">
-                                <h1 className="text-right text-black">
+                            <div className="col-lg-9 col-12 ">
+                                <h1 className="text-black  text-center text-lg-right">
                                     منصة الشحن
                                 </h1>
                             </div>
