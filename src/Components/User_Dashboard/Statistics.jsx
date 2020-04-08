@@ -9,7 +9,7 @@ class Statistics extends React.Component {
         return (
             <React.Fragment>
                 <section className="statistics">
-                    <Navbar notifications_counter={this.props.notifications_counter} />
+                    <Navbar notifications_counter={this.props.notifications_counter}/>
                     <div className="container-fluid mt-5">
                         <div className="row mt-5">
                             <div className="col-lg-3 d-none d-lg-inline-block"></div>
@@ -19,10 +19,10 @@ class Statistics extends React.Component {
                                 </h1>
                             </div>
 
-                            <div className="col-lg-3 d-none d-lg-inline-block  pl-0">
-                                <Sidebar />
+                            <div className="mx-5 d-none d-xl-inline-block pl-0">
+                                <Sidebar/>
                             </div>
-                            <div className="col-lg-9   pr-lg-0  section-L">
+                            <div className="col-xl-9 col-12 pr-lg-0  section-L">
                                 <div className="container">
                                     <div className="row">
                                         <div className="col-lg-8 col-12 pr-lg-0 pl-lg-3">
@@ -43,7 +43,9 @@ class Statistics extends React.Component {
                                                             <div className="text-white">
                                                                 <span className="text-white h1 mt-2 d-inline">70</span>
                                                                 <div className="d-block">
-                                                                    <a href="#" className="add-C d-inline-block text-white text-center text-light">اشترك في احد الباقات الان</a>
+                                                                    <a href="#"
+                                                                       className="add-C d-inline-block text-white text-center text-light">اشترك
+                                                                        في احد الباقات الان</a>
                                                                 </div>
 
                                                             </div>
@@ -53,9 +55,12 @@ class Statistics extends React.Component {
                                                         <div className="mt-4">
                                                             <h3 className="text-white text-light">رصيدك الحالي</h3>
                                                             <div className="text-white ">
-                                                                <span className="text-white h3 mt-2 d-inline">لا يوجد</span>
+                                                                <span
+                                                                    className="text-white h3 mt-2 d-inline">لا يوجد</span>
                                                                 <div className="d-block">
-                                                                    <a href="#" className="add-C d-inline-block text-white text-center mt-3 text-light">اشترك في احد الباقات الان</a>
+                                                                    <a href="#"
+                                                                       className="add-C d-inline-block text-white text-center mt-3 text-light">اشترك
+                                                                        في احد الباقات الان</a>
                                                                 </div>
 
                                                             </div>
@@ -65,9 +70,14 @@ class Statistics extends React.Component {
                                                         <div className="mt-4">
                                                             <h3 className="text-white text-light">رصيدك الحالي</h3>
                                                             <div className="text-white">
-                                                                <div className="text-white h1 mt-2 d-inline">300</div><div className="d-inline-block position-absolute mt-2 mr-2">ريال</div>
+                                                                <div className="text-white h1 mt-2 d-inline">300</div>
+                                                                <div
+                                                                    className="d-inline-block position-absolute mt-2 mr-2">ريال
+                                                                </div>
                                                                 <div className="d-block">
-                                                                    <a href="#" className="add-C d-inline-block text-white text-center text-light">إضافة رصيد</a>
+                                                                    <a href="#"
+                                                                       className="add-C d-inline-block text-white text-center text-light">إضافة
+                                                                        رصيد</a>
                                                                 </div>
 
                                                             </div>
@@ -81,15 +91,14 @@ class Statistics extends React.Component {
                                             <div className="bundles bg-purple p-3 w-100">
                                                 <div className="bundle position-relative w-100">
                                                     <div className="out pr-2 position-absolute text-right bg-orange">
-                                                        <h5 className="text-white h3 text-center d-flex justify-content-center align-items-center pl-1 pt-2">قم بالترقية الان</h5>
+                                                        <h5 className="text-white h3 text-center d-flex justify-content-center align-items-center pl-1 pt-2">قم
+                                                            بالترقية الان</h5>
                                                     </div>
                                                     <div className="position-absolute mt-2">
                                                         <h5 className="text-white text-right h2">الباقة الحالية</h5>
                                                         <h5 className="text-right primary-color h2">الباقة الحالية</h5>
                                                         <h5 className="text-right text-white h4">ادفع حسب استخدامك</h5>
                                                     </div>
-
-
 
 
                                                 </div>
@@ -99,7 +108,7 @@ class Statistics extends React.Component {
                                 </div>
                             </div>
                             <div className="col-12 mt-5">
-                                <Footer />
+                                <Footer/>
                             </div>
 
                         </div>
@@ -109,4 +118,5 @@ class Statistics extends React.Component {
         )
     }
 }
+
 export default Statistics;
