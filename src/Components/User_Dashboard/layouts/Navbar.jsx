@@ -47,10 +47,10 @@ class Navbar extends React.Component {
                             </div>
                         </Sidebar>
                     </div>
-                    <Link to="/" className="mx-4 p-5 p-md-0">
+                    <Link to="/" className="mx-4 p-md-0">
                         <img src={logo}/>
                     </Link>
-                    <ul className="nav mr-auto align-items-center ml-5">
+                    <ul className="nav mr-auto align-items-center ml-md-5">
                         <li className="nav-item mx-4">
                             <div className="dropdown">
                                 <a className="dropdown-heading d-flex flex-column justify-content-around align-items-center"
@@ -78,7 +78,7 @@ class Navbar extends React.Component {
                                 </div>
                             </div>
                         </li>
-                        <li className="nav-item mx-4">
+                        <li className="nav-item mx-4 d-none d-lg-block">
                             <img src={bordered_logo}/>
                         </li>
                         <li className="new-shipment align-self-end nav-item mx-4 d-none d-lg-inline-block">
