@@ -19,7 +19,7 @@ class Statistics extends React.Component {
                                 </h1>
                             </div>
 
-                            <div className="col-3 statistics-sidebar d-none d-xl-flex justify-content-center">
+                            <div className="statistics-sidebar d-none d-xl-flex justify-content-center">
                                 <Sidebar/>
                             </div>
                             <div className="col-xl-9 col-12 pr-lg-0 section-L">
