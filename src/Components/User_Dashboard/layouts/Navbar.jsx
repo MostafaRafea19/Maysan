@@ -10,7 +10,6 @@ import menu_logo from './../../../img/menu_logo.png';
 import Notification_Counter from './Notification_Counter';
 import Sidebar_ from "./Sidebar";
 import Sidebar from "react-sidebar";
-import Sidebar_R from "./Sidebar_R";
 
 class Navbar extends React.Component {
 
@@ -31,7 +30,7 @@ class Navbar extends React.Component {
 
                     <div style={{width: '50px'}}>
                         <Sidebar
-                            sidebar={<Sidebar_R/>}
+                            sidebar={<Sidebar_/>}
                             open={this.state.sidebarOpen}
                             onSetOpen={this.onSetSidebarOpen}
                             styles={{sidebar: {background: "white"}}}
