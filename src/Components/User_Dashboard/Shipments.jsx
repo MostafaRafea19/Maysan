@@ -13,9 +13,9 @@ class Shipments extends React.Component{
                     <Navbar />
                     <div className="container-fluid mt-5">
                         <div className="row justify-content-center text-right">
-                            <div className="col-3"></div>
-                            <div className="col-9"><h1 className="h1">أرسل شحنة جددة</h1></div>
-                            <div className="col-3 mt-5">
+                            <div className="col-lg-3 d-none d-lg-inline-block"></div>
+                            <div className="col-9 text-center text-lg-right "><h1 className="h1">أرسل شحنة جددة</h1></div>
+                            <div className="col-lg-3 d-none d-lg-inline-block mt-5">
                                 <Sidebar />
                             </div>
                             <div className="col-9 mt-5">

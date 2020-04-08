@@ -280,10 +280,10 @@ nav .menu-logo {
 
 .statistics .section-L .bundles .out {
     top: -45px;
-    left: 123px;
+    left: 34%;
     box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
-    width: 195px;
+    width: 89%;
     height: 45px;
 }
 
@@ -420,7 +420,7 @@ footer ul li a {
 
 .send-steps .line {
     height: 3px;
-    width: 150px;
+    width: 20%;
     background: #4F4F4F;
     margin: 0 20px;
 }

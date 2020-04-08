@@ -26,6 +26,10 @@
         top: -135px !important;
         text-align: center;
     }
+    .statistics .section-L .details{
+        height: auto;
+        padding-bottom: 25px ;
+    }
 }
 
 @media screen and (max-width: 394px) {
