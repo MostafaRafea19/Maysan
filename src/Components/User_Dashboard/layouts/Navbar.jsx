@@ -36,7 +36,7 @@ class Navbar extends React.Component {
                             styles={{sidebar: {background: "white"}}}
                             pullRight={true}
                         >
-                            <div className="d-flex align-items-center menu d-lg-none">
+                            <div className="d-flex align-items-center menu d-xl-none">
                                 <button
                                     type="button"
                                     className="btn"

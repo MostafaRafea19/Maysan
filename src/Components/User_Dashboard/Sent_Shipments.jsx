@@ -13,8 +13,8 @@ class Sent_Shipments extends React.Component {
                     <Navbar/>
                     <div className="container-fluid">
                         <div className="row">
-                            <div className="mx-3 col-2"></div>
-                            <h1 className="text-right mx-5 my-5 px-3">الشحنات المرسلة</h1>
+                            <div className="mx-3 col-2 d-none d-lg-block"></div>
+                            <h1 className="text-lg-right text-center mx-5 my-5 px-3">الشحنات المرسلة</h1>
                         </div>
                         <div className="row justify-content-around">
                             <div className="h-100 d-xl-block d-none">
