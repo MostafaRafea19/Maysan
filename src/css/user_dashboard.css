@@ -112,7 +112,29 @@
 
 /* Login, Registration, Verification */
 
+/* User Dashboard */
+
+.user-dashboard {
+    background-image: url('./../img/bg_elements.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.user-dashboard h1 {
+    font-family: DIN Next LT W23 Medium;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+/* User Dashboard */
+
 /* Sidebar Component Start */
+
+.sidebar_ {
+    flex: 0 0 22.5%;
+    max-width: 25%;
+}
 
 .sidebar {
     background: #FFFFFF;
@@ -230,10 +252,6 @@ nav .menu-logo {
 /* Navbar */
 
 /* Statistics */
-.statistics {
-    background-image: url('./../img/bg_elements.jpg');
-    background-size: cover;
-}
 
 .statistics .section-L .empty {
     width: 100%;
@@ -347,19 +365,6 @@ nav .menu-logo {
 /* Graph Component End*/
 
 /* Sent Shipments */
-
-.sent_shipments {
-    background-image: url('./../img//bg_elements.jpg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: left;
-}
-
-.sent_shipments h1 {
-    font-family: DIN Next LT W23 Medium;
-    font-weight: 500;
-    font-size: 40px;
-}
 
 .sent_shipments table thead {
     background: #FFFFFF;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Form_Shipments extends React.Component{
+class New_Shipment_Form extends React.Component{
     render() {
         return(
             <React.Fragment>
@@ -60,4 +60,4 @@ class Form_Shipments extends React.Component{
         )
     }
 }
-export default Form_Shipments;
+export default New_Shipment_Form;

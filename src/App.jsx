@@ -6,13 +6,17 @@ import {
 } from "react-router-dom";
 
 import Login from './Components/User_Dashboard/Login';
-import Statistics from "./Components/User_Dashboard/Statistics";
 import Register from './Components/User_Dashboard/Register';
-import Shipments from "./Components/User_Dashboard/Shipments";
 import Verification from './Components/User_Dashboard/Verification';
 import Resend from './Components/User_Dashboard/Resend';
-import Sent_Shipments from './Components/User_Dashboard/Sent_Shipments';
+
+/*import Statistics from "./Components/User_Dashboard/Statistics";
+import Shipments from "./Components/User_Dashboard/Shipments";
+import Sent_Shipments from './Components/User_Dashboard/Sent_Shipments';*/
+
 import Landing_Page from './Components/Landing_Page/Landing_Page';
+
+import User_Dashboard from './Components/User_Dashboard/User_Dashboard';
 
 import axios from 'axios';
 
@@ -312,21 +316,12 @@ class App extends React.Component {
                     <Route path="/login">
                         <Login/>
                     </Route>
-                    <Route path="/statistics">
-                        <Statistics
-                            notifications_counter={this.state.notifications_counter}
-                            graph={this.state.graph}
-                        />
-                    </Route>
                     <Route path="/register">
                         <Register
                             handleRegisterFormChange={this.handleRegisterFormChange}
                             handleRegisterFormSubmit={this.handleRegisterFormSubmit}
                             errors={this.state.errors}
                         />
-                    </Route>
-                    <Route path="/shipments">
-                        <Shipments/>
                     </Route>
                     <Route path="/verify">
                         <Verification
@@ -349,11 +344,28 @@ class App extends React.Component {
                             handleUserResendSubmit={this.handleUserResendSubmit}
                         />
                     </Route>
+
+                    <Route path="/dashboard">
+                        <User_Dashboard
+                            graph={this.state.graph}
+                        />
+                    </Route>
+
+                    {/*<Route path="/statistics">
+                        <Statistics
+                            notifications_counter={this.state.notifications_counter}
+                            graph={this.state.graph}
+                        />
+                    </Route>
+                    <Route path="/shipments">
+                        <Shipments/>
+                    </Route>
                     <Route path="/sent-shipments">
                         <Sent_Shipments
                             sent_shipments={this.state.sent_shipments}
                         />
-                    </Route>
+                    </Route>*/}
+
                     <Route path="/">
                         <Landing_Page feedback={this.state.Feedback} handle={this.handle}/>
                     </Route>

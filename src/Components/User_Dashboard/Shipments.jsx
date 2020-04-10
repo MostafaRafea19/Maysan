@@ -2,7 +2,7 @@ import React from 'react';
 import Send_Steps from "./Send_Steps";
 import Navbar from "./layouts/Navbar";
 import Sidebar from "./layouts/Sidebar";
-import Form_Shipments from "./Form_Shipments";
+import New_Shipment_Form from "./New_Shipment_Form";
 import Content_Shipment from "./Content_Shipment";
 
 class Shipments extends React.Component{
@@ -23,7 +23,7 @@ class Shipments extends React.Component{
                                     <div className="row justify-content-center align-items-center">
                                         <div className="col-12 text-center">
                                             <Send_Steps />
-                                            {/*<Form_Shipments />*/}
+                                            {/*<New_Shipment_Form />*/}
                                             <Content_Shipment />
                                         </div>
 
