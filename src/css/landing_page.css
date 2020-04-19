@@ -9,6 +9,7 @@
 .landing-page .navbar-landing nav {
     border-radius: 40px;
     margin-top: 35px;
+    height: auto;
 }
 
 .landing-page .navbar-landing .navbar-nav .links a {

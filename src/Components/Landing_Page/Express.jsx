@@ -20,7 +20,7 @@ class Express extends React.Component {
                                 <div className="edit-height " style={{height:'390px'}}>
 
                                     <div className="img-car position-relative h-100  " >
-                                        <img src={ex} className="img-fluid w-100 wow bounceInRight" data-wow-iteration="1" alt="" />
+                                        <img src={ex} className="img-fluid w-100 http://localhost:3000/Maysan bounceIn   " data-wow-iteration="1" alt="" />
                                         <div className="position-absolute expp" >
                                             <img src={expp} alt="" />
                                         </div>
@@ -29,7 +29,7 @@ class Express extends React.Component {
                                 </div>
                             </div>
                             <div className="col-12 my-4 col-xl-5 text-center" >
-								<div className="wow bounceInLeft" data-wow-iteration="1">
+								<div>
 									                                <p className="text-white my-4">
                                     أكثر من ١٠٠ متجر يثقون فى ميسان شاركنا النجاح مع أول طلب شحن لك
                                 </p>
