@@ -5,7 +5,7 @@ class Sent_Shipments_Table extends React.Component {
     render() {
         return (
             <React.Fragment>
-                <div className="table-responsive-xl">
+                <div className="table-responsive-xl sent_shipments">
                     <table className="table">
                         <thead>
                         <tr>

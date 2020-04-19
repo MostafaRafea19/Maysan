@@ -82,7 +82,8 @@ class Navbar extends React.Component {
                             <img src={bordered_logo}/>
                         </li>
                         <li className="new-shipment align-self-end nav-item mx-4 d-none d-lg-inline-block">
-                            <Link to="" className="nav-link d-flex align-items-center position-relative">
+                            <Link to="/dashboard/new-shipment"
+                                  className="nav-link d-flex align-items-center position-relative">
                                 <img src={plus} className="plus position-absolute"/>
                                 <img src={new_shipment} className="px-1"/>
                                 <span className="px-1 pt-1">شحنة جديدة</span>

@@ -6,7 +6,7 @@ import CC from '../../../img/icon/conversation.png';
 import SS from '../../../img/icon/settings.png';
 import plus from "../../../img/icon/plus.svg";
 import new_shipment from "../../../img/icon/new_shipment.svg";
-import {Link} from "react-router-dom";
+import {Link, Redirect} from "react-router-dom";
 
 import Sidebar_Link from "./Sidebar_Link";
 
@@ -19,20 +19,39 @@ class Sidebar extends React.Component {
             false,
             false,
             false,
+            false,
+            false,
             false
-        ]
+        ],
+        sub_link: false
     };
 
-    /*handleLinkClick = (e) => {
-        e.preventDefault();
+    handleLinkClick = (e) => {
         let links = this.state.links;
         links = links.filter((link) => {
             link = false;
         })
         links[e.target.id] = true;
+
+        switch (e.target.id) {
+            case "3":
+            case "4":
+            case "5":
+                this.setState({
+                    sub_link: true
+                });
+                links[3] = true;
+                break;
+            default:
+                this.setState({
+                    sub_link: false
+                })
+        }
+
         this.setState({links});
-        window.location.href = 'http://localhost:3000/statistics';
-    };*/
+    };
+
+    handleShipments
 
     render() {
         return (
@@ -40,7 +59,8 @@ class Sidebar extends React.Component {
                 <section className="sidebar text-center p-4">
 
                     <div className="new-shipment align-self-center nav-item d-block d-lg-none">
-                        <Link to="" className="nav-link d-flex align-items-center position-relative">
+                        <Link to="/dashboard/new-shipment"
+                              className="nav-link d-flex align-items-center position-relative">
                             <img src={plus} className="plus position-absolute"/>
                             <img src={new_shipment} className="px-1"/>
                             <span className="px-1 pt-1">شحنة جديدة</span>
@@ -49,8 +69,12 @@ class Sidebar extends React.Component {
 
 
                     <Link
-                        to="/statistics"
-                        className="row py-3 d-flex justify-content-center align-items-center">
+                        to="/dashboard"
+                        className="row py-3 d-flex justify-content-center align-items-center"
+                        onClick={(e) => {
+                            this.handleLinkClick(e)
+                        }}
+                    >
                         <div className="col-3 text-center">
                             <svg width="32" height="18" viewBox="0 0 32 18" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
@@ -81,7 +105,11 @@ class Sidebar extends React.Component {
                     </Link>
                     <Link
                         to=""
-                        className=" row py-3 d-flex justify-content-center align-items-center">
+                        className=" row py-3 d-flex justify-content-center align-items-center"
+                        onClick={(e) => {
+                            this.handleLinkClick(e)
+                        }}
+                    >
                         <div className=" col-3 text-center">
                             <svg width="
                         21" height="21" viewBox="0 0 21 21" fill="none"
@@ -129,7 +157,11 @@ class Sidebar extends React.Component {
                     </Link>
                     <Link
                         to=""
-                        className="row py-3 d-flex justify-content-center align-items-center">
+                        className="row py-3 d-flex justify-content-center align-items-center"
+                        onClick={(e) => {
+                            this.handleLinkClick(e)
+                        }}
+                    >
                         <div className="col-3 text-center">
 
                         </div>
@@ -140,7 +172,15 @@ class Sidebar extends React.Component {
                     </Link>
                     <Link
                         to=""
-                        className="row py-3 d-flex justify-content-center align-items-center">
+                        className={
+                            this.state.sub_link ? "row pt-3 d-flex justify-content-center align-items-center"
+                                : "row py-3 d-flex justify-content-center align-items-center"
+                        }
+                        onClick={(e) => {
+                            e.preventDefault();
+                            this.handleLinkClick(e)
+                        }}
+                    >
                         <div className="col-3 text-center">
                             <svg width="23" height="20" viewBox="0 0 23 20" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
@@ -155,79 +195,69 @@ class Sidebar extends React.Component {
                             الشحنات
                         </div>
                     </Link>
+                    <div className={this.state.sub_link ? "hidden_links d-block" : "hidden_links d-none"}>
+                        <Link
+                            to="/dashboard/shipments"
+                            className="row d-flex justify-content-center align-items-center"
+                            onClick={(e) => {
+                                this.handleLinkClick(e)
+                            }}
+                        >
+                            <div className="col-3 text-center">
+
+                            </div>
+                            <div id="4"
+                                 className={this.state.links[4] ? "col-9 px-0 text-right active" : "col-9 px-0 text-right"}>
+                                قائمة الشحنات
+                            </div>
+                        </Link>
+                        <Link
+                            to="/dashboard/new-shipment"
+                            className="row d-flex justify-content-center align-items-center"
+                            onClick={(e) => {
+                                this.handleLinkClick(e)
+                            }}
+                        >
+                            <div className="col-3 text-center">
+
+                            </div>
+                            <div id="5"
+                                 className={this.state.links[5] ? "col-9 px-0 text-right active" : "col-9 px-0 text-right"}>
+                                ارسال شحنة جديدة
+                            </div>
+                        </Link>
+                    </div>
                     <Link
                         to=""
-                        className="row py-3 d-flex justify-content-center align-items-center">
+                        className="row py-3 d-flex justify-content-center align-items-center"
+                        onClick={(e) => {
+                            this.handleLinkClick(e)
+                        }}
+                    >
                         <div className="col-3 text-center">
 
                         </div>
-                        <div id="4"
-                             className={this.state.links[4] ? "col-9 px-0 text-right active" : "col-9 px-0 text-right"}>
+                        <div id="6"
+                             className={this.state.links[6] ? "col-9 px-0 text-right active" : "col-9 px-0 text-right"}>
                             المساعدة
                         </div>
                     </Link>
                     <Link
                         to=""
-                        className="row py-3 d-flex justify-content-center align-items-center">
+                        className="row py-3 d-flex justify-content-center align-items-center"
+                        onClick={(e) => {
+                            this.handleLinkClick(e)
+                        }}
+                    >
                         <div className="col-3 text-center">
 
                         </div>
-                        <div id="5"
-                             className={this.state.links[5] ? "col-9 px-0 text-right active" : "col-9 px-0 text-right"}>
+                        <div id="7"
+                             className={this.state.links[7] ? "col-9 px-0 text-right active" : "col-9 px-0 text-right"}>
                             الاعدادات
                         </div>
                     </Link>
                 </section>
-
-                {/*<section className="sidebar-user-D d-flex align-items-center w-auto h-100">
-                    <div className="content m-auto">
-                        <div className="row py-3 d-flex justify-content-center align-items-center justify-content-center align-items-center">
-                            <div className="text-right">
-                                <div className="col-12 link mt-2">
-
-                                    <Link href="#" className="d-inline active">
-                                        <div className="icon d-inline ml-3">
-                                            <img src={Sh} alt=""/>
-                                        </div>
-                                        منصة الشحن</a>
-
-                                </div>
-                                <div className="col-12 link">
-
-                                    <Link href="#" className="d-inline">
-                                        <div className="icon d-inline ml-3">
-                                            <img src={Xl} alt=""/>
-                                        </div>
-                                        البولصيات</a>
-
-                                </div>
-                                <div className="col-12 link ">
-
-                                    <Link href="#" className="d-inline client"> العملاء</a>
-
-                                </div>
-                                <div className="col-12 link">
-
-                                    <Link href="#" className="d-inline">
-                                        <div className="icon d-inline ml-3">
-                                            <img src={Xm} alt=""/>
-                                        </div>
-                                        الشحنات</a>
-
-                                </div>
-                                <div className="col-12 link">
-
-                                    <Link href="#" className="d-inline settings">المساعدة</a>
-
-                                </div>
-                                <div className="col-12 link">
-                                    <Link href="#" className="d-inline settings">الاعدادات</a>
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div>*/}
             </React.Fragment>
         )
     }

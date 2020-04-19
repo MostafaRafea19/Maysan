@@ -10,10 +10,6 @@ import Register from './Components/User_Dashboard/Register';
 import Verification from './Components/User_Dashboard/Verification';
 import Resend from './Components/User_Dashboard/Resend';
 
-/*import Statistics from "./Components/User_Dashboard/Statistics";
-import Shipments from "./Components/User_Dashboard/Shipments";
-import Sent_Shipments from './Components/User_Dashboard/Sent_Shipments';*/
-
 import Landing_Page from './Components/Landing_Page/Landing_Page';
 
 import User_Dashboard from './Components/User_Dashboard/User_Dashboard';
@@ -348,23 +344,10 @@ class App extends React.Component {
                     <Route path="/dashboard">
                         <User_Dashboard
                             graph={this.state.graph}
-                        />
-                    </Route>
-
-                    {/*<Route path="/statistics">
-                        <Statistics
-                            notifications_counter={this.state.notifications_counter}
-                            graph={this.state.graph}
-                        />
-                    </Route>
-                    <Route path="/shipments">
-                        <Shipments/>
-                    </Route>
-                    <Route path="/sent-shipments">
-                        <Sent_Shipments
                             sent_shipments={this.state.sent_shipments}
+                            notifications_counter={this.state.notifications_counter}
                         />
-                    </Route>*/}
+                    </Route>
 
                     <Route path="/">
                         <Landing_Page feedback={this.state.Feedback} handle={this.handle}/>

@@ -152,6 +152,10 @@
     color: #4F4F4F;
 }
 
+.sidebar .hidden_links .col-9 {
+    font-size: 18px !important;
+}
+
 .sidebar a:hover {
     text-decoration: none;
 }

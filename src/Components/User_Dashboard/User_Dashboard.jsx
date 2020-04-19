@@ -1,9 +1,5 @@
 import React from "react";
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-} from "react-router-dom";
+import {Route} from "react-router-dom";
 
 import Navbar from "./layouts/Navbar";
 import Dashboard_Header from './layouts/Dashboard_Header';
@@ -28,7 +24,9 @@ class User_Dashboard extends React.Component {
         return (
             <React.Fragment>
                 <section className="user-dashboard">
-                    <Navbar/>
+                    <Navbar
+                        notifications_counter={this.props.notifications_counter}
+                    />
 
                     <div className="container-fluid">
 
@@ -43,24 +41,20 @@ class User_Dashboard extends React.Component {
                             </div>
 
                             <div className="col-xl-9 col-11 px-0 h-100">
-
-                                <Router>
-                                    <Switch>
-                                        <Route path="/shipment">
-                                            <New_Shipment_Form/>
-                                        </Route>
-                                        <Route path="/sent-shipments">
-                                            <Sent_Shipments_Table/>
-                                        </Route>
-                                        <Route path="/">
-                                            <Statistics
-                                                graph={this.props.graph}
-                                                setHeading={this.setDashboardHeading}
-                                            />
-                                        </Route>
-                                    </Switch>
-                                </Router>
-
+                                <Route path="/dashboard/new-shipment">
+                                    <New_Shipment_Form/>
+                                </Route>
+                                <Route path="/dashboard/shipments">
+                                    <Sent_Shipments_Table
+                                        sent_shipments={this.props.sent_shipments}
+                                    />
+                                </Route>
+                                <Route path="/dashboard" exact>
+                                    <Statistics
+                                        graph={this.props.graph}
+                                        setHeading={this.setDashboardHeading}
+                                    />
+                                </Route>
                             </div>
 
                         </div>
