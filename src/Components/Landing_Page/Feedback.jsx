@@ -20,7 +20,7 @@ class Feedback extends React.Component {
     render() {
         return (
             <React.Fragment>
-                <section className="feedback my-5 wow zoomInDown">
+                <section className="feedback my-5 wow zoomInDown" >
                     <div className="container">
                         <h2 className="text-center">ماذا يقول عملائنا عنا</h2>
                         <div className="row d-flex justify-content-center align-items-center">

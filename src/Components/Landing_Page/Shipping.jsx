@@ -23,7 +23,7 @@ class Shipping extends React.Component {
                                 </p>
                             </div>
                             <div className="col-12 position-relative content d-grid my-3">
-                                <img src={img} className="img-fluid w-100 wow flipInX" alt="" data-wow-iteration="1"/>
+                                <img src={img} className="img-fluid w-100 wow bounceIn" alt="" data-wow-iteration="1"/>
                                 <div className="position-absolute D1">
                                     <img src={icon} alt="" />
                                 </div>

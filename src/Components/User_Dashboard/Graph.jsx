@@ -4,6 +4,22 @@ import React from "react";
 class Graph extends React.Component{
 
 
+    state= {
+        button: [
+            false,
+            false
+            ]};
+    handelButtonClick = (e) =>{
+        e.preventDefault();
+        let  button = this.state.button;
+        button = button.filter((button) => {
+            button = false;
+        })
+        button[e.target.id] = true;
+        this.setState({button});
+    }
+
+
     render() {
         return(
             <React.Fragment>
@@ -13,8 +29,8 @@ class Graph extends React.Component{
                         <div className="row py-3 h-100">
                             <div className="col-12 head p">
                                 <div className="text-right">
-                                <a href="#" className="bg-purple py-1 btn btn-Form munth mx-2 active">الشهر</a>
-                                <a href="#" className="text-purple py-1 btn btn-outline-light px-4 weak mx-2">الاسبوع</a>
+                                    <a href="#" className={this.state.button[1] ? "bg-purple py-1 btn btn-Form munth mx-2 active" : "bg-purple py-1 btn btn-Form munth mx-2"}>الشهر</a>
+                                    <a href="#" className={this.state.button[2] ? "text-purple py-1 btn btn-outline-light px-4 weak mx-2 active" : "text-purple py-1 btn btn-outline-light px-4 weak mx-2"}>الاسبوع</a>
                                 </div>
                             </div>
                             <div className="col-12 pt-3 position-relative">
