@@ -9,6 +9,7 @@ import Footer from "./layouts/Footer";
 import New_Shipment_Form from "./New_Shipment_Form";
 import Sent_Shipments_Table from "./Sent_Shipments_Table";
 import Statistics from "./Statistics";
+import Send_Steps from "./Send_Steps";
 
 class User_Dashboard extends React.Component {
 
@@ -42,6 +43,7 @@ class User_Dashboard extends React.Component {
 
                             <div className="col-xl-9 col-11 px-0 h-100">
                                 <Route path="/dashboard/new-shipment">
+                                    <Send_Steps/>
                                     <New_Shipment_Form/>
                                 </Route>
                                 <Route path="/dashboard/shipments">
