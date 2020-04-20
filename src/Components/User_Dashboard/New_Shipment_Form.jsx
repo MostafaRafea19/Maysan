@@ -1,64 +1,70 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 
 class New_Shipment_Form extends React.Component {
 
     state = {
         prev_btn: false,
-        svg1: 1,
+        svgs: [
+            1,
+            0,
+            0
+        ],
         lines: false,
-        svg2: 0,
-        svg3: 0,
         form1: true,
         form2: false,
         status: 0
     };
 
-    handleNextClick = () => {
+    handleNextClick = (e) => {
+        e.preventDefault();
         switch (this.state.status) {
             case 0:
                 this.setState({
                     prev_btn: true,
-                    svg1: 2,
-                    svg2: 1,
-                    status: 1
+                    status: 1,
+                    svgs: svgs
                 });
                 break;
             case 1:
+                let svgs = this.state.svgs;
+                svgs[1] = 2;
+                svgs[2] = 1;
                 this.setState({
-                    svg2: 2,
                     lines: true,
-                    svg3: 1,
                     form1: false,
                     form2: true,
-                    status: 2
-                })
+                    status: 2,
+                    svgs: svgs
+                });
+                break;
         }
     };
 
     render() {
         return (
             <React.Fragment>
-                <section className="form-shipments m-auto" style={{width: "78%"}}>
+                <section className="form-shipments m-auto py-3" style={{width: "78%"}}>
                     <div className="container">
                         <div className="row">
-
                             <section className="send-steps col-12 text-center">
                                 <div className="position-relative  d-inline">
                                     <svg width="40" height="44" viewBox="0 0 40 44" fill="none"
                                          xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M39.0301 32.6877H37.9613C38.0504 32.4205 38.1395 32.1533 38.1395 31.7971V13.9842C38.1395 12.4701 36.9816 11.3123 35.4675 11.3123H29.233H22.1079H15.8734C14.3593 11.3123 13.2014 12.4701 13.2014 13.9842V31.7971C13.2014 32.1533 13.2905 32.4205 13.3796 32.6877H11.4201V1.51519C11.4201 0.9808 11.0639 0.624542 10.5295 0.624542H6.96693H3.40435C1.89026 0.624542 0.732422 1.78238 0.732422 3.29647C0.732422 4.81057 1.89026 5.96841 3.40435 5.96841H6.07629V33.5784V37.1409C6.07629 37.6753 6.43254 38.0316 6.96693 38.0316H10.1733C9.90606 38.566 9.63886 39.1894 9.63886 39.8129C9.63886 41.7723 11.242 43.3755 13.2014 43.3755C15.1609 43.3755 16.764 41.7723 16.764 39.8129C16.764 39.1894 16.5859 38.566 16.2296 38.0316H29.6784C29.4112 38.566 29.144 39.1894 29.144 39.8129C29.144 41.7723 30.7471 43.3755 32.7065 43.3755C34.666 43.3755 36.2691 41.7723 36.2691 39.8129C36.2691 39.1894 36.091 38.566 35.7347 38.0316H38.941C39.4754 38.0316 39.8317 37.6753 39.8317 37.1409V33.5784C39.9208 33.044 39.5645 32.6877 39.0301 32.6877ZM28.3424 13.0936V21.1094C28.3424 21.6437 27.9861 22 27.4517 22H23.8892C23.3548 22 22.9985 21.6437 22.9985 21.1094V13.0936H28.3424ZM14.9827 31.7971V13.9842C14.9827 13.4498 15.339 13.0936 15.8734 13.0936H21.2172V21.1094C21.2172 22.6234 22.3751 23.7813 23.8892 23.7813H27.4517C28.9658 23.7813 30.1237 22.6234 30.1237 21.1094V13.0936H35.4675C36.0019 13.0936 36.3582 13.4498 36.3582 13.9842V31.7971C36.3582 32.3315 36.0019 32.6877 35.4675 32.6877H15.8734C15.339 32.6877 14.9827 32.3315 14.9827 31.7971ZM9.63886 32.6877H7.85757V5.07776V2.40583H9.63886V32.6877ZM3.40435 4.18712C2.86997 4.18712 2.51371 3.83086 2.51371 3.29647C2.51371 2.76209 2.86997 2.40583 3.40435 2.40583H6.07629V4.18712H3.40435ZM14.9827 39.8129C14.9827 40.7926 14.1811 41.5942 13.2014 41.5942C12.2217 41.5942 11.4201 40.7926 11.4201 39.8129C11.4201 38.8332 12.2217 38.0316 13.2014 38.0316C14.1811 38.0316 14.9827 38.8332 14.9827 39.8129ZM34.5769 39.8129C34.5769 40.7926 33.7753 41.5942 32.7956 41.5942C31.8159 41.5942 31.0143 40.7926 31.0143 39.8129C31.0143 38.8332 31.8159 38.0316 32.7956 38.0316C33.7753 38.0316 34.5769 38.8332 34.5769 39.8129ZM38.1395 36.2503H7.85757V34.469H10.5295H15.8734H35.4675H38.1395V36.2503Z"
-                                            fill="#4E2F8A"/>
+                                            fill={this.state.svgs[0] == 1 ? "#4E2F8A" : "#F16724"}
+                                        />
                                     </svg>
                                     <svg className="position-absolute number-corner" width="26" height="32"
                                          viewBox="0 0 26 32"
                                          fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="13.3899" cy="17.2807" r="12.469" fill="#4E2F8A"/>
+                                        <circle cx="13.3899" cy="17.2807" r="12.469"
+                                                fill={this.state.svgs[0] == 1 ? "#4E2F8A" : "#F16724"}/>
                                         <path
                                             d="M12.1957 13.56H12.1557L9.99573 15.04C9.84907 15.1333 9.77573 15.0933 9.77573 14.92V12.44C9.77573 12.3333 9.8224 12.24 9.91573 12.16L12.1957 10.52C12.2891 10.44 12.4091 10.4 12.5557 10.4H14.7957C14.9291 10.4 14.9957 10.4667 14.9957 10.6V23.8C14.9957 23.9333 14.9291 24 14.7957 24H12.3957C12.2624 24 12.1957 23.9333 12.1957 23.8V13.56Z"
                                             fill="white"/>
                                     </svg>
-
                                 </div>
                                 <span className="d-inline-block line"></span>
                                 <div className="position-relative d-inline mb-5">
@@ -66,7 +72,8 @@ class New_Shipment_Form extends React.Component {
                                          xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M3.75063 51.1966H26.8438C28.6282 51.1966 29.9928 49.8321 29.9928 48.0476V27.0538C29.9928 25.2694 28.6282 23.9048 26.8438 23.9048H19.4959H11.0984H3.75063C1.96616 23.9048 0.601562 25.2694 0.601562 27.0538V48.0476C0.601562 49.8321 1.96616 51.1966 3.75063 51.1966ZM18.4463 26.0041V35.4513C18.4463 36.0811 18.0264 36.501 17.3966 36.501H13.1978C12.568 36.501 12.1481 36.0811 12.1481 35.4513V26.0041H18.4463ZM2.70094 27.0538C2.70094 26.424 3.12081 26.0041 3.75063 26.0041H10.0487V35.4513C10.0487 37.2358 11.4133 38.6004 13.1978 38.6004H17.3966C19.181 38.6004 20.5456 37.2358 20.5456 35.4513V26.0041H26.8438C27.4736 26.0041 27.8934 26.424 27.8934 27.0538V48.0476C27.8934 48.6774 27.4736 49.0973 26.8438 49.0973H3.75063C3.12081 49.0973 2.70094 48.6774 2.70094 48.0476V27.0538Z"
-                                            fill="#474747"/>
+                                            fill="#474747"
+                                        />
                                         <path
                                             d="M15.297 21.8054C15.6119 21.8054 15.9268 21.5955 16.1368 21.3855C16.7666 20.4408 22.6448 11.9383 22.6448 8.15946C22.6448 4.06568 19.3908 0.811646 15.297 0.811646C11.2032 0.811646 7.94922 4.06568 7.94922 8.15946C7.94922 11.8334 13.7225 20.4408 14.4573 21.3855C14.6672 21.5955 14.9821 21.8054 15.297 21.8054ZM15.297 2.91102C18.2362 2.91102 20.5455 5.22033 20.5455 8.15946C20.5455 10.1539 17.6063 15.2973 15.297 18.8663C12.9877 15.2973 10.0486 10.1539 10.0486 8.15946C10.0486 5.22033 12.3579 2.91102 15.297 2.91102Z"
                                             fill="#474747"/>
@@ -104,12 +111,9 @@ class New_Shipment_Form extends React.Component {
                                             d="M7.86831 21.4427C7.84165 21.3093 7.89498 21.2227 8.02831 21.1827L10.2283 20.7627C10.3483 20.7493 10.4283 20.8027 10.4683 20.9227C10.5883 21.2827 10.795 21.5893 11.0883 21.8427C11.3816 22.0827 11.7683 22.2027 12.2483 22.2027C12.7683 22.2027 13.175 22.036 13.4683 21.7027C13.775 21.3693 13.9283 20.9493 13.9283 20.4427C13.9283 19.8293 13.755 19.356 13.4083 19.0227C13.075 18.6893 12.615 18.5227 12.0283 18.5227H11.4483C11.315 18.5227 11.2483 18.456 11.2483 18.3227V16.3827C11.2483 16.2493 11.315 16.1827 11.4483 16.1827H11.9883C12.495 16.1827 12.9016 16.0293 13.2083 15.7227C13.515 15.416 13.6683 15.0027 13.6683 14.4827C13.6683 14.0027 13.5283 13.616 13.2483 13.3227C12.9816 13.0293 12.6083 12.8827 12.1283 12.8827C11.7016 12.8827 11.3616 12.996 11.1083 13.2227C10.8683 13.4493 10.695 13.756 10.5883 14.1427C10.5483 14.2627 10.4683 14.3093 10.3483 14.2827L8.16831 13.8627C8.03498 13.836 7.98165 13.7627 8.00831 13.6427C8.08831 13.1893 8.24165 12.776 8.46831 12.4027C8.69498 12.016 8.98831 11.6827 9.34831 11.4027C9.72165 11.1227 10.1483 10.9093 10.6283 10.7627C11.1216 10.6027 11.6683 10.5227 12.2683 10.5227C12.935 10.5227 13.5283 10.616 14.0483 10.8027C14.5683 10.9893 15.0083 11.2493 15.3683 11.5827C15.7283 11.916 16.0016 12.316 16.1883 12.7827C16.375 13.236 16.4683 13.736 16.4683 14.2827C16.4683 14.8693 16.335 15.4027 16.0683 15.8827C15.815 16.3627 15.4416 16.7627 14.9483 17.0827V17.1227C15.1483 17.2293 15.355 17.376 15.5683 17.5627C15.7816 17.7493 15.975 17.9827 16.1483 18.2627C16.3216 18.5293 16.4616 18.8427 16.5683 19.2027C16.675 19.5627 16.7283 19.9693 16.7283 20.4227C16.7283 21.0493 16.615 21.616 16.3883 22.1227C16.175 22.6293 15.8683 23.0627 15.4683 23.4227C15.0683 23.7827 14.595 24.0627 14.0483 24.2627C13.515 24.4627 12.9283 24.5627 12.2883 24.5627C11.1283 24.5627 10.1483 24.2893 9.34831 23.7427C8.54831 23.196 8.05498 22.4293 7.86831 21.4427Z"
                                             fill="white"/>
                                     </svg>
-
-
                                 </div>
                             </section>
-
-                            <form action="#" className="col-12">
+                            <form action="#" className={this.state.form1 ? "col-12 d-block" : "col-12 d-none"}>
                                 <div className="container mt-5">
                                     <div className="row">
                                         <div className="col-12 col-md-6 p-3">
@@ -141,27 +145,73 @@ class New_Shipment_Form extends React.Component {
                                         </div>
                                         <div className="col-12  p-3">
                                             <div className="form-group">
-                                                <input type="text" className="form-control" placeholder="العنوان"/>
+                                                <input type="text" className="form-control"
+                                                       placeholder="العنوان"/>
                                             </div>
                                         </div>
                                         <div className="col-12  p-3">
                                             <div className="form-group">
-                                                <input type="number" className="form-control" placeholder="رقم الجوال"/>
-                                            </div>
-                                            <div className="form-group float-left ">
-                                                <button className="btn-Form btn submit-btn py-3">ألتالي</button>
-                                            </div>
-                                            <div className="form-group float-right ">
-                                                <button className="btn-Form-back btn submit-btn py-3">السابق</button>
+                                                <input type="number" className="form-control"
+                                                       placeholder="رقم الجوال"/>
                                             </div>
                                         </div>
-
                                     </div>
                                 </div>
-
                             </form>
-
-
+                            <form>
+                                <div className={this.state.form2 ? "col-12 form2 d-block" : "col-12 form2 d-none"}>
+                                    <div className="row">
+                                        <div className="col-12 col-md-6 p-3">
+                                            <div className="form-group">
+                                                <input type="text" className="form-control"
+                                                       placeholder="عدد الفطع"/>
+                                            </div>
+                                        </div>
+                                        <div className="col-12 col-md-6 p-3">
+                                            <div className="form-group">
+                                                <input type="number" className="form-control"
+                                                       placeholder="الوزن الاجمالي (بالكيلو)"/>
+                                            </div>
+                                        </div>
+                                        <div className="col-12 p-3">
+                                            <div className="form-group">
+                                                        <textarea type="number" rows="3" className="form-control"
+                                                                  placeholder="محتوى الشحنة"/>
+                                            </div>
+                                        </div>
+                                        <div className="col-12 p-3">
+                                            <div className="form-group text-right position-relative">
+                                                <input className="form-check-input" type="checkbox"
+                                                       id="gridCheck"/>
+                                                <span className="check"></span>
+                                                <label className="form-check-label mr-4 text-medium"
+                                                       htmlFor="gridCheck">
+                                                    اقر انا المرسل ان جميع محتويات الشحنة لا تخالف
+                                                </label>
+                                                <Link to="{}" className="text-purple text-medium"> سياسة
+                                                    ميسان</Link>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <section className="d-flex justify-content-between col-12 px-4">
+                                <div className="form-group">
+                                    <button
+                                        className={this.state.prev_btn ? "btn-Form-back btn submit-btn py-3 d-block" : "btn-Form-back btn submit-btn py-3 d-none"}>السابق
+                                    </button>
+                                </div>
+                                <div className="form-group">
+                                    <button
+                                        className="btn-Form btn submit-btn py-3"
+                                        onClick={(e) => {
+                                            this.handleNextClick(e)
+                                        }}
+                                    >
+                                        التالى
+                                    </button>
+                                </div>
+                            </section>
                         </div>
                     </div>
                 </section>

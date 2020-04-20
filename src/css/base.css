@@ -72,6 +72,9 @@ a {
 .text-black {
     color: black !important;
 }
+.text-medium{
+    font-family: DIN Next LT W23 Medium;
+}
 
 .text-bold {
     font-family: DIN Next LT W23 BOLD;
@@ -99,7 +102,7 @@ a {
     background: #4E2F8A;
     box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
-    /*width: 267.42px;*/
+    width: 267.42px;
 }
 
 .btn-Form:hover {
