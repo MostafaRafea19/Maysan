@@ -1,7 +1,40 @@
 import React from 'react';
-import Send_Steps from './Send_Steps';
 
 class New_Shipment_Form extends React.Component {
+
+    state = {
+        prev_btn: false,
+        svg1: 1,
+        lines: false,
+        svg2: 0,
+        svg3: 0,
+        form1: true,
+        form2: false,
+        status: 0
+    };
+
+    handleNextClick = () => {
+        switch (this.state.status) {
+            case 0:
+                this.setState({
+                    prev_btn: true,
+                    svg1: 2,
+                    svg2: 1,
+                    status: 1
+                });
+                break;
+            case 1:
+                this.setState({
+                    svg2: 2,
+                    lines: true,
+                    svg3: 1,
+                    form1: false,
+                    form2: true,
+                    status: 2
+                })
+        }
+    };
+
     render() {
         return (
             <React.Fragment>
@@ -9,7 +42,7 @@ class New_Shipment_Form extends React.Component {
                     <div className="container">
                         <div className="row">
 
-                            <section className="send-steps col-12">
+                            <section className="send-steps col-12 text-center">
                                 <div className="position-relative  d-inline">
                                     <svg width="40" height="44" viewBox="0 0 40 44" fill="none"
                                          xmlns="http://www.w3.org/2000/svg">
@@ -17,7 +50,8 @@ class New_Shipment_Form extends React.Component {
                                             d="M39.0301 32.6877H37.9613C38.0504 32.4205 38.1395 32.1533 38.1395 31.7971V13.9842C38.1395 12.4701 36.9816 11.3123 35.4675 11.3123H29.233H22.1079H15.8734C14.3593 11.3123 13.2014 12.4701 13.2014 13.9842V31.7971C13.2014 32.1533 13.2905 32.4205 13.3796 32.6877H11.4201V1.51519C11.4201 0.9808 11.0639 0.624542 10.5295 0.624542H6.96693H3.40435C1.89026 0.624542 0.732422 1.78238 0.732422 3.29647C0.732422 4.81057 1.89026 5.96841 3.40435 5.96841H6.07629V33.5784V37.1409C6.07629 37.6753 6.43254 38.0316 6.96693 38.0316H10.1733C9.90606 38.566 9.63886 39.1894 9.63886 39.8129C9.63886 41.7723 11.242 43.3755 13.2014 43.3755C15.1609 43.3755 16.764 41.7723 16.764 39.8129C16.764 39.1894 16.5859 38.566 16.2296 38.0316H29.6784C29.4112 38.566 29.144 39.1894 29.144 39.8129C29.144 41.7723 30.7471 43.3755 32.7065 43.3755C34.666 43.3755 36.2691 41.7723 36.2691 39.8129C36.2691 39.1894 36.091 38.566 35.7347 38.0316H38.941C39.4754 38.0316 39.8317 37.6753 39.8317 37.1409V33.5784C39.9208 33.044 39.5645 32.6877 39.0301 32.6877ZM28.3424 13.0936V21.1094C28.3424 21.6437 27.9861 22 27.4517 22H23.8892C23.3548 22 22.9985 21.6437 22.9985 21.1094V13.0936H28.3424ZM14.9827 31.7971V13.9842C14.9827 13.4498 15.339 13.0936 15.8734 13.0936H21.2172V21.1094C21.2172 22.6234 22.3751 23.7813 23.8892 23.7813H27.4517C28.9658 23.7813 30.1237 22.6234 30.1237 21.1094V13.0936H35.4675C36.0019 13.0936 36.3582 13.4498 36.3582 13.9842V31.7971C36.3582 32.3315 36.0019 32.6877 35.4675 32.6877H15.8734C15.339 32.6877 14.9827 32.3315 14.9827 31.7971ZM9.63886 32.6877H7.85757V5.07776V2.40583H9.63886V32.6877ZM3.40435 4.18712C2.86997 4.18712 2.51371 3.83086 2.51371 3.29647C2.51371 2.76209 2.86997 2.40583 3.40435 2.40583H6.07629V4.18712H3.40435ZM14.9827 39.8129C14.9827 40.7926 14.1811 41.5942 13.2014 41.5942C12.2217 41.5942 11.4201 40.7926 11.4201 39.8129C11.4201 38.8332 12.2217 38.0316 13.2014 38.0316C14.1811 38.0316 14.9827 38.8332 14.9827 39.8129ZM34.5769 39.8129C34.5769 40.7926 33.7753 41.5942 32.7956 41.5942C31.8159 41.5942 31.0143 40.7926 31.0143 39.8129C31.0143 38.8332 31.8159 38.0316 32.7956 38.0316C33.7753 38.0316 34.5769 38.8332 34.5769 39.8129ZM38.1395 36.2503H7.85757V34.469H10.5295H15.8734H35.4675H38.1395V36.2503Z"
                                             fill="#4E2F8A"/>
                                     </svg>
-                                    <svg className="position-absolute number-corner" width="26" height="32" viewBox="0 0 26 32"
+                                    <svg className="position-absolute number-corner" width="26" height="32"
+                                         viewBox="0 0 26 32"
                                          fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="13.3899" cy="17.2807" r="12.469" fill="#4E2F8A"/>
                                         <path
@@ -41,7 +75,8 @@ class New_Shipment_Form extends React.Component {
                                             fill="#474747"/>
                                     </svg>
 
-                                    <svg className="position-absolute number-corner" width="26" height="32" viewBox="0 0 26 32"
+                                    <svg className="position-absolute number-corner" width="26" height="32"
+                                         viewBox="0 0 26 32"
                                          fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="12.6961" cy="18.2807" r="12.469" fill="#4F4F4F"/>
                                         <path
@@ -61,7 +96,8 @@ class New_Shipment_Form extends React.Component {
                                     </svg>
 
 
-                                    <svg className="position-absolute number-corner" width="25" height="32" viewBox="0 0 25 32"
+                                    <svg className="position-absolute number-corner" width="25" height="32"
+                                         viewBox="0 0 25 32"
                                          fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="12.5178" cy="18.0462" r="12.469" fill="#4F4F4F"/>
                                         <path
@@ -78,7 +114,8 @@ class New_Shipment_Form extends React.Component {
                                     <div className="row">
                                         <div className="col-12 col-md-6 p-3">
                                             <div className="form-group">
-                                                <input type="text" className="form-control" placeholder="الاسم بالكامل"/>
+                                                <input type="text" className="form-control"
+                                                       placeholder="الاسم بالكامل"/>
                                             </div>
                                         </div>
                                         <div className="col-12 col-md-6  p-3 ">
@@ -123,7 +160,6 @@ class New_Shipment_Form extends React.Component {
                                 </div>
 
                             </form>
-
 
 
                         </div>

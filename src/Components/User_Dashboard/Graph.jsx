@@ -1,27 +1,29 @@
 import React from "react";
 
 
-class Graph extends React.Component{
+class Graph extends React.Component {
 
 
-    state= {
+    state = {
         button: [
-            false,
+            true,
             false
-            ]};
-    handelButtonClick = (e) =>{
+        ]
+    };
+
+    handelButtonClick = (e) => {
         e.preventDefault();
-        let  button = this.state.button;
+        let button = this.state.button;
         button = button.filter((button) => {
             button = false;
-        })
+        });
         button[e.target.id] = true;
         this.setState({button});
-    }
+    };
 
 
     render() {
-        return(
+        return (
             <React.Fragment>
 
                 <section className="graph bg-white">
@@ -29,15 +31,38 @@ class Graph extends React.Component{
                         <div className="row py-3 h-100">
                             <div className="col-12 head p">
                                 <div className="text-right">
-                                    <a href="#" className={this.state.button[1] ? "bg-purple py-1 btn btn-Form munth mx-2 active" : "bg-purple py-1 btn btn-Form munth mx-2"}>الشهر</a>
-                                    <a href="#" className={this.state.button[2] ? "text-purple py-1 btn btn-outline-light px-4 weak mx-2 active" : "text-purple py-1 btn btn-outline-light px-4 weak mx-2"}>الاسبوع</a>
+                                    <a href="#"
+                                       id="0"
+                                       className={
+                                           this.state.button[0] ? "py-1 px-5 btn btn-Form month mx-2"
+                                               : "text-purple py-1 btn btn-outline-light px-5 weak mx-2"
+                                       }
+                                       onClick={(e) => {
+                                           this.handelButtonClick(e)
+                                       }}
+                                    >
+                                        الشهر
+                                    </a>
+                                    <a href="#"
+                                       id="1"
+                                       className={
+                                           this.state.button[1] ? "py-1 px-4 btn btn-Form month mx-2"
+                                               : "text-purple py-1 btn btn-outline-light px-4 weak mx-2"
+                                       }
+                                       onClick={(e) => {
+                                           this.handelButtonClick(e)
+                                       }}
+                                    >
+                                        الاسبوع
+                                    </a>
                                 </div>
                             </div>
                             <div className="col-12 pt-3 position-relative">
                                 <div className="graphs p-3 d-flex justify-content-around align-items-end mt-3">
-                                    <div className="border-graph d-flex justify-content-around align-items-end h-100 w-100 pl-3">
+                                    <div
+                                        className="border-graph d-flex justify-content-around align-items-end h-100 w-100 pl-3">
 
-                                        {this.props.graph.map((element, index)=>{
+                                        {this.props.graph.map((element, index) => {
 
                                             let purple_div = {
                                                 height: element.purple
@@ -47,8 +72,10 @@ class Graph extends React.Component{
                                                 height: element.orange
                                             };
 
-                                            return(
-                                                <div className="h-100 super d-flex justify-content-between align-items-end" key={index}>
+                                            return (
+                                                <div
+                                                    className="h-100 super d-flex justify-content-between align-items-end"
+                                                    key={index}>
                                                     <div className="small " style={orange_div}></div>
                                                     <div className="graph-iteam" style={purple_div}></div>
                                                 </div>
@@ -69,7 +96,7 @@ class Graph extends React.Component{
                                         </ul>
                                     </div>
                                 </div>
-                                
+
                                 <div className="under-graph posiation-absliute">
                                     <ul className="d-flex justify-content-around">
                                         <li>001</li>

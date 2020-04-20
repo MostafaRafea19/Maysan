@@ -353,10 +353,6 @@ nav .menu-logo {
     color: #8BC2C9;
 }
 
-.statistics .graph .head .munth {
-    width: 22%;
-}
-
 .statistics .graph .head .weak {
     font-size: 24px;
     line-height: 35px;
@@ -439,7 +435,6 @@ footer ul li a:hover {
 }
 
 /* Footer */
-
 
 
 /*Start form-shipments*/
