@@ -427,6 +427,10 @@ footer ul li a {
     margin: 0 20px;
 }
 
+.send-steps .line.active {
+    background: #F16724;
+}
+
 /* Send_Steps Componont End */
 
 /* Content_Shipments Start*/
