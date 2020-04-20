@@ -441,5 +441,30 @@ footer ul li a:hover {
 /* Footer */
 
 
-
 /*Start form-shipments*/
+.form-shipments .form2 .custom-select {
+    /*background: #fff url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' heig…0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right 19.75rem center/8px 10px*/
+}
+
+.form-shipments .form2 .form-check-input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.form-shipments .form2 .check {
+    position: absolute;
+    top: 4px;
+    right: 0;
+    height: 14px;
+    width: 14px;
+    border: 2px solid #4E2F8A;
+
+}
+
+.form-shipments .form2 .form-check-input:checked ~ .check {
+    background-color: #F16724;
+    border: 2px solid #4E2F8A;
+}
