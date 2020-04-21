@@ -42,11 +42,14 @@ class User_Dashboard extends React.Component {
 
                             <div className="col-xl-9 col-11 px-0 h-100">
                                 <Route path="/dashboard/new-shipment">
-                                    <New_Shipment_Form/>
+                                    <New_Shipment_Form
+                                        setHeading={this.setDashboardHeading}
+                                    />
                                 </Route>
                                 <Route path="/dashboard/shipments">
                                     <Sent_Shipments_Table
                                         sent_shipments={this.props.sent_shipments}
+                                        setHeading={this.setDashboardHeading}
                                     />
                                 </Route>
                                 <Route path="/dashboard" exact>

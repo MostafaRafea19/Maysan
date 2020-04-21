@@ -416,8 +416,7 @@ footer ul li a {
 
 /* Send_Steps Componont Start */
 .send-steps .number-corner {
-    top: -30px;
-    right: -25px;
+    top: -1%;
 }
 
 .send-steps .line {
@@ -431,14 +430,19 @@ footer ul li a {
     background: #F16724;
 }
 
-.send-steps .text-1{
-    right: 14%;
+.send-steps p {
+    font-weight: bold;
+    font-size: 18px;
+    font-family: DIN Next LT W23 Light;
+    color: #4F4F4F;
 }
-.send-steps .text-2{
-    right: 44%;
+
+.send-steps p.active {
+    color: #4E2F8A;
 }
-.send-steps .text-3{
-    right: 74%;
+
+.send-steps p.active-2 {
+    color: #F16724;
 }
 
 /* Send_Steps Componont End */

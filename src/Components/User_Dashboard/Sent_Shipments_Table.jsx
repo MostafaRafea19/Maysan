@@ -2,6 +2,10 @@ import React from 'react';
 
 class Sent_Shipments_Table extends React.Component {
 
+    componentDidMount() {
+        this.props.setHeading('الشحنات المرسلة');
+    }
+
     render() {
         return (
             <React.Fragment>
