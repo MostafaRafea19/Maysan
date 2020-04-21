@@ -431,6 +431,16 @@ footer ul li a {
     background: #F16724;
 }
 
+.send-steps .text-1{
+    right: 14%;
+}
+.send-steps .text-2{
+    right: 44%;
+}
+.send-steps .text-3{
+    right: 74%;
+}
+
 /* Send_Steps Componont End */
 
 /* Content_Shipments Start*/

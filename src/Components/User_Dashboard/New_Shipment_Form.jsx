@@ -154,6 +154,11 @@ class New_Shipment_Form extends React.Component {
                 <section className="form-shipments m-auto py-3" style={{width: "78%"}}>
                     <div className="container">
                         <div className="row">
+                            <div className="header-shipment my-3 col-12 text-right">
+                                <h1 className="text-black mb-5">
+                                    ارسال شحنة جديدة
+                                </h1>
+                            </div>
                             <section className="send-steps col-12 text-center">
                                 <div className="position-relative  d-inline">
                                     <svg width="40" height="44" viewBox="0 0 40 44" fill="none"
@@ -199,6 +204,17 @@ class New_Shipment_Form extends React.Component {
                                             fill="white"/>
                                     </svg>
                                 </div>
+                                <div className="position-relative w-100">
+                                    <div className="text-1 position-absolute">
+                                        بيانات المرسل
+                                    </div>
+                                    <div className="text-2 position-absolute">
+                                        بيانات المستلم
+                                    </div>
+                                    <div className="text-3 position-absolute">
+                                        محتوى الشحنة
+                                    </div>
+                                </div>
                             </section>
                             <form action="#"
                                   className={this.state.form1 ? "col-12 my-5 d-block" : "col-12 my-5 d-none"}>
@@ -207,7 +223,9 @@ class New_Shipment_Form extends React.Component {
                                         <div className="col-12 col-md-6 p-3">
                                             <div className="form-group">
                                                 <input type="text" className="form-control"
-                                                       placeholder="الاسم بالكامل"/>
+                                                       placeholder="الاسم بالكامل"
+                                                        required
+                                                />
                                             </div>
                                         </div>
                                         <div className="col-12 col-md-6  p-3 ">
@@ -282,31 +300,35 @@ class New_Shipment_Form extends React.Component {
                                     </div>
                                 </div>
                             </form>
-                            <section className="d-flex justify-content-between col-12 px-4">
-                                <div className="form-group">
-                                    <button
-                                        className={
-                                            this.state.prev_btn
-                                                ? "btn-Form-back btn submit-btn py-3 d-block"
-                                                : "btn-Form-back btn submit-btn py-3 d-none"
-                                        }
-                                        onClick={(e) => {
-                                            this.handlePrevBtnClick(e)
-                                        }}
-                                    >
-                                        السابق
-                                    </button>
+                            <section className="col-12 px-4">
+                                <div className="row">
+
+                                    <div className="form-group text-md-center  justify-content-center col-12 col-md-6">
+                                        <button
+                                            className={
+                                                this.state.prev_btn
+                                                    ? "btn-Form-back m-auto m-md-0 btn submit-btn py-3 d-block"
+                                                    : "btn-Form-back btn m-auto m-md-0 submit-btn py-3 d-none"
+                                            }
+                                            onClick={(e) => {
+                                                this.handlePrevBtnClick(e)
+                                            }}
+                                        >
+                                            السابق
+                                        </button>
+                                    </div>
+                                    <div className="form-group  col-12 text-center text-md-left col-md-6">
+                                        <button
+                                            className="btn-Form btn submit-btn py-3"
+                                            onClick={(e) => {
+                                                this.handleNextClick(e)
+                                            }}
+                                        >
+                                            التالى
+                                        </button>
+                                    </div>
                                 </div>
-                                <div className="form-group">
-                                    <button
-                                        className="btn-Form btn submit-btn py-3"
-                                        onClick={(e) => {
-                                            this.handleNextClick(e)
-                                        }}
-                                    >
-                                        التالى
-                                    </button>
-                                </div>
+
                             </section>
                         </div>
                     </div>
